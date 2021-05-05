@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/nature_news_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/f09ce13278540620afe5a67840ef23284d4d83f9/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/f09ce13278540620afe5a67840ef23284d4d83f9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/f09ce13278540620afe5a67840ef23284d4d83f9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/304f585a8769de7b70846b1f5b4e20370a8bfeab/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/304f585a8769de7b70846b1f5b4e20370a8bfeab/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/304f585a8769de7b70846b1f5b4e20370a8bfeab/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/nature_news_manuscript/v/f09ce13278540620afe5a67840ef23284d4d83f9/))
+([permalink](https://greenelab.github.io/nature_news_manuscript/v/304f585a8769de7b70846b1f5b4e20370a8bfeab/))
 was automatically generated
-from [greenelab/nature_news_manuscript@f09ce13](https://github.com/greenelab/nature_news_manuscript/tree/f09ce13278540620afe5a67840ef23284d4d83f9)
+from [greenelab/nature_news_manuscript@304f585](https://github.com/greenelab/nature_news_manuscript/tree/304f585a8769de7b70846b1f5b4e20370a8bfeab)
 on May 5, 2021.
 </em></small>
 
@@ -102,6 +102,14 @@ on May 5, 2021.
 
 
 
+
+## Introduction
+
+## Methods
+
+## Results
+
+## Discussion
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.
