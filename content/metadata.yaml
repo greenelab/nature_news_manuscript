@@ -6,21 +6,21 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - github: nrosed
+    name: Natalie R. Davidson
+    orcid: 0000-0002-1745-8072
+    twitter: n_rose_d
+    email: natalie.davidson@cuanschutz.edu
     affiliations:
-      - Department of Something, University of Whatever
+      - University of Colorado School of Medicine, Aurora, Colorado, United States of America; Center for Health AI
     funders:
       - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+  - github: cgreene
+    name: Casey S. Greene
+    orcid: 0000-0001-8713-9213
+    twitter: GreeneScientist
+    email: casey.s.greene@cuanschutz.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - University of Colorado School of Medicine, Aurora, Colorado, United States of America; Center for Health AI
+    funders:
+      - Grant XXXXXXXX
