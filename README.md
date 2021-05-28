@@ -1,4 +1,4 @@
-# Automated scholarly manuscripts on GitHub
+# Gender and regional biases in scientific coverage revealed through computational analysis of _Nature_ news
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
