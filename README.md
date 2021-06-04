@@ -1,4 +1,5 @@
-# Automated scholarly manuscripts on GitHub
+# Analysis of _Nature_ news reveals gender and regional disparities in scientific coverage
+
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
