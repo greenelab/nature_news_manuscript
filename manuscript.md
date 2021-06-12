@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-06-04'
+date-meta: '2021-06-12'
 author-meta:
 - Natalie R. Davidson
 - Casey S. Greene
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Analysis of _Nature_ news reveals gender and regional disparities in scientific coverage" />
   <meta property="og:title" content="Analysis of _Nature_ news reveals gender and regional disparities in scientific coverage" />
   <meta property="twitter:title" content="Analysis of _Nature_ news reveals gender and regional disparities in scientific coverage" />
-  <meta name="dc.date" content="2021-06-04" />
-  <meta name="citation_publication_date" content="2021-06-04" />
+  <meta name="dc.date" content="2021-06-12" />
+  <meta name="citation_publication_date" content="2021-06-12" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,11 +41,13 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/nature_news_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/9ba72ff0467b02625e3f341ef637bb8b7bff2119/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/9ba72ff0467b02625e3f341ef637bb8b7bff2119/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/9ba72ff0467b02625e3f341ef637bb8b7bff2119/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/4e652d869213fa2fb805743df3dbd2f52c981ca5/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/4e652d869213fa2fb805743df3dbd2f52c981ca5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/4e652d869213fa2fb805743df3dbd2f52c981ca5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://github.com/nrosed/nature_news_disparities/blob/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png" />
+  <meta property="twitter:image" content="https://github.com/nrosed/nature_news_disparities/blob/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -65,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/nature_news_manuscript/v/9ba72ff0467b02625e3f341ef637bb8b7bff2119/))
+([permalink](https://greenelab.github.io/nature_news_manuscript/v/4e652d869213fa2fb805743df3dbd2f52c981ca5/))
 was automatically generated
-from [greenelab/nature_news_manuscript@9ba72ff](https://github.com/greenelab/nature_news_manuscript/tree/9ba72ff0467b02625e3f341ef637bb8b7bff2119)
-on June 4, 2021.
+from [greenelab/nature_news_manuscript@4e652d8](https://github.com/greenelab/nature_news_manuscript/tree/4e652d869213fa2fb805743df3dbd2f52c981ca5)
+on June 12, 2021.
 </em></small>
 
 ## Authors
@@ -96,7 +98,7 @@ on June 4, 2021.
     [GreeneScientist](https://twitter.com/GreeneScientist)<br>
   <small>
      University of Colorado School of Medicine, Aurora, Colorado, United States of America; Center for Health AI
-     · Funded by Grant XXXXXXXX
+     · Funded by The Gordon and Betty Moore Foundation (GBMF 4552)
   </small>
 
 
@@ -107,7 +109,7 @@ Scientific news coverage shapes the public’s view of the current state of scie
 Through researching a story, journalists identify and interview a limited number of sources.
 These sources may come from a journalist’s research or through recommendations by other scientists.
 In either case, unconscious biases may influence who is identified as an expert to interview, possibly skewing the selection of interviewees.
-We analyzed more than 22,000 news articles published by _Nature_ to quantify possible disparities.
+We analyzed more than 16,000 news articles published by _Nature_ to quantify possible disparities.
 Our analysis considered three possible sources of bias: gender, name origin, and country affiliation.
 To explore these sources of bias, we extracted cited authors’ names and affiliations, as well as extracted names of quoted speakers.
 We then used the names to predict gender and name origin of the authors and speakers.
@@ -144,7 +146,7 @@ Since _Nature_ also publishes research articles, this provides a natural estimat
 Our goal is to identify quoted and cited scientists by analyzing the content and citations within all news articles from 2005 to 2020.
 We further analyze if the coverage is biased beyond the current state of academic publishing by analyzing the authorship statistics across all _Nature_ research articles across the same period.
  
-Through our analysis of 22,094 news-related articles, we were able to identify >120,000 quotes and >10,000 citations with sufficient speaker or author information within the news content.
+Through our analysis of 22,001 news-related articles, we were able to identify >100,000 quotes and >8,000 citations with sufficient speaker or author information within the news content.
 We then identified possible gender or regional biases using the extracted names.
 We used computational methods to predict gender and identified a bias towards male quotes in news articles.
 However, during the period that we examine the bias has decreased from being more extreme than in the research content of _Nature_ to less extreme.
@@ -166,7 +168,7 @@ To help change these patterns, there exist guides [@https://www.theopennotebook.
 
 We scraped all text and metadata using the web-crawling framework Scrapy [@https://scrapy.org/] (version 2.4.1).
 We created three independent scrapy web spiders to process the news text, news citations, and research article metadata.
-News articles were defined as all articles from 2005 to 2020 that were designated as "News", "News-and-Views", "News-Feature", "Career-Column", "Career-Feature", "Technology-Feature", and "Toolbox".
+News articles were defined as all articles from 2005 to 2020 that were designated as "News", "News-Feature", "Career-Feature", "Technology-Feature", and "Toolbox".
 Using the spider “target_year_crawl.py”, we scraped the title, author, and main text from all news articles.
 We character normalized the main text by mapping visually identical Unicode codepoints to a single Unicode codepoint and stripping all non-Unicode characters.
 Using an additional spider defined in “doi_crawl.py”, we scaped all citations within news articles.
@@ -195,22 +197,44 @@ These articles were the first 200 English language "Journal" articles returned b
 To get the author information for the cited articles, we queried the _Springer_ API using the scraped DOI.
 For both API query types, the author names, positions, and affiliations for each publication were stored and are available in "all_author_country.tsv" and "all_author_fullname.tsv".
  
-### Name Normalization
- 
-Names were cast to lowercase and processed using the R package humaniformat [@https://cran.r-project.org/web/packages/humaniformat/index.html].
-humaniformat identifies if names are reversed (Lastname, Firstname), as well as identifies middle names.
-Since many last or first authorships may be non-names, we additionally filtered out any identified names if they partially or fully match any of the following terms: "consortium", "group", "initiative", "team", "collab", "committee", "center", "program", "author", or "institute".
-Furthermore, since many articles only contain first and last name initials, we remove any names less than four letters with a  "." or "-".
-Finally, we only consider any remaining names of more than two characters.
-We do this additional filtering to remove any web-scraping or coreNLP errors that only return partial names.
- 
-Since gender and origin predictions require the speaker’s full name, when possible, a longer name with minimal edit (Levenshtein) distance mentioned within the same article replaces the coreNLP predicted speaker.
+### Name Formatting
+
+#### Name Formatting for Gender Prediction in Quotes or Mentions
+To identify the gender of a quoted or mentioned person, we first attempt to identify the person’s full name.
+Even though genderizeR only uses the first name to make the gender prediction, identifying the full name gives us greater confidence that we are using the first name.
+To identify the full name, we take the predicted speaker by coreNLP and match it to the longest matching name within the same article.
+We match names by finding the longest mentioned name in the article with minimal edit (Levenshtein) distance.
 The name with the smallest edit distance, where character deletions have zero cost, is defined as the matching name.
 Character deletion was assigned a zero cost because we would like exact substring matches.
 For example, the calculated cost, including a cost for character deletion, between John and John Steinberg is 10; without character deletion, it is 0.
 Compared with the distance between John and Jane Doe, with character deletion cost, it is 7; without it is 2.
-Furthermore, the identification of simultaneously cited and quoted speakers used this same name matching strategy.
- 
+If we are still unable to find a full name, or if coreNLP cannot identify a speaker at all, we also determine whether or not coreNLP linked a gendered pronoun to the quote.
+If so, we assign the gender of the pronoun to the speaker. <!-- need to make sure this section is correctly worded, maybe not "assign" >
+We ignore all quotes with no name or partial names and no associated pronouns.
+
+
+#### Name Formatting for Gender Prediction of Authors
+
+Because we separate first and last authors, we only considered articles with more than one author.
+As for quotes, we needed to extract the first name of the authors.
+We cast names to lowercase and processed them using the R package humaniformat [@https://cran.r-project.org/web/packages/humaniformat/index.html].
+humaniformat identifies if names are reversed (Lastname, Firstname), as well as identifies middle names.
+This processing was not required for quote prediction because names written in news articles did not appear to be reversed or abbreviated.
+Since many last or first authorships may be non-names, we additionally filtered out any identified names if they partially or fully match any of the following terms: "consortium", "group", "initiative", "team", "collab", "committee", "center", "program", "author", or "institute".
+Furthermore, since many articles only contain first name initials (for example, "N. Davidson"), we remove any names less than four letters (length includes punctuation) and containing a  "." or "-", then strip out all periods from the first name.
+This ensures that hyphenated names are not changed, e.g. Julia-Louise remains unchanged, but removes hyphenated initials, e.g. J-L.
+Finally, we only consider any remaining first names of more than two characters.
+This is to eliminate first and middle jointly-initialized names.
+For example, "NR Davidson" would be reduced to "Davidson" and then eliminated due to the lack of a first name.
+
+
+#### Name Formatting for Name Origin Prediction
+In contrast to the gender prediction, we require the entire name in all steps of name origin prediction.
+For names identified in the _Nature_ news articles, we use the same process as described for the gender prediction; we again try to identify the full name.
+For author names, we process the names as previously described for the gender prediction of authors.
+For all names, we only consider them in our analyses if they consist of two distinct parts separated by a space.
+Additionally, if a full name is less than three characters, we were unable to consider it as the prediction model that we apply uses 3-mers.
+
 
 ### Gender Analysis
 
@@ -235,12 +259,24 @@ $$\textrm{Prop. Male First Authors} = \frac{|\textrm{Male First Authors}|} {|\te
 We used the same quoted speakers as described in the previous section for the name origin analysis.
 In addition, we also take all authors cited in a _Nature_ news article.
 In contrast to the gender prediction, we need to use the full name to predict name origin.
-We submitted all extracted full names to Wiki-2019LSTM [@doi:10.1101/2020.04.14.927251] to predict one of ten possible name origins: African, CelticEnglish, EastAsian, European, Greek, Hispanic, Jewish, ArabTurkPers, Nordic, and SouthAsia.
-We set the highest probability origin as the resultant assignment.
+We submitted all extracted full names to Wiki-2019LSTM [@doi:10.1101/2020.04.14.927251] to predict one of ten possible name origins: African, Celtic/English, East Asian, European, Greek, Hispanic, Hebrew, Arabic/Turkish/Persian, Nordic, and South Asian.
+While a full description of Wiki-2019LSTM is outside the scope of this paper, we describe it here breifly.
+Wiki-2019LSTM is trained on name and nationality pairs, using 3-mers of the characters in a name to predict a nationality.
+To ensure robust predictions, nationalities were grouped together as described in NamePrism [@doi:10.1145/3132847.3133008].
+Due to having large immigrant populations, the United States, Australia, and Canada were excluded from training.
+
+After running the pre-trained model, we select the highest probability origin for each name as the resultant assignment.
 Similar to the gender analyses, quote proportions were again directly compared against publication rates.
-For citations, we calculated the proportion of overall news citations for a given year for each name origin, as exemplified in @eq:cite-origin to calculate the citation rate for first authors with a Greek name origin.
+For citations, quotes, and mentions, we calculated the proportion for a given year for each name origin.
+This is shown in @eq:cite-origin to, for example, calculate the citation rate for last authors with a Greek name origin for a single year.
  
-$$\textrm{Prop. Greek } 1^\textrm{st} \textrm{ Author Citations} = \frac{| \textrm{Cited } 1^\textrm{st} \textrm{ Authors w/Greek Name Orig}|} {| \textrm{Cited } 1^\textrm{st} \textrm{ Authors w/any Name Orig}|}$${#eq:cite-origin}
+$$\textrm{Prop. Greek Last Author Cited} = \frac{| \textrm{Cited Last Authors w/Greek Name}|} {| \textrm{Cited Last Authors w/any Name}|}$${#eq:cite-origin}
+
+$$\textrm{Prop. Greek Quotes} = \frac{| \textrm{Quotes w/Greek Named Speaker}|} {| \textrm{Quotes w/any Named Speaker}|}$${#eq:quote-origin}
+
+$$\textrm{Prop. Greek Names Mentioned} = \frac{| \textrm{Unique Greek Names Mentioned}|} {| \textrm{Unique Names w/any Origin Mentioned}|}$${#eq:quote-origin}
+
+
 
 ### Country Mention Proportions
 
@@ -274,14 +310,15 @@ Outlier detection was done by subtracting the citation and mention rates, then i
 We only considered countries identified as either high citation (Set C) or high mention (Set M) across all years.
 We did not consider any country that was in the top and bottom 5% in different years.
 Additionally, we only considered a country if cited or mentioned five times in a single year.
-Once we identified set C/M countries, we analyzed the word frequencies in all news articles where the set C/M country was mentioned but not cited.
-We believe this would provide insight into content differences between set C/M countries.
+Once we identified set C/M countries, we analyzed the word frequencies in all news articles where the set C or M country was mentioned but not cited.
+We believe this would provide insight into content differences between set C and M countries.
 Text from news articles in 2020 were not considered due to an excess of SARS-CoV-2 related terms.
 Using the R package tidytext [@https://cran.r-project.org/web/packages/tidytext/index.html] we extracted tokens, removed stop words, and calculated the token frequencies across all articles.
-We only consider tokens in set C/M articles if the token has been observed at least 100 times across all articles.
+We only consider tokens in set C or M articles if the token has been observed at least 100 times across all articles.
 We then identify tokens that have the most significant ratio of usage between the two sets.
 Since there are differences in the number of articles per country within each set, we calculated a token frequency within a set as the median frequency within each countries associated articles.
 We calculated the resultant token ratio as the country normalized citation frequency to the country normalized mention frequency.
+To avoid divide by zero errors, a pseudocount of 1 is added to both the numerator and denominator.
 We assert that the term must be observed at least once in each set.
 
 ### Bootstrap Estimations
@@ -312,15 +349,16 @@ Panel B shows the types and amounts of articles that we have used for analyses.
 
 ### Creation of an Annotated News Dataset
 
-We have analyzed the text and citations of 22,094 news-related articles hosted on "www.nature.com".
-The articles span 15 years from 2005 to 2020, and seven article types: Career Column, Career Feature, News, News and Views, News Feature, Technology Feature, and Toolbox.
+We have analyzed the text and citations of 22,001 news-related articles hosted on "www.nature.com" that span 15 years from 2005 to 2020.
+Our primary focus is on 16,080 articles written by journalists which include the following five article types: Career Feature, News, News Feature, Technology Feature, and Toolbox.
+We also include one analysis of the scientist-written news articles, Career Column and News and Views, as a comparison set of 5,921 articles.
 The text and citations were then uniformly processed as depicted in Figure {@fig:fig1}a.
 We scraped the text using the web-crawling framework Scrapy [@https://scrapy.org/], processed, and run through the coreNLP pipeline ([Methods]).
 From the coreNLP pipeline results, we wanted to identify two distinct data types to analyze, country mentions and quotes with their associated speakers.
 To identify country mentions, we used the following named entities as possible mentions: "organizations", "countries", "states or provinces".
 We then mapped the named entity to a country prediction using OpenStreetMap [@https://www.openstreetmap.org].
 To identify quotes and speakers, we used the coreNLP quote extraction and attribution annotator.
-We performed name normalization ([Methods]) to identify the speaker’s full name for gender and name origin prediction.
+We performed multiple name formatting processes ([Methods]) to identify the speaker’s full name for gender and name origin prediction.
 We scraped the citations using an independent scraper to the text scraper.
 All identified DOI's were queried using the _Springer_ API to attain author names, positions, and affiliations.
 
@@ -333,11 +371,11 @@ The extracted author affiliations from both data sources were mapped to a countr
 Similarly, author names were uniformly processed and then used to predict both gender and name origin.
 
 When considering all _Nature_ articles, news and research, across all time, we find significant variability in the number of articles by type (Figure {@fig:fig1}b).
-The top three observed article frequencies are research (including letters and research), news, and news-and-views.
-Since _Nature_ merged letters and research articles in 2019, we combine them in our analysis.
+The top three observed article frequencies are Research (which includes Letters and Articles), News, and News Feature.
+Since _Nature_ merged Letters and Research articles in 2019, we combine them in our analysis.
 The changing classification of article types may also explain temporal changes in news articles.
 Over time, the frequency of news-related articles is decreasing; however, more specific article types are increasing.
-We observe this in the introduction of two new categories, "Career-column" and "Career-feature" in 2017.
+We observe this in the introduction of the new category "Career Feature" in 2017.
 These articles were previously identified as "Features" articles before 2017 (https://www.nature.com/nature/articles?type=feature).
 
 ### Quoted Speakers are More Often Male
@@ -370,14 +408,12 @@ We then compared our hand-annotated gender prediction against the gender predict
 Using our hand-annotated prediction as ground truth, we correctly predicted a total of 42/55 female and 157/162 male names within the benchmark articles.
 We found that the gender prediction had an accuracy of 0.914, with a Kappa statistic of 0.767 (Figure {@fig:suppfig1}a).
 After establishing a reasonable accuracy for gender prediction, we determined the rate of gendered quotes within articles.
-We first examined the number of quotes identified within each news-related article (Figure {@fig:fig2}b), totaling 121,684 quotes with 120,309 of them containing a gender prediction for the speaker.
+We first examined the number of quotes identified within each news-related article (Figure {@fig:fig2}b), totaling 119,998 quotes with 109,723 of them containing a gender prediction for the speaker.
 Quote frequencies vary by article type.
-The only article types in which there is a large discrepancy between the number of quotes and articles are "news-and-views" and "career-column.”
-This discrepancy is expected in "news-and-views" since this article type typically is an overview of a specific scientific topic and rarely quotes authors.
-Similarly, "career-column" is a perspective piece from a scientist who also rarely quotes other persons.
+
 
 We then compared the number of male quotes to the number of male first and last authors published in _Nature_ (Figure {@fig:fig2}c).
-We analyzed a total of 10,466 first authors and 10,494 last authors with a gender prediction.
+We analyzed a total of 10,454 first authors and 10,488 last authors with a gender prediction.
 As denoted by the red line, we find that both authorship and quotes are far from gender parity.
 Additionally, we find a difference in author genders between first and last authors, with the last authors being more male-dominated.
 Since _Nature_ authorship may not represent scientific publishing as a whole, we also compared against a random selection of authors from English language journals published by _Springer_ (Figure {@fig:suppfig2}a).
@@ -385,58 +421,71 @@ We observed a larger gender gap between first and last authors in our selection 
 
 
 In contrast to the relatively stable gender proportions of authorship, we find the rate of male quotes significantly decreases over time.
-The male quote rate in 2005 is 87.6% (884/7103) and in 2020 is 70.1% (3911/5578).
+The male quote rate in 2005 is 86.84 (5,552/6,391) and in 2020 is 68.5% (3,494/5,098).
 From 2005-2010, we find the male quote rate is higher than the male last authorship rate, then slowly decreasing until it matches the male first authorship rate in 2018 and continues to trend downwards.
 We then explored the possible reasons for this decrease.
 First, we looked at changes in the rate of authorship position by quoted speakers (Figure {@fig:fig2}d).
-We were able to identify 10,167 quotes with an associated citation (4630 first author and 5537 last author quotes).
+We were able to identify 8,064 quotes with an associated citation (3,382 first author and 4,682 last author quotes).
 We found that quotes are slightly biased towards the last authors. 
 However, this rate does not change over time, and we do not believe this drives the downward trend.
 We then analyzed the breakdown of gendered quotes by article type.
 Interestingly, we found one article type, "career-feature" that has achieved gender parity in its quotes (Figure {@fig:fig2}e and Figure {@fig:suppfig2}b).
-Since the introduction of this article, it has identified a total of 1,550 quotes (781 female and 769 male quotes) and has substantially pulled the overall quote gender ratio much closer to parity from 2018 onward.
+Since the introduction of this article, it has included a total of 1,454 quotes (759 female and 695 male quotes) and has substantially shifted the overall quote gender ratio much closer to parity from 2018 onward.
 
 ### Celtic English Names are over enriched in cited and quoted persons, while East Asian Names are under enriched
 
 ![
-**Analysis of Quotes and Citations found Overrepresentation of Celtic/English and underrepresentation of East Asian names**
+**Analysis of Quotes and Citations found Over-representation of Celtic/English and under-representation of East Asian names**
 Panel A, left, depicts an example of the names extracted from quoted speakers and citations found within news articles and authors in research articles.
 Panel A, right, highlights the data types and processes used to analyze the origin of extracted names.
-Panels B and D depicts nine trend lines, each representing a possible name origin.
-Panels C and E depict two possible trend lines, comparing either cited last authors or quoted speakers against last authors of _Nature_ research articles.
-We observed that the overrepresentation of Celtic/English names is present both in citations and quotes.
-Furthermore, the overrepresentation of East Asian names is also present both in citations and quotes.
-We recapitulate this finding when comparing against an additional background of _Springer_ published last authors (Figure {@fig:suppfig3})
+Panels B and C depict a comparison between the name origins of last authors in _Nature_ and cited articles in news articles.
+Panel B and C differ in the news articles types.
+Panel B calculates the name origin proportion using only journalist-written articles, whereas Panel C only uses scientist-written articles.
+Similarly, Panels D and E depict two possible trend lines, comparing either quoted speakers or mentioned names against last authors of _Nature_ research articles.
+We observed that the over-representation of Celtic/English names is present in quotes, and to a minor degree in citations.
+Furthermore, the under-representation of East Asian names is also present both in quotes and citations, however it is much more pronounced in citations of scientist-written articles in comparison to journalist-written articles.
+Additional information for the cited, quoted, and mentioned persons are provided in (Figure {@fig:suppfig3} and {@fig:suppfig4})
+Furthermore, we recapitulate this finding when comparing against an additional background of _Springer_ published last authors (Figure {@fig:suppfig3})
 ](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig3_tmp/fig3_main.png "Figure 3"){#fig:fig3 width=6in}
 
 
 To identify possible bias in name origin, we again used the extracted quoted speakers and last authors published in _Nature_.
 In addition, we also identified the last authors of all articles cited by a news-related article.
-All processed names were then inputted into Wiki2019-LSTM and used to assign one of nine possible name origins ([Methods]).
+All processed names were then inputted into Wiki2019-LSTM and used to assign one of ten possible name origins ([Methods]).
 Figure {@fig:fig3}a displays a schematic of the data processing and example names used in this analysis.
-We divided our analysis into two parts: firstly, looking at the number of cited last authors with a specific name origin overall cited last authors in a particular year.
-Secondly, looking at the proportion of quotes from a speaker with a specific name origin overall quotes in a particular year.
-We used the proportion of last authors in _Nature_ with a specific name origin overall _Nature_ articles in a particular year for both analyses.
+We divided our analysis into three parts: firstly, looking at the number of cited last authors with a specific name origin over all cited last authors in a particular year.
+Secondly, looking at the proportion of quotes from a speaker with a specific name origin over all quotes in a particular year.
+Thirdly, looking at the proportion of unique name mentions within an articles with a specific name origin over all names mentioned in a particular year.
+We used the proportion of last authors in _Nature_ with a specific name origin overall _Nature_ articles in a particular year for all three analyses.
 Additionally, in our supplemental analyses, we compare against the last authorship in a random selection of _Springer_ articles.
-We find that the number of quotes dramatically outnumbers the number of authors and citations (Figure {@fig:suppfig3}a).
+We find that the number of quotes and unique names mentioned dramatically outnumbers the number of authors and citations (Figure {@fig:suppfig3}a).
 Still, we believe that the total number of observations per data type across all years is sufficient for our analysis.
-Minimum and median per data type: _Nature_ articles, (682, 788); _Springer_ articles, (1630, 1904); quotes, (4626, 6229); citations, (823, 1070).
+Minimum and median per data type: _Nature_ articles, (565, 679); _Springer_ articles, (1298, 1684); quotes, (4577, 6194); mentions, (3634, 5002); citations in journalist-written article, (139, 267) citations in a scientist-written article, (503, 660).
 
-In comparing the citation rate of last author name origins in news articles, we find most names are Celtic/English or European, both with a bootstrapped estimated citation rate between 26.2-42.5% (Figure {@fig:fig3}b).
-East Asian names are the third highest proportion of cited names, with a bootstrapped estimated citation rate between 8.3-19.0%.
-All other name origins individually account for less than 7% of total cited authors.
-To compare against the composition of the last authors in _Nature_, we compare the top three most frequent name origins (Figure {@fig:fig3}c).
-We find a slight over-enrichment for Celtic/English names and a small under-enrichment for East Asian names.
-Furthermore, we find no significant difference for European or other name origins (Figure {@fig:fig3}c, Figure {@fig:suppfig3}b).
-We also observed the Celtic/English over-enrichment and East Asian under-enrichment when considering our subset of _Springer_ articles (Figure {@fig:suppfig3}c).
-In contrast to _Nature_, in our _Springer_ articles, we see a significant difference in European names, with a growing over-enrichment.
-Additionally, we see a significant difference in Arabic/Turkish/Persian, Hispanic, Jewish, and South Asian name frequencies between cited authors and _Springer_ authors, however, the difference is lower than observed for Celtic/English and East Asian.
+In comparing the citation rate of last author name origins in news articles, we decided to additionally analyze scientist-written articles.
+Though fewer in number, scientist-written non-research articles have many citations making the set sufficient for analysis and provides an opportunity to measure disparities in citation patterns by author type.
+In both journalist- and scientist-written articles, we find most names are Celtic/English or European, both with a bootstrapped estimated citation rate between 24.8-43.0% (Figure Figure {@fig:suppfig3}b),c).
+East Asian names are the third highest proportion of cited names, with a bootstrapped estimated citation rate between 5.7-24.8%.
+All other name origins individually account for less than 9% of total cited authors.
+To compare against the composition of the last authors in _Nature_, we compare the top three most frequent name origins (Figure {@fig:fig3}b,c).
+We find a slight over-enrichment for Celtic/English names and a small under-enrichment for East Asian names in scientist-written articles.
+Interestingly, we only observed under-enrichment for East Asian names in journalist-written articles from 2005 to 2009.
+Furthermore, we find no significant difference for European or other name origins (Figure {@fig:suppfig4}a).
+However, we do observe that European name origins are more highly cited in articles written by scientists than journalists (Figure {@fig:suppfig4}b,c). 
+We also observed the Celtic/English over-enrichment and East Asian under-representation when considering our subset of _Springer_ articles (Figure {@fig:suppfig4}b) for both journalist- and scientist-written articles.
+In contrast to _Nature_, in the _Springer_ set, we see a difference in European names, with a growing over-enrichment.
+Additionally, we see a significant difference in Arabic/Turkish/Persian name frequencies between cited authors and _Springer_ authors, however the difference is lower than observed for Celtic/English and East Asian.
 
-We then sought to see if quoted speaker replicated the cited authors’ over- and under-enrichment patterns.
-We found a much stronger Celtic/English over-enrichment, with quotes from Celtic/English speakers at a much higher frequency than quotes from European speakers (Figure {@fig:fig3}c).
-Additionally, we also found a much stronger under-enrichment of quotes from East Asian speakers (Figure {@fig:fig3}c), with never more than 7.8% of quotes even though they constitute between 8.3-19.0% of cited authors.
-When we again compare against last authorship in _Nature_, we find the same patterns observed in the previously described citation analysis with all name origins except for East Asian and Celtic/English closely matching the background rate.
-Similarly, we find the same patterns in quoted speakers when comparing against the _Springer_ background as we did in the previous citation analysis (Figure {@fig:suppfig3}e).
+We then sought to determine whether or not the quoted speaker replicated the cited authors’ over- and under-enrichment patterns.
+We found a much stronger Celtic/English over-enrichment, with quotes from Celtic/English speakers at a much higher frequency than quotes from European speakers (Figure {@fig:suppfig3}d).
+Additionally, we also found a much stronger depletion of quotes from East Asian speakers (Figure {@fig:suppfig3}b), with never more than 7.9% of quotes even though they constitute between 5.7-24.8% of cited authors.
+When we again compare against last authorship in _Nature_, we observe patterns consistent with the citation analysis with all name origins except for East Asian and Celtic/English closely matching the background rate (Figure {@fig:fig3}d).
+Similarly, we find the same patterns in quoted speakers with East Asian, Celtic/English, and Arabic/Turkish/Persian name origins when comparing against the _Springer_ background as we did in the previous citation analysis (Figure {@fig:suppfig4}d).
+In addition, we also find an under-enrichment of Hispanic, South Asian, and Hebrew names when comparing against the _Springer_ background set.
+It was possible that journalists preferentially paraphrased speakers with some name origins.
+To examine whether or not this was driving the results, we expanded our analysis to also include sources that were possibly paraphrased and not directly quoted. 
+To do this, we identified all unique names that appeared in an article, which we term mentions.
+We found that same pattern of over-enrichment for Celtic/English names and under-enrichment for East Asian names when comparing against both _Nature_ and _Springer_ last authorships (Figure {@fig:fig3}e, Figure {@fig:suppfig3}d,e, Figure {@fig:suppfig4}e,f).
 
 
 ### Content of Science Coverage Differs between Countries
@@ -453,12 +502,12 @@ Each cell contains the difference between citation and mention rates, with red d
 The left annotation bar titled "median_M_C" is the median difference across all observed years.
 The "Class" annotation column denotes the binarized set definition of each country, either "Cited" or "Mentioned".
 Panel E shows the top 15 words extracted from articles mentioning the countries depicted in Panel D, with the most significant proportional frequency between the two defined country sets.
-The width of the bar depicts the log10(Frequency in Mentions / Frequency of Citations).
+The width of the bar depicts the log10(Frequency in Mentions +1 / Frequency of Citations +1).
 ](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig4_tmp/fig4_main.png "Figure 4"){#fig:fig4 width=6in}
 
 
 After finding name origin differences between cited and quoted persons, we wanted to determine if news articles 1) represent countries at different rates 2) vary in the language used to describe scientific content related to each country.
-To do this analysis, we used three sources of information 1) country-related entities mentioned in the news text, 2) country affiliations of cited authors in news articles, 3) country affiliation of authors in _Nature_ and Springer.
+To do this analysis, we used three sources of information 1) country-related entities mentioned in the news text, 2) country affiliations of cited authors in news articles, 3) country affiliation of authors in _Nature_ and _Springer_.
 Figure {@fig:fig4}a shows example input data and a schematic of the analysis.
 We provide further processing details in [Methods].
 First, we interrogated the country affiliations of cited authors.
@@ -467,9 +516,10 @@ Therefore a single manuscript may have multiple country affiliations.
 We analyzed any possible country affiliation for an article due to limits imposed by the _Springer_ API.
 Affiliation query results from the _Springer_ API return all country affiliations for a specific manuscript and are not linked to one particular author.
  
-After post-processing, we analyzed a total of 12,853 articles and considered all authors within the article and their affiliations for this analysis.
+After post-processing, we analyzed a total of 1,989 articles with a citation accessible through the _Springer_ API.
+We considered all authors, not only first or last, within the article and their affiliations for this analysis.
 We found that most cited articles have at least one author with an affiliation within the United States, followed by the United Kingdom, Germany, and France (Figure {@fig:fig4}b).
-Interestingly, we found a strong citation over-enrichment of many top-cited countries, but we found no evidence of under-enrichment by East Asian countries (Figure {@fig:fig4}c, Figure {@fig:suppfig4}a).
+Interestingly, we found a strong citation over-enrichment of many top-cited countries, but we found no evidence of under-enrichment by East Asian countries (Figure {@fig:fig4}c, Figure {@fig:suppfig5}a).
 Next, we examined content differences between countries or groups of countries.
 For example, we wanted to determine the extent to which a country was the subject (i.e., their scientific policies, environment, pollution) or the research being performed within that country was the subject.
 To do this, we need to calculate the mention rate of each country.
@@ -482,16 +532,16 @@ When aggregating over articles, we find that 4/30 articles contain exactly one i
 Once we calculated the mention rate and used the previously described citation rate, we identified countries with a consistent skew towards either a higher or lower mention to citation rate (Figure {@fig:fig4}d and Figure {@fig:suppfig4}b).
 This is defined as countries where the difference between citation and mention rates is in the top or bottom 5% per year.
 This outlier description allowed us to identify two sets of countries based on their citation and mention rates.
-Those with a high relative citation to mention rate were: Germany, Netherlands, Japan, Spain, Denmark, Israel, Sweden, Switzerland, Belgium, Austria, China, South Korea, and Australia.
-Those with a low relative citation to mention rate: Canada, Democratic Republic of the Congo, Chile, Indonesia, Russia, South Africa, Mexico, Brasil, Philippines, Colombia,  and India.
-We removed all countries that were in both the top or bottom 5% in different years, which excluded the United States, France, and the United Kingdom from consideration.
+Those with a high relative citation to mention rate were: Germany, Spain, Netherlands, Denmark, Sweden, Austria, Switzerland, Israel, and Belgium.
+Those with a low relative citation to mention rate were: Russia, Brazil, Colombia, the United States, and India.
+We removed all countries that were in both the top or bottom 5% in different years, which excluded Australia, Canada, the United Kingdom, China, France, and Japan from consideration.
  
 We then identified content differences between these two sets of countries by analyzing all of the main text from articles that mentioned and did not cite an author affiliated with each of the specified countries.
 After properly identifying high-frequency words across the entire corpus, we identified the top 15 most discriminative terms of each country type ([Methods]).
-Interestingly, we identified that the words most linked with mentioned countries were related to environmental or extractive topics.
-The top 5 terms were br, pesticide, dams, spores, and herd (Figure {@fig:fig4}e, Figure {@fig:suppfig4}c,d).
+Interestingly, we identified that the words most linked with mentioned countries were mostly related to environmental, extractive or political topics.
+The top 5 terms were "dams", "rio", "shuttle", "hydropower", and "weapons" (Figure {@fig:fig4}e, Figure {@fig:suppfig4}c,d).
 In contrast, we find that the words most related to countries with a higher citation than mention rate were science or research-related ones.
-The top five terms were ips, entanglement, graphene, classical, and epigenetic.
+The top five terms were "classical", "quantum", "yeast", "neurons", and "cells".
  
  
 
@@ -501,7 +551,7 @@ The top five terms were ips, entanglement, graphene, classical, and epigenetic.
 Scientific news coverage, unlike academic articles, should represent not only the current state of research-related disciplines but also the diversity of its readership.
 News coverage is the conduit between the academic and public spheres, and consequently shapes the public's view of science and scientists.
 Though it would be best for news coverage to promote equitable representation, at a minimum news coverage should match the current rates of regional and gender participation in academia.
-To test whether this last point was true, we analyzed over 10,000 news articles published by _Nature_ to identify quoted and cited persons.
+To test whether this last point was true, we analyzed over 16,000 news articles published by _Nature_ to identify quoted, mentioned, and cited persons.
 We then compared this to the authorship statistics from _Nature_'s research articles and a subset of _Springer_'s English language articles.
 
 We first looked at possible gender biases in quotes and found a large, but decreasing, gender gap in all but one article type.
@@ -520,8 +570,10 @@ Instead, we found that column types were driving the trend, with career-feature 
  
 To further our analysis of possible coverage biases, we looked to biases in name origins of quoted and cited last authors across all the processed news articles.
 Our findings provide additional support for previous studies that identified under-citation [@doi:10.1101/2020.10.12.336230] and under-recognition [@doi:10.1101/2020.04.14.927251] of East Asian persons.
-Interestingly, we found that under-citation of East Asian persons to be less pronounced than under-quotation.
-Overall, we find that most quotes and citations are from persons with Celtic/English or European name origins, followed by East Asian, with the remaining individual origins individually making up less than 10% of both citations or quotes.
+Interestingly, we found under-citation of persons with East Asian name origins to be much less pronounced than under-quotation.
+Furthermore, we find that scientist-written news articles tend to under-cite persons with East Asian name origins more than journalist-written articles.
+Our finding of under-quotation of East Asian persons was also recapitulated when we additionally looked at unique names mentioned within news articles.
+Overall, we find that most quotes, mentions, and citations are from persons with Celtic/English or European name origins, followed by East Asian, with the remaining origins individually making up less than 10% of both citations or quotes.
 Except Celtic/English (over-representation) and East Asian (under-representation), all name origins roughly match the expected academic background rate estimated by _Nature_ last authorship.
 We also found this same pattern in our _Springer_ data set.
  
@@ -534,10 +586,10 @@ Furthermore, the increased citation and last authorship rates of Chinese affilia
 We then focused on identifying whether the news content about a country focused on the scientific output from that country or the country itself as the scientific subject.
 We postulated that a difference in citation and mention rates could indicate the difference in a news article’s subject matter.
 To achieve this, we identified two sets of countries with a large and consistent difference in their citation and mention rates.
-The top "Citation" countries were Germany, Netherlands, and Japan.
-The top "Mention" countries were India, Colombia, and the Philippines.
+The top "Citation" countries were Germany, Spain, and the Netherlands.
+The top "Mention" countries were India, the United States, and Colombia.
 We then found that these two sets of countries were discussed differently.
-The resultant words for "Mention" countries were most related to agriculture; suggesting that the country was likely the article’s subject.
+The resultant words for "Mention" countries were most related to extraction, agriculture and politics, suggesting that the country was likely the article’s subject.
 In contrast, the representative words for "Citation" countries were more diverse in topic, relating to biological, medical, and physics terms.
 The difference in discriminative terms between the two country sets is evidence that the news content may focus more on research of a country as a subject than science that comes out of it.
 
@@ -566,12 +618,16 @@ All code and metadata is also available on github, [full analysis repository lin
 The code to generate all main and supplemental figures are available as R markdown documents within our main analysis github, in the following subfolder: [notebooks](https://github.com/greenelab/nature_news_disparities/tree/main/figure_notebooks).
 Due to copyright, we are unable to provide the scraped data used in this analysis.
 However, scraping code is available on our main analysis github, in the following subfolder: [scraper](https://github.com/greenelab/nature_news_disparities/tree/main/nature_news_scraper).
+To ensure reproducability without violating copyright, we provide the word frequencies for each news article and the coreNLP output.
+Furthermore, we provide a docker image that can re-run the analysis pipeline using intermediate, pre-processed data and produce all the main and supplemental figures.
+To re-run the entire pipeline (including scraping), the docker image contains all necessary packages and code. 
+The shell scripts to re-run the entire analysis are provided in the README file in the github repository.
 
 
 ### Acknowledgements
-<!---
-We would like to thank Jeffrey Perkel for spurring this line of research and providing thoughtful feedback throughout the course of this project. 
--->
+
+We would like to thank Jeffrey Perkel for asking thoughtful questions that spurred this line of research, and providing feedback and insight into the news-gathering process during the course of this project. 
+
 
 
 ## Supplemental Figures {.page_break_before}
@@ -592,12 +648,21 @@ In all plots the colored bands represent a 95% confidence interval and the point
 ](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig2_tmp/fig2_supp.png "Supplementary Figure 2"){#fig:suppfig2 tag="Supplemental 2" width=6in}
 
 ![
-**Overrepresentation of Celtic/English names and underrepresentation of East Asian names is also found in _Springer_ articles**
-Panel A, depicts the number of quotes, citations, or reasearch articles considered in the name origin analysis.
-Panels B-D depicts ten plots, each for a possible name origin comparison against a background set.
-Panel B and C compare the citation rate against _Nature_ (b), or _Springer_ (c) last author name origins.
-Panel D and E compare the quote rate against _Nature_ (d), or _Springer_ (e) last author name origins.
+**Celtic/English, and European names are the highest cited, quoted, and mentioned**
+Panel A, depicts the number of quotes, mentions, citations, or research articles considered in the name origin analysis.
+Panels B-E depicts the proportion of a name origin in a given dataset, citations in articles written by journalists or writers, quoted speakers or mentions.
+In all plots the colored bands represent a 95% confidence interval and the point is the median calculated from 5,000 bootstrap samples.
 ](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig3_tmp/fig3_supp.png "Supplementary Figure 3"){#fig:suppfig3 tag="Supplemental 3" width=6in}
+
+![
+**Over-representation of Celtic/English names and under-representation of East Asian names is also found in _Nature_ and _Springer_ articles**
+Panels A-F depicts ten plots, each for a possible name origin comparison against a background set.
+Panel A, C, and E compare the citation (a), quote (c), or mention (e) rate against _Nature_ last author name origins.
+Panel B, D, and F compare the citation (a), quote (c), or mention (e) rate against _Springer_ last author name origins.
+Panels A and B additionally partition the citation rates calculated into two sets, journalist-written articles (salmon) and scientist-written articles (mint green).
+For C-F, only journalist written articles are considered.
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig3_tmp/fig3_supp2.png "Supplementary Figure 4"){#fig:suppfig4 tag="Supplemental 4" width=6in}
+
 
 ![
 **Analysis of Country representation**
@@ -607,7 +672,7 @@ Panel B depicts the top and bottom 5% of (mention rate - citation rate).
 Each point represents a country - year pair.
 Blue points are a country that is further considered to be a "Citation" or "Mention" country.
 Panel C and D show the overall word frequencies of the 15 words with the largest ratio of frequencies between "Citation" (panel C) and "Mention" (panel D) countries.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig4_tmp/fig4_supp.png "Supplementary Figure 4"){#fig:suppfig4 tag="Supplemental 4" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig4_tmp/fig4_supp.png "Supplementary Figure 5"){#fig:suppfig5 tag="Supplemental 5" width=6in}
 
 
 ## References {.page_break_before}
