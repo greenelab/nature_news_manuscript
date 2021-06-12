@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/nature_news_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/4e652d869213fa2fb805743df3dbd2f52c981ca5/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/4e652d869213fa2fb805743df3dbd2f52c981ca5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/4e652d869213fa2fb805743df3dbd2f52c981ca5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="og:image" content="https://github.com/nrosed/nature_news_disparities/blob/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/nature_news_manuscript/v/4e652d869213fa2fb805743df3dbd2f52c981ca5/))
+([permalink](https://greenelab.github.io/nature_news_manuscript/v/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1/))
 was automatically generated
-from [greenelab/nature_news_manuscript@4e652d8](https://github.com/greenelab/nature_news_manuscript/tree/4e652d869213fa2fb805743df3dbd2f52c981ca5)
+from [greenelab/nature_news_manuscript@5f3cf07](https://github.com/greenelab/nature_news_manuscript/tree/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1)
 on June 12, 2021.
 </em></small>
 
@@ -209,7 +209,7 @@ Character deletion was assigned a zero cost because we would like exact substrin
 For example, the calculated cost, including a cost for character deletion, between John and John Steinberg is 10; without character deletion, it is 0.
 Compared with the distance between John and Jane Doe, with character deletion cost, it is 7; without it is 2.
 If we are still unable to find a full name, or if coreNLP cannot identify a speaker at all, we also determine whether or not coreNLP linked a gendered pronoun to the quote.
-If so, we assign the gender of the pronoun to the speaker. <!-- need to make sure this section is correctly worded, maybe not "assign" >
+If so, we assign the gender of the pronoun to the speaker. <!-- need to make sure this section is correctly worded, maybe not "assign" -->
 We ignore all quotes with no name or partial names and no associated pronouns.
 
 
