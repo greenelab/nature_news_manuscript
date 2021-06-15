@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-06-12'
+date-meta: '2021-06-15'
 author-meta:
 - Natalie R. Davidson
 - Casey S. Greene
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Analysis of _Nature_ news reveals gender and regional disparities in scientific coverage" />
   <meta property="og:title" content="Analysis of _Nature_ news reveals gender and regional disparities in scientific coverage" />
   <meta property="twitter:title" content="Analysis of _Nature_ news reveals gender and regional disparities in scientific coverage" />
-  <meta name="dc.date" content="2021-06-12" />
-  <meta name="citation_publication_date" content="2021-06-12" />
+  <meta name="dc.date" content="2021-06-15" />
+  <meta name="citation_publication_date" content="2021-06-15" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/nature_news_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/9082db717c69f00e71e2aaedb99803ab5cace354/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/9082db717c69f00e71e2aaedb99803ab5cace354/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/9082db717c69f00e71e2aaedb99803ab5cace354/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="og:image" content="https://github.com/nrosed/nature_news_disparities/blob/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/nature_news_manuscript/v/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1/))
+([permalink](https://greenelab.github.io/nature_news_manuscript/v/9082db717c69f00e71e2aaedb99803ab5cace354/))
 was automatically generated
-from [greenelab/nature_news_manuscript@5f3cf07](https://github.com/greenelab/nature_news_manuscript/tree/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1)
-on June 12, 2021.
+from [greenelab/nature_news_manuscript@9082db7](https://github.com/greenelab/nature_news_manuscript/tree/9082db717c69f00e71e2aaedb99803ab5cace354)
+on June 15, 2021.
 </em></small>
 
 ## Authors
@@ -106,58 +106,61 @@ on June 12, 2021.
 ## Abstract {.page_break_before}
 
 Scientific news coverage shapes the public’s view of the current state of scientific findings and legitimizes experts.
-Through researching a story, journalists identify and interview a limited number of sources.
-These sources may come from a journalist’s research or through recommendations by other scientists.
-In either case, unconscious biases may influence who is identified as an expert to interview, possibly skewing the selection of interviewees.
-We analyzed more than 16,000 news articles published by _Nature_ to quantify possible disparities.
+News stories frequently cite and quote a limited number of sources.
+These sources may be identified by the journalist’s research or by recommendations by other scientists.
+In both cases, biases may influence who is identified and ultimately included as an expert.
+We analyzed 22,001 news articles published by _Nature_ to quantify possible disparities.
 Our analysis considered three possible sources of bias: gender, name origin, and country affiliation.
 To explore these sources of bias, we extracted cited authors’ names and affiliations, as well as extracted names of quoted speakers.
-We then used the names to predict gender and name origin of the authors and speakers.
-In our analysis, we found a bias towards male quotation, but quotation is trending toward equal representation at a faster rate than academic publishing.
-Interestingly, we found that the gender disparity in quotes was column-dependent, with the "career-features" column reaching gender parity.
+We then used the names to predict gender and name origin of the authors and speakers. <!-- maybe add caveat here -->
+In order to appropriately quantify the level of bias, we must identify an appropriate reference set for comparison.
+We chose first and last authors within primary research articles in _Nature_ and a subset of _Springer_ articles in the same time period as our comparator.
+In our analysis, we found a bias towards male quotation in _Nature_ news-related articles, but quotation is trending toward equal representation at a faster rate than first and last authorship in academic publishing.
+Interestingly, we found that the gender disparity in quotes was column-dependent, with the "Career-Features" column reaching gender parity.
 Our name origin analysis found a significant over-representation of names with Celtic/English origin and under-representation of names with an East Asian origin.
-This finding was observed both in extracted quotes and citations, but dampened in citations.
+This finding was observed both in extracted quotes and journal citations, but dampened in citations.
 Finally, we performed an analysis to identify how countries vary in the way that they're described in the news.
-We found a set of countries that are typically mentioned in the text of the article, but whose academic output is not highly cited, and their counterpart, a set of countries that are highly cited, but not commonly mentioned.
+We focused on two groups of countries: countries that are often mentioned in articles, but do not often have affiliated authors cited, and countries that have affiliated authors that are often cited, but the country is not typically mentioned.
 We found that the articles in which the less cited countries occur tend to have more agricultural terms, whereas articles including highly cited countries have broader scientific terms.
 This discrepancy indicates a possible lack of regional diversity in the reporting of scientific output.
 
 
 ## Introduction
  
-News coverage of science shapes who both peers and the public consider a scientist and field expert.
+News coverage of science shapes who is considered a scientist and field expert by both peers and the public.
 This indication of legitimacy can either help recognize persons who are typically overlooked due to systemic biases or intensify biases.
-Journalistic biases have been observed by journalists themselves [@https://www.theguardian.com/world/2016/may/25/enduring-whiteness-of-american-journalism; @https://medium.com/ladybits-on-medium/i-analyzed-a-year-of-my-reporting-for-gender-bias-and-this-is-what-i-found-a16c31e1cdf#.44nchdhay; @https://www.theatlantic.com/technology/archive/2016/02/gender-diversity-journalism/463023/; @https://www.theatlantic.com/science/archive/2018/02/i-spent-two-years-trying-to-fix-the-gender-imbalance-in-my-stories/552404/], as well as by independent researchers [@doi:10.1177/0003122415596999; @doi:10.1080/1461670X.2013.834149; @doi:10.1177/0163443711418272; @doi:10.1371/journal.pone.0148434; @https://www.poynter.org/reporting-editing/2013/lack-of-female-sources-in-new-york-times-stories-spotlights-need-for-change/; @https://whomakesthenews.org/gmmp-2015-reports/].
-Researchers found a gap between male and female speakers or quotes, with independent studies finding that between 17-40% of total subjects were female across multiple news outlets between 1985 and 2015 [@doi:10.1177/0003122415596999; @doi:10.1080/1461670X.2013.834149; @https://whomakesthenews.org/gmmp-2015-reports/].
-One study found 27-35% of total subjects in science-related news were female between 1995 and 2010 [@https://whomakesthenews.org/gmmp-2015-reports/].
-However, news coverage is not the only source of bias.
-Both gender and racial disparities already exist in science as observed in differences in citation [@doi:10.1177/2378023117738903; @doi:10.1038/504211a], funding [@doi:10.1016/j.cell.2021.01.011; @doi:10.1126/sciadv.aaz4868; @doi:10.1126/sciadv.aaw7238; @doi:10.1126/science.1165878], and publication rates [@doi:10.1007/s11192-012-0893-4; @doi:10.1073/pnas.1915378117; @doi:10.1257/pandp.20181111].
+Journalistic biases in general-interest, online and printed news have been observed by journalists themselves [@https://www.theguardian.com/world/2016/may/25/enduring-whiteness-of-american-journalism; @https://medium.com/ladybits-on-medium/i-analyzed-a-year-of-my-reporting-for-gender-bias-and-this-is-what-i-found-a16c31e1cdf#.44nchdhay; @https://www.theatlantic.com/technology/archive/2016/02/gender-diversity-journalism/463023/; @https://www.theatlantic.com/science/archive/2018/02/i-spent-two-years-trying-to-fix-the-gender-imbalance-in-my-stories/552404/], as well as by independent researchers [@doi:10.1177/0003122415596999; @doi:10.1080/1461670X.2013.834149; @doi:10.1177/0163443711418272; @doi:10.1371/journal.pone.0148434; @https://www.poynter.org/reporting-editing/2013/lack-of-female-sources-in-new-york-times-stories-spotlights-need-for-change/; @https://whomakesthenews.org/gmmp-2015-reports/].
+Researchers found a gap between male and female subjects or sources, with independent studies finding that between 17-40% of total subjects were female across multiple general-interest printed news outlets between 1985 and 2015 [@doi:10.1177/0003122415596999; @doi:10.1080/1461670X.2013.834149; @https://whomakesthenews.org/gmmp-2015-reports/].
+One study found 27-35% of total subjects in international science and health related news were female between 1995 and 2015, and 46% in print, radio, and television in the United States in 2015 [@https://whomakesthenews.org/gmmp-2015-reports/].
+It should be noted that scientific news coverage is confounded by the existing differences in gender and racial demographics within the scientific field [@https://ncses.nsf.gov/wmpd; @doi:10.1038/s41590-019-0470-6].
+However, we are interested in quantifying the additional level of bias beyond observed demographic differences in the scientific field, using authorship as an estimate for the existing demographic differences. 
+This is similar to other studies that have quantified gender or racial disparities in science as observed in citation [@doi:10.1177/2378023117738903; @doi:10.1038/504211a] and funding rates [@doi:10.1016/j.cell.2021.01.011; @doi:10.1126/sciadv.aaz4868; @doi:10.1126/sciadv.aaw7238; @doi:10.1126/science.1165878; @doi:10.1126/science.1196783].
+<!-- CUT and publication rates [@doi:10.1007/s11192-012-0893-4; @doi:10.1073/pnas.1915378117; @doi:10.1257/pandp.20181111]. -->
  
-Therefore, it is crucial to ensure that science coverage does not solely focus on a few well-known scientists but expands our shared view of an expert scientist.
-One may believe that science coverage would simply reflect the most current and groundbreaking findings. 
-Still, there are many ways gender, racial, or regional biases can unknowingly seep into coverage.
-In researching a story, a journalist will typically interview multiple scientists for their opinion, potentially asking for additional sources, allowing individual unconscious biases to skew scientific coverage broadly.
+<!-- CUT It is crucial to ensure that science news coverage does not solely focus on a few well-known scientists, but expands our shared view of an expert scientist. -->
+Even if science news coverage simply reflects the current scientific events and new findings, there are many gender, racial, or regional biases that can unknowingly seep into coverage.
+In researching a story, a journalist will typically interview multiple sources for their opinion, potentially asking for additional sources, thus allowing individual unconscious biases at any point along the interview chain to skew scientific coverage broadly.
 In addition, the repeated selection of a small set of field experts or the approach a journalist takes in establishing a new source may intensify existing biases [@https://www.theopennotebook.com/2016/08/23/including-diverse-voices-in-science-stories/; @https://www.theatlantic.com/technology/archive/2016/02/gender-diversity-journalism/463023/; @https://www.theatlantic.com/science/archive/2018/02/i-spent-two-years-trying-to-fix-the-gender-imbalance-in-my-stories/552404/].
  
-While these biases may go unnoticed by an individual, analyzing a large corpus of articles can identify and quantify these biases and help guide institutional and individual self-reflection.
-In the same vein as previous media studies, we seek to quantify gender and regional biases of news coverage.
-Our study focuses solely on scientific news content, specifically news content published by _Nature_.
-Since _Nature_ also publishes research articles, this provides a natural estimated background rate for comparison.
-Our goal is to identify quoted and cited scientists by analyzing the content and citations within all news articles from 2005 to 2020.
-We further analyze if the coverage is biased beyond the current state of academic publishing by analyzing the authorship statistics across all _Nature_ research articles across the same period.
+While disparities in representation may go unnoticed in a single article, analyzing a large corpus of articles can identify and quantify these disparities and help guide institutional and individual self-reflection.
+In the same vein as previous media studies [@doi:10.1177/0003122415596999; @doi:10.1080/1461670X.2013.834149; @doi:10.1177/0163443711418272; @doi:10.1371/journal.pone.0148434; @https://www.poynter.org/reporting-editing/2013/lack-of-female-sources-in-new-york-times-stories-spotlights-need-for-change/; @https://whomakesthenews.org/gmmp-2015-reports/; @doi:10.1177/2378023117738903; @doi:10.1038/504211a; @doi:10.1007/s11192-012-0893-4; @doi:10.1073/pnas.1915378117; @doi:10.1257/pandp.20181111; @doi:10.1016/j.cell.2021.01.011; @doi:10.1126/sciadv.aaz4868; @doi:10.1126/sciadv.aaw7238; @doi:10.1126/science.1165878; @doi:10.1126/science.1196783], we sought to quantify gender and regional biases of news coverage beyond the existing demographic biases in the scientific field.
+Our study focused solely on scientific news content, specifically news content published by _Nature_.
+Since _Nature_ also publishes primary research articles, we used these data to determine the demographics of the expected set of possible sources.
+Specifically, we identified quoted and cited persons by analyzing the content and citations within all news articles from 2005 to 2020, and compared this demographic to the academic publishing demographic by analyzing first and last authorship statistics across all _Nature_ research articles during the same time period.
  
 Through our analysis of 22,001 news-related articles, we were able to identify >100,000 quotes and >8,000 citations with sufficient speaker or author information within the news content.
+We also identified first and last authors of >13,000 _Nature_ research articles. <!-- check number -->
 We then identified possible gender or regional biases using the extracted names.
-We used computational methods to predict gender and identified a bias towards male quotes in news articles.
-However, during the period that we examine the bias has decreased from being more extreme than in the research content of _Nature_ to less extreme.
-Furthermore, we identified that the speaker bias was dependent on article type; the "Career-Feature" column achieved gender parity in quoted speakers.
+The extracted names were used to generate three data-types: quoted, mentioned, and cited persons.
+We used computational methods to predict gender and identified a bias towards quotes from males in news articles when compared to both the general population and male authorship in research articles.
+Within the period that we examined, the proportion of predicted male attributed quotes in news articles went from initially higher to currently lower than the proportion of male first and last authors in _Nature_.
+Furthermore, we found that the quote bias was dependent on article type; the “Career-Feature” column achieved gender parity in quoted speakers.
 We also used computational methods to predict name origins and found a significant over-representation of names with Celtic/English origin and under-representation of names with an East Asian origin in both quotes and citations.
  
 While we focused on scientific news coverage from _Nature_, our software can be repurposed to analyze other news text.
 We hope that news publishers will welcome bias-audting systems to help identify journalistic blind spots.
 However, auditing is only part of the solution; journalists and source recommenders must also change their source gathering patterns.
 To help change these patterns, there exist guides [@https://www.theopennotebook.com/2016/08/23/including-diverse-voices-in-science-stories/], databases [@https://gage.500womenscientists.org/, @https://www.womensmediacenter.com/shesource/], and affinity groups [@https://www.theopennotebook.com/2016/08/23/including-diverse-voices-in-science-stories/] that can help us all expand our vision of who can be a field expert.
-
 
 
 ## Methods
@@ -350,38 +353,46 @@ Panel B shows the types and amounts of articles that we have used for analyses.
 ### Creation of an Annotated News Dataset
 
 We have analyzed the text and citations of 22,001 news-related articles hosted on "www.nature.com" that span 15 years from 2005 to 2020.
-Our primary focus is on 16,080 articles written by journalists which include the following five article types: Career Feature, News, News Feature, Technology Feature, and Toolbox.
-We also include one analysis of the scientist-written news articles, Career Column and News and Views, as a comparison set of 5,921 articles.
-The text and citations were then uniformly processed as depicted in Figure {@fig:fig1}a.
-We scraped the text using the web-crawling framework Scrapy [@https://scrapy.org/], processed, and run through the coreNLP pipeline ([Methods]).
-From the coreNLP pipeline results, we wanted to identify two distinct data types to analyze, country mentions and quotes with their associated speakers.
+Our primary focus is on 16,080 articles written by journalists which include the following five article types: "Career-Feature", "News", "News-Feature", "Technology-Feature", and 'Toolbox'.
+"Career-Feature" generally focuses on the career-related aspects of being a scientist.
+"News" and "News-Feature" focuses on current events related to science, such as controversies and politics, as well as new scientific findings.
+It should be noted that the types of articles contained in "News" changed over time which may induce content shifts in a subset of the articles over time within our corpus.
+"Technology Feature" also covers current events and scientific findings, but intersects with technology, such as apps, methodologies, tools, and practices.
+Lastly, "Toolbox" is similar to "Technology-Feature", but is more centered on technology, especially the tools used to perform science.
+We also include one analysis of the scientist-written news articles, "Career Column" and "News and Views", as an additional set of 5,921 articles.
+"Career Column" is similar to "Career Feature", except it is not written by journalists, but individuals in the scientific field.  
+"News and Views" is similar to a review article, where a field expert writes an article relating to a recently written article within Nature.
+
+The text and citations were then uniformly processed as depicted in Figure {@fig:fig1}a to identify: 1) mentioned locations or organizations (light orange box), 2) quotes and quoted speakers (blue box), and 3) cited authors (green box).
+The extracted names from the text were used to generate three data types for downstream processing: quoted, mentioned, and cited persons.
+We scraped the text using the web-crawling framework Scrapy [@https://scrapy.org/], processed, and ran it through the coreNLP pipeline ([Methods]).
 To identify country mentions, we used the following named entities as possible mentions: "organizations", "countries", "states or provinces".
 We then mapped the named entity to a country prediction using OpenStreetMap [@https://www.openstreetmap.org].
 To identify quotes and speakers, we used the coreNLP quote extraction and attribution annotator.
 We performed multiple name formatting processes ([Methods]) to identify the speaker’s full name for gender and name origin prediction.
 We scraped the citations using an independent scraper to the text scraper.
-All identified DOI's were queried using the _Springer_ API to attain author names, positions, and affiliations.
+All identified DOI's were queried using the _Springer_ API to attain all authors' names, positions, and affiliations, however last authors were used as the primary comparator.
 
-
-We used the author names, positions, and affiliations of Research articles and Letters published by _Nature_ to perform comparative analyses.
-Since the news articles of current science, the quoted speakers, mentioned countries, and cited authors should have a similar demographic makeup to contemporaneous _Nature_ authorship.
-The author metadata of research-related articles was analyzed over the same period as the news-related articles and totaled 13,414 articles.
-Since the demographic makeup of authors published in _Nature_ may not represent overall science authorship, we also analyzed 36,000 randomly selected _Springer_-published articles from English language journals over the same time.
+To determine if the quoted speakers, mentioned countries, and cited authors in the news-related articles have a similar demographic makeup as the scientists who publish their primary research in _Nature_, we used the all authors' names, positions, and affiliations of Research Articles and Letters published by _Nature_ over the same time period (Figure {@fig:fig1}a, dark orange box).
+Again, last authors were used as the primary comparator.
+The author metadata of research-related _Nature_ articles from 2005 to 2020 totaled 13,414 articles.
+To more broadly represent the overall science authorship, we also separately analyzed 36,000 randomly selected _Springer_-published articles from English language journals over the same time.
+It should be noted that extracted quotes may come from multiple types of persons, such as academic scientists, clinicians, the broader scientific community, politicians, and more.
+However, through anecdotal observation we believe that most sources come from either academic scientists or those actively involved in science.
 The extracted author affiliations from both data sources were mapped to a country using OpenStreetMap.
 Similarly, author names were uniformly processed and then used to predict both gender and name origin.
 
-When considering all _Nature_ articles, news and research, across all time, we find significant variability in the number of articles by type (Figure {@fig:fig1}b).
-The top three observed article frequencies are Research (which includes Letters and Articles), News, and News Feature.
-Since _Nature_ merged Letters and Research articles in 2019, we combine them in our analysis.
-The changing classification of article types may also explain temporal changes in news articles.
-Over time, the frequency of news-related articles is decreasing; however, more specific article types are increasing.
-We observe this in the introduction of the new category "Career Feature" in 2017.
-These articles were previously identified as "Features" articles before 2017 (https://www.nature.com/nature/articles?type=feature).
+The top three observed article frequencies are "Research" (including "Letters" and "Articles"), "News", and "News-Feature".
+Since _Nature_ merged "Letters" and "Research" articles in 2019, we combined them in our analysis.
+We observed substantial variability in the number of _Nature_ news-articles by type between 2005 and 2020 (Figure {@fig:fig1}b).
+The changing classification of article types may explain temporal changes in news articles.
+Over time, the frequency of "News" articles decreased; however, more specific news-related article types increased, including the introduction of the new categories "Career-feature", "Toolbox", and "Career-Column".
 
-### Quoted Speakers are More Often Male
+
+### Quoted Speakers and Primary Research Authors in _Nature_ are More Often Male
 
 ![
-**Male bias is observed in news quotes but is dependent on article type**
+**Males are overrepresented in news quotes, but this depends on the article type.**
 Panel A, left, depicts an example of the names extracted from quoted speakers in news articles and authors in research articles.
 Panel A, right, highlighted the data types and processes used to analyze the gender of extracted names.
 Panel B shows an overview of the number of quotes extracted for each article type.
@@ -390,102 +401,115 @@ We observe that the proportion of estimated male quotes is steadily decreasing, 
 This decreasing trend is not due to a change in quotes from the first or last authors, as observed in Panel D.
 Panel D shows a consistent but slight bias towards quoting the last author of a cited article than the first author.
 Instead, the observed downward trend of male quotes coincides with additional article types introduced in 2017.
-Panel E depicts the frequency of quote by article type highlighting an increase in quotes from “Career-Feature” articles.
+Panel E depicts the frequency of quote by article type highlighting an increase in quotes from "Career-Feature" articles.
 Panel E depicts that the quotes obtained in this article type have reached parity.
 The colored bands represent a 95% confidence interval in all plots, and the point is the median calculated from 5,000 bootstrap samples.
 ](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig2_tmp/fig2_main.png "Figure 2"){#fig:fig2 width=6in}
 
 
-To quantify the amount of gender bias in quotes, we analyzed the names of quoted speakers and compared them against the first and last authors of research articles.
-While we could have analyzed the proportion of all quotes from a male speaker, we were interested in measuring the overall participation rates by gender.
-Figure @fig:fig2 shows an overview of the process and example input data for this analysis.
-This analysis relies upon accurate gender prediction of both authors and speakers.
+To quantify and compare the gender demographic of quoted people and primary research authors, we analyzed their names.
+While we could have analyzed the proportion of unique male speakers, we were interested in measuring the overall participation rates by gender and analyzed the proportion of total quotes, e.g. a single speaker may have more than one quote in an article.
+Furthermore, we assume that a majority of quoted speakers are typically involved in scientific research and therefore primary research authors is a comparable demographic.
+Figure @fig:fig2 shows an overview of the process and example input data for this analysis, which relied upon accurate gender prediction of both authors and speakers.
 To predict the gender of the speaker or author, we used the package genderizeR [@doi:10.32614/rj-2016-002], an R package wrapper to access the genderize.io API [@https://genderize.io/] to get binary gender predictions for each identified first name.
-We, unfortunately, cannot identify non-binary gender expression with the tools we used.
-To identify our binary gender prediction error rate, we created a benchmark data set of thirty randomly selected news articles; ten from each of the following years: 2005, 2010, 2015.
-In these articles, we hand-annotated the quoted speakers and their assumed gender.
+We unfortunately cannot identify non-binary gender expression with the tools we used.
+Performance of binary prediction was evaluated on a benchmark data set of thirty randomly selected news articles, ten from each of the following years: 2005, 2010, 2015 (Figure {@fig:suppfig1}a).
+
+<!-- CUT WAS SUGGESTED BY ANGELA To identify our binary gender prediction error rate, we created a benchmark data set of thirty randomly selected news articles; ten from each of the following years: 2005, 2010, 2015 .
+In these articles, we hand-annotated the quoted speakers and their assumed gender. HOW WAS THIS DONE NEED MORE SPECIFIC
 We then compared our hand-annotated gender prediction against the gender prediction after the entire scraping, coreNLP quote annotator, and genderizeR pipeline.
 Using our hand-annotated prediction as ground truth, we correctly predicted a total of 42/55 female and 157/162 male names within the benchmark articles.
 We found that the gender prediction had an accuracy of 0.914, with a Kappa statistic of 0.767 (Figure {@fig:suppfig1}a).
 After establishing a reasonable accuracy for gender prediction, we determined the rate of gendered quotes within articles.
-We first examined the number of quotes identified within each news-related article (Figure {@fig:fig2}b), totaling 119,998 quotes with 109,723 of them containing a gender prediction for the speaker.
+!-->
+
+
+We first examined the number of quotes identified within each type of news-related article (Figure {@fig:fig2}b), totaling 119,998 quotes with 109,723 of them containing a gender prediction for the speaker.
 Quote frequencies vary by article type.
+We compared the number of quotes from predicted males to the number of predicted male first and last authors published in _Nature_.
+As denoted by the red line, we found that the predicted genders of primary research authors and source-quotes were far from gender parity (Figure {@fig:fig2}c).
+Additionally, we observed a difference in the predicted genders between first and last authors, with the last authors more frequently predicted to be male.
+
+To extend our analysis to primary research authors more broadly, we also examined a random selection of authors from English language journals published by _Springer_ (Figure {@fig:suppfig2}a).
+The predicted gender gap between first and last authors was larger in our selection of _Springer_ articles; however, both first and last authors were predicted to be closer to parity than for _Nature_ authors.
+Overall, predicted males were more frequently quoted than predicted females in _Nature_ news-related articles and published first and last primary research authors in _Nature_ and _Springer_ over the same time period. 
 
 
-We then compared the number of male quotes to the number of male first and last authors published in _Nature_ (Figure {@fig:fig2}c).
 We analyzed a total of 10,454 first authors and 10,488 last authors with a gender prediction.
 As denoted by the red line, we find that both authorship and quotes are far from gender parity.
 Additionally, we find a difference in author genders between first and last authors, with the last authors being more male-dominated.
 Since _Nature_ authorship may not represent scientific publishing as a whole, we also compared against a random selection of authors from English language journals published by _Springer_ (Figure {@fig:suppfig2}a).
 We observed a larger gender gap between first and last authors in our selection of _Springer_ articles; however, both first and last authors are much closer to parity than _Nature_ authors.
 
-
-In contrast to the relatively stable gender proportions of authorship, we find the rate of male quotes significantly decreases over time.
-The male quote rate in 2005 is 86.84 (5,552/6,391) and in 2020 is 68.5% (3,494/5,098).
-From 2005-2010, we find the male quote rate is higher than the male last authorship rate, then slowly decreasing until it matches the male first authorship rate in 2018 and continues to trend downwards.
-We then explored the possible reasons for this decrease.
-First, we looked at changes in the rate of authorship position by quoted speakers (Figure {@fig:fig2}d).
-We were able to identify 8,064 quotes with an associated citation (3,382 first author and 4,682 last author quotes).
-We found that quotes are slightly biased towards the last authors. 
-However, this rate does not change over time, and we do not believe this drives the downward trend.
+The gender proportions of authorship were relatively stable over time for both _Nature_ and _Springer_ articles.
+In contrast, we found that the rate of quotes predicted to be from males significantly decreased over time.
+In 2005, the fraction of quotes predicted to be from males was 86.84% (5,552/6,391) whereas in 2020 it was 68.5% (3,494/5,098).
+Indeed, the fraction of quotes from predicted males was initially higher than the fraction of predicted male last authors, then slowly decreased until it was below the predicted male first and last authorship rates in 2020.
+We explored the possible reasons for this decrease.
+First, we looked at the authorship position of speakers who were quoted about their published paper (Figure {@fig:fig2}d).
+We identified 8,064 quotes with an associated citation (3,382 first author and 4,682 last author quotes).
+We found that quotes were slightly biased towards last authors from 2005 to 2020, but because the fraction of predicted male last authors remained stable over time both for _Nature_ and the selection of _Springer_ articles, this bias likely does not explain the downward trend.
 We then analyzed the breakdown of gendered quotes by article type.
-Interestingly, we found one article type, "career-feature" that has achieved gender parity in its quotes (Figure {@fig:fig2}e and Figure {@fig:suppfig2}b).
-Since the introduction of this article, it has included a total of 1,454 quotes (759 female and 695 male quotes) and has substantially shifted the overall quote gender ratio much closer to parity from 2018 onward.
+Interestingly, one article type, "Career-Feature", achieved gender parity in its quotes (Figure {@fig:fig2}e and Figure {@fig:suppfig2}b).
+In this article type, we identified a total of 1,454 quotes (759 predicted female and 695 predicted male quotes), which substantially pulled the overall quote gender ratio closer to parity from 2018 onward.
+
 
 ### Celtic English Names are over enriched in cited and quoted persons, while East Asian Names are under enriched
 
 ![
-**Analysis of Quotes and Citations found Over-representation of Celtic/English and under-representation of East Asian names**
+**Analysis of Quotes and Citations found Over-representation of Celtic/English and under-representation of East Asian names.**
 Panel A, left, depicts an example of the names extracted from quoted speakers and citations found within news articles and authors in research articles.
-Panel A, right, highlights the data types and processes used to analyze the origin of extracted names.
-Panels B and C depict a comparison between the name origins of last authors in _Nature_ and cited articles in news articles.
+Panel A, right, highlights the data types and processes used to analyze the origin of extracted names. Panels B and C depict a comparison between the name origins of last authors in _Nature_ and cited articles in news articles.
 Panel B and C differ in the news articles types.
 Panel B calculates the name origin proportion using only journalist-written articles, whereas Panel C only uses scientist-written articles.
-Similarly, Panels D and E depict two possible trend lines, comparing either quoted speakers or mentioned names against last authors of _Nature_ research articles.
-We observed that the over-representation of Celtic/English names is present in quotes, and to a minor degree in citations.
-Furthermore, the under-representation of East Asian names is also present both in quotes and citations, however it is much more pronounced in citations of scientist-written articles in comparison to journalist-written articles.
-Additional information for the cited, quoted, and mentioned persons are provided in (Figure {@fig:suppfig3} and {@fig:suppfig4})
-Furthermore, we recapitulate this finding when comparing against an additional background of _Springer_ published last authors (Figure {@fig:suppfig3})
+Similarly, Panels D and E depict two possible trend lines, comparing name origins of either quoted or mentioned people against name origins of last authors of _Nature_ research articles.
+<!-- REMOVE CONCLUSION FROM CAPTION We found that Celtic/English name origins are overrepresented in quotes, and to a smaller degree in citations, when compared to name origins of last authors.
+Furthermore, East Asian name origins are underrepresented in quotes and citations when compared to name origins of last authors, however it was much particularly for citations of non-journalist-written articles versus journalist-written articles.
+Additional information for the cited, quoted, and mentioned persons are provided in (Figure {@fig:suppfig3} and {@fig:suppfig4}).
+Furthermore, we recapitulate this finding when comparing against an additional background of _Springer_ published last authors (Figure {@fig:suppfig3}) -->.
 ](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig3_tmp/fig3_main.png "Figure 3"){#fig:fig3 width=6in}
 
 
-To identify possible bias in name origin, we again used the extracted quoted speakers and last authors published in _Nature_.
-In addition, we also identified the last authors of all articles cited by a news-related article.
-All processed names were then inputted into Wiki2019-LSTM and used to assign one of ten possible name origins ([Methods]).
+To identify possible disparities with respect to name origin, we again used the extracted names of quoted speakers and last authors published in _Nature_.
+In addition, we also identified the last authors of all articles cited by a news-related article. All processed names were then input into Wiki2019-LSTM and assigned one of ten possible name origins ([Methods]).
 Figure {@fig:fig3}a displays a schematic of the data processing and example names used in this analysis.
-We divided our analysis into three parts: firstly, looking at the number of cited last authors with a specific name origin over all cited last authors in a particular year.
-Secondly, looking at the proportion of quotes from a speaker with a specific name origin over all quotes in a particular year.
-Thirdly, looking at the proportion of unique name mentions within an articles with a specific name origin over all names mentioned in a particular year.
-We used the proportion of last authors in _Nature_ with a specific name origin overall _Nature_ articles in a particular year for all three analyses.
-Additionally, in our supplemental analyses, we compare against the last authorship in a random selection of _Springer_ articles.
-We find that the number of quotes and unique names mentioned dramatically outnumbers the number of authors and citations (Figure {@fig:suppfig3}a).
-Still, we believe that the total number of observations per data type across all years is sufficient for our analysis.
-Minimum and median per data type: _Nature_ articles, (565, 679); _Springer_ articles, (1298, 1684); quotes, (4577, 6194); mentions, (3634, 5002); citations in journalist-written article, (139, 267) citations in a scientist-written article, (503, 660).
+We divided our analysis into three parts: firstly, quantifying the proportions of predicted name origins of last authors cited in _Nature_ news articles.
+Secondly, calculating the proportion of quotes from speakers with a predicted name origin.
+Thirdly, calculating the proportion of unique names mentioned within an article with a predicted name origin.
+As a comparator set, we again used the names of last authors of _Nature_ research articles for all three analyses.
+Additionally, in our supplemental analyses, we compared against the last authorship in a random selection of _Springer_ articles.
+We found that the number of quotes and unique names mentioned dramatically outnumbered the number of cited authors in _Nature_ news articles, as well as  last authors within _Nature_ primary research articles (Figure {@fig:suppfig3}a).
+Still, since we have more than one hundred observations per time point for each data type, we believe this is sufficient for our analysis.
+Minimum and median per data type over all years: _Nature_ articles, (565, 679); _Springer_ articles, (1298, 1684); quotes, (4577, 6194); mentions, (3634, 5002); citations in journalist-written article, (139, 267) citations in a scientist-written article, (503, 660).
 
 In comparing the citation rate of last author name origins in news articles, we decided to additionally analyze scientist-written articles.
-Though fewer in number, scientist-written non-research articles have many citations making the set sufficient for analysis and provides an opportunity to measure disparities in citation patterns by author type.
-In both journalist- and scientist-written articles, we find most names are Celtic/English or European, both with a bootstrapped estimated citation rate between 24.8-43.0% (Figure Figure {@fig:suppfig3}b),c).
-East Asian names are the third highest proportion of cited names, with a bootstrapped estimated citation rate between 5.7-24.8%.
-All other name origins individually account for less than 9% of total cited authors.
-To compare against the composition of the last authors in _Nature_, we compare the top three most frequent name origins (Figure {@fig:fig3}b,c).
-We find a slight over-enrichment for Celtic/English names and a small under-enrichment for East Asian names in scientist-written articles.
-Interestingly, we only observed under-enrichment for East Asian names in journalist-written articles from 2005 to 2009.
-Furthermore, we find no significant difference for European or other name origins (Figure {@fig:suppfig4}a).
-However, we do observe that European name origins are more highly cited in articles written by scientists than journalists (Figure {@fig:suppfig4}b,c). 
+Though fewer in number, scientist-written articles have many citations, making the set sufficient for analysis and providing an opportunity to measure differences in citation patterns between journalists and scientists.
+In both journalist- and scientist-written articles, we found that most cited name origins were Celtic/English or European, both with a bootstrapped estimated citation rate between 24.8-43.0% (Figure {@fig:suppfig3}b,c).
+East Asian name origins are the third highest proportion of cited names, with a bootstrapped estimated citation rate between 5.7-24.8%.
+All other name origins individually account for less than 9% of total cited authors. 
+
+We determined how these distributions compare to the composition of the last authors in _Nature_, by examining the top three most frequent name origins (Figure {@fig:fig3}b,c).
+We found a slight over-enrichment for Celtic/English names and a small under-enrichment for East Asian names in scientist-written and journalist-written articles when compared to the composition of last authors in _Nature_ (Figure {@fig:fig3}b, c).
+Interestingly, the under-enrichment for East Asian names in journalist-written articles was only from 2005 to 2009.
+Furthermore, we found no significant difference for European or other name origins (Figure {@fig:suppfig4}a).
+However, we did observe that articles in which the last author had European name origins were more highly cited in articles written by scientists than journalists (Figure {@fig:suppfig4}4b,c).
 We also observed the Celtic/English over-enrichment and East Asian under-representation when considering our subset of _Springer_ articles (Figure {@fig:suppfig4}b) for both journalist- and scientist-written articles.
 In contrast to _Nature_, in the _Springer_ set, we see a difference in European names, with a growing over-enrichment.
 Additionally, we see a significant difference in Arabic/Turkish/Persian name frequencies between cited authors and _Springer_ authors, however the difference is lower than observed for Celtic/English and East Asian.
 
-We then sought to determine whether or not the quoted speaker replicated the cited authors’ over- and under-enrichment patterns.
-We found a much stronger Celtic/English over-enrichment, with quotes from Celtic/English speakers at a much higher frequency than quotes from European speakers (Figure {@fig:suppfig3}d).
-Additionally, we also found a much stronger depletion of quotes from East Asian speakers (Figure {@fig:suppfig3}b), with never more than 7.9% of quotes even though they constitute between 5.7-24.8% of cited authors.
-When we again compare against last authorship in _Nature_, we observe patterns consistent with the citation analysis with all name origins except for East Asian and Celtic/English closely matching the background rate (Figure {@fig:fig3}d).
-Similarly, we find the same patterns in quoted speakers with East Asian, Celtic/English, and Arabic/Turkish/Persian name origins when comparing against the _Springer_ background as we did in the previous citation analysis (Figure {@fig:suppfig4}d).
-In addition, we also find an under-enrichment of Hispanic, South Asian, and Hebrew names when comparing against the _Springer_ background set.
-It was possible that journalists preferentially paraphrased speakers with some name origins.
-To examine whether or not this was driving the results, we expanded our analysis to also include sources that were possibly paraphrased and not directly quoted. 
-To do this, we identified all unique names that appeared in an article, which we term mentions.
-We found that same pattern of over-enrichment for Celtic/English names and under-enrichment for East Asian names when comparing against both _Nature_ and _Springer_ last authorships (Figure {@fig:fig3}e, Figure {@fig:suppfig3}d,e, Figure {@fig:suppfig4}e,f).
+We then sought to determine whether or not the quoted speaker demographic replicated the cited authors’ over- and under-enrichment patterns.
+We found a much stronger Celtic/English over-enrichment, with quotes from those with Celtic/English name origins at a much higher frequency than quotes from those with European name origins (Figure {@fig:suppfig3}d).
+Additionally, we also found a much stronger depletion of quotes from people with East Asian name origins (Figure {@fig:suppfig3}b), with never more than 7.9% of quotes even though they constitute between 5.7-24.8% of last authors cited in either journalist- or scientist-written articles (Figure {@fig:fig3}b,c).
+When we again compare against last authorship in _Nature_, we observe patterns consistent with the citation analysis with all name origins, except for East Asian and Celtic/English closely matching the predicted name origin rate of last authors in _Nature_ (Figure {@fig:fig3}d). 
+
+Similarly, we find the same patterns in quoted speakers with East Asian, Celtic/English, and Arabic/Turkish/Persian name origins when comparing against the _Springer_ set of last authors as we did in the previous citation analysis (Figure {@fig:suppfig4}d).
+In addition, we also find an under-enrichment of Hispanic, South Asian, and Hebrew names when comparing against the predicted name origin rate of last authors in our _Springer_ set.
+
+
+It was possible that journalists preferentially paraphrased speakers with some name origins, e.g. the person was a source and mentioned in the story but not directly quoted.
+To address this possibility, we expanded our analysis to also include sources that were paraphrased.
+To do this, we identified all unique names that appeared in an article, which we term _mentions_.
+We found the same pattern of over-enrichment for Celtic/English name origins and under-enrichment for East Asian name origins when comparing against both _Nature_ and _Springer_ last authorships (Figure {@fig:fig3}e, Figure {@fig:suppfig3}d,e, Figure {@fig:suppfig4}e,f).
 
 
 ### Content of Science Coverage Differs between Countries
@@ -495,7 +519,7 @@ We found that same pattern of over-enrichment for Celtic/English names and under
 Panel A, left, depicts an example of the country mentions extracted from the news article text and citations found within news articles and author affiliations in research articles.
 Panel A, right, highlights the data types and processes used to analyze the countries cited or mentioned.
 Panel B depicts the citation rate of the top ten most-cited countries over time.
-Panel C depicts the citation rate of the top three most-cited countries (yellow) compared to that countries citation rate, as measured by author affiliation (grey).
+Panel C depicts the citation rate of the top three most-cited countries (yellow) compared to that countries citation rate within _Nature_, as measured by author affiliation (grey).
 Panel D is a heatmap depicting the yearly difference in citation and mention rate for a specific country.
 We only depict countries with a consistent and significant difference across all years.
 Each cell contains the difference between citation and mention rates, with red denoting the lower difference between mention and citation and green a more considerable difference.
@@ -506,27 +530,34 @@ The width of the bar depicts the log10(Frequency in Mentions +1 / Frequency of C
 ](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig4_tmp/fig4_main.png "Figure 4"){#fig:fig4 width=6in}
 
 
-After finding name origin differences between cited and quoted persons, we wanted to determine if news articles 1) represent countries at different rates 2) vary in the language used to describe scientific content related to each country.
-To do this analysis, we used three sources of information 1) country-related entities mentioned in the news text, 2) country affiliations of cited authors in news articles, 3) country affiliation of authors in _Nature_ and _Springer_.
+After finding name origin differences between cited and quoted persons in comparison to last-authorship rates, we wanted to determine if news articles 1) represent countries at different rates, or 2) vary in the language used to describe scientific content related to each country.
+To perform this analysis, we used three sources of information: 1) country-related entities mentioned in the news text (light orange), 2) country affiliations of cited authors in news articles (green), 3) country affiliation of authors in _Nature_ and _Springer_ (dark orange).
 Figure {@fig:fig4}a shows example input data and a schematic of the analysis.
-We provide further processing details in [Methods].
+We provide further processing details in [Methods]. 
+
+
 First, we interrogated the country affiliations of cited authors.
-We assigned an affiliation to a manuscript if any author has affiliation from a specific country. 
+We assigned an affiliation to a manuscript if any author, not only first or last, has affiliation with a specific country.
 Therefore a single manuscript may have multiple country affiliations.
-We analyzed any possible country affiliation for an article due to limits imposed by the _Springer_ API.
+It was not possible to only identify country affiliations for a specific author position due to limitations in the _Springer_ API.
 Affiliation query results from the _Springer_ API return all country affiliations for a specific manuscript and are not linked to one particular author.
  
 After post-processing, we analyzed a total of 1,989 articles with a citation accessible through the _Springer_ API.
 We considered all authors, not only first or last, within the article and their affiliations for this analysis.
 We found that most cited articles have at least one author with an affiliation within the United States, followed by the United Kingdom, Germany, and France (Figure {@fig:fig4}b).
 Interestingly, we found a strong citation over-enrichment of many top-cited countries, but we found no evidence of under-enrichment by East Asian countries (Figure {@fig:fig4}c, Figure {@fig:suppfig5}a).
+
+
 Next, we examined content differences between countries or groups of countries.
 For example, we wanted to determine the extent to which a country was the subject (i.e., their scientific policies, environment, pollution) or the research being performed within that country was the subject.
-To do this, we need to calculate the mention rate of each country.
+To do this, we needed to identify in an article when a country is mentioned and an affiliated author from that country is cited.
+Our assumption is that if a country is not cited, but it is talked about, then the topic of the article is related to something happening within that country.
+Similarly, if a country is not mentioned, but has an affiliated author that is cited, then the science output from that country is likely to be the subject of the article.
+We quantified this by counting all the journalist-written news articles in which a country, region within a country, or organization affiliated with a country was mentioned, which we term a country's "mention rate".
 To identify if a country was mentioned in an article, we started with all organizations, countries, states, or provinces identified by coreNLP's named entity tagger.
 We then linked all the identified region-related named entities to countries with OpenStreetMap.
 Since there may be errors in both coreNLP and OpenStreetMap, we only assumed a country was mentioned when at least two unique entities mapped to the same country in a single article.
-On a benchmark set, we identify 4 country identifications from a total of 59 country predictions were incorrect (Figure {@fig:suppfig1}b,c).
+On a benchmark set, we found that 4 country identifications from a total of 59 country predictions were incorrect (Figure {@fig:suppfig1}b,c).
 When aggregating over articles, we find that 4/30 articles contain exactly one incorrect country mention (Figure {@fig:suppfig1}b)
  
 Once we calculated the mention rate and used the previously described citation rate, we identified countries with a consistent skew towards either a higher or lower mention to citation rate (Figure {@fig:fig4}d and Figure {@fig:suppfig4}b).
@@ -548,66 +579,66 @@ The top five terms were "classical", "quantum", "yeast", "neurons", and "cells".
 
 ## Discussion
  
-Scientific news coverage, unlike academic articles, should represent not only the current state of research-related disciplines but also the diversity of its readership.
+Scientific news coverage ideally is representative of academic articles.
 News coverage is the conduit between the academic and public spheres, and consequently shapes the public's view of science and scientists.
-Though it would be best for news coverage to promote equitable representation, at a minimum news coverage should match the current rates of regional and gender participation in academia.
-To test whether this last point was true, we analyzed over 16,000 news articles published by _Nature_ to identify quoted, mentioned, and cited persons.
+Though it would be best for news coverage to promote equitable representation, at a minimum quotes and citations would ideally match the regional and gender demographics of scientific academia.
+To examine this last point, we analyzed over 22,000 news articles published by _Nature_ to identify quoted, mentioned, and cited persons.
 We then compared this to the authorship statistics from _Nature_'s research articles and a subset of _Springer_'s English language articles.
 
-We first looked at possible gender biases in quotes and found a large, but decreasing, gender gap in all but one article type.
-We found that the decreasing trend was largely driven by a single column, career-feature.
-This column has an equal number of quotes from both genders showing that gender parity is possible in science-related news coverage.
-In order to draw these conclusions, we performed an analysis examining the proportion of all identified quotes that were from a male speaker.
-As a comparator, we analyzed the proportion of male authors, which similarly is a measure of scientific participation.
+We first looked at possible gender biases in quotes and found a large, but decreasing, gender gap when compared to the broader population in all but one article type.
+We found that the decreasing trend was largely driven by the recent introduction of a single column, "Career-Feature".
+This column has an equal number of quotes from both genders, showing that gender parity is possible in science-related news coverage.
+However, we do recognize that different news columns may represent different demographics and be inherently more difficult to reach parity.
+In order to draw these conclusions, we analyzed the proportion of all identified quotes that were from a speaker predicted to be male compared to the proportion of authors predicted to be male, which similarly is a measure of scientific participation.
 Using computational methods, we performed quote association and gender prediction.
-We observe a strong bias towards male participation across both authorship and quotes.
-We also identify a gender bias between first and last authors, previously shown in [@pubmed:30070216; @doi:10.1016/j.jpedsurg.2020.05.020; @doi:10.1016/j.biopsych.2019.02.010].
-Interestingly, we found that while the rate of male quotes and male authorship are decreasing over time, quotation rate is decreasing faster than authorship rates.
-We then tried to identify what drove the observed trend.
-First or last authorship changes, which we anticipated to affect gendered quotation rates, did not drive the downward trend.
-Despite first authors more commonly being female than last authors, first and last authors were quoted at comparable rates over time.
-Instead, we found that column types were driving the trend, with career-feature reaching gender parity.
+We observed a strong bias towards predicted male participation across both authorship and quotes.
+We also identify a gender bias between first and last authors, as previously shown [@pubmed:30070216; @doi:10.1016/j.jpedsurg.2020.05.020; @doi:10.1016/j.biopsych.2019.02.010].
  
 To further our analysis of possible coverage biases, we looked to biases in name origins of quoted and cited last authors across all the processed news articles.
 Our findings provide additional support for previous studies that identified under-citation [@doi:10.1101/2020.10.12.336230] and under-recognition [@doi:10.1101/2020.04.14.927251] of East Asian persons.
 Interestingly, we found under-citation of persons with East Asian name origins to be much less pronounced than under-quotation.
+We do not believe that the under-quotation is driven by paraphrasing sources, which may occur more frequently with non-native English speakers.
+This is because our findings of under-enrichment of predicted East Asian name origins was recapitulated when we additionally looked at unique names mentioned within news articles.
 Furthermore, we find that scientist-written news articles tend to under-cite persons with East Asian name origins more than journalist-written articles.
 Our finding of under-quotation of East Asian persons was also recapitulated when we additionally looked at unique names mentioned within news articles.
 Overall, we find that most quotes, mentions, and citations are from persons with Celtic/English or European name origins, followed by East Asian, with the remaining origins individually making up less than 10% of both citations or quotes.
 Except Celtic/English (over-representation) and East Asian (under-representation), all name origins roughly match the expected academic background rate estimated by _Nature_ last authorship.
 We also found this same pattern in our _Springer_ data set.
  
-After observing name origin biases, we sought to identify a bias in the frequency or content of coverage across countries.
-We first looked at possible citation biases for authors with specific country affiliations, and found that most manuscripts cited by _Nature_ news have at least one author affiliated with the United States, United Kingdom, and Germany.
+After observing name origin biases, we determined if there was a bias in the frequency or content of coverage across countries.
+We first looked at possible citation biases for authors with specific country affiliations, and found that most manuscripts cited by _Nature_ news-related articles have at least one author affiliated with the United States, United Kingdom, or Germany.
 In contrast to the name origins results, the citation rate of Chinese affiliated authors was not significantly depleted.
 Interestingly, we find the number of citations to articles with authors having affiliations in China is increasing at the same rate as _Springer_ and _Nature_ authorships.
 Furthermore, the increased citation and last authorship rates of Chinese affiliated authors is most pronounced in comparison to all other countries within the top ten most cited. 
 
-We then focused on identifying whether the news content about a country focused on the scientific output from that country or the country itself as the scientific subject.
-We postulated that a difference in citation and mention rates could indicate the difference in a news article’s subject matter.
+We then focused on identifying whether the news-related content about a country focused on the scientific output from that country or the country itself as the scientific subject.
+We postulated that a difference in citation and mention rates could indicate the difference in a news article's subject matter.
 To achieve this, we identified two sets of countries with a large and consistent difference in their citation and mention rates.
 The top "Citation" countries were Germany, Spain, and the Netherlands.
 The top "Mention" countries were India, the United States, and Colombia.
 We then found that these two sets of countries were discussed differently.
-The resultant words for "Mention" countries were most related to extraction, agriculture and politics, suggesting that the country was likely the article’s subject.
+The resultant words for "Mention" countries were most related to extraction, agriculture and politics, suggesting that the country was likely the article's subject.
 In contrast, the representative words for "Citation" countries were more diverse in topic, relating to biological, medical, and physics terms.
-The difference in discriminative terms between the two country sets is evidence that the news content may focus more on research of a country as a subject than science that comes out of it.
-
+We hypothesize that the difference in discriminative terms between the two country sets is evidence that the news content may focus more on research of a country as a subject than science that comes out of it.
+This hypothesis assumes that no country has a specialization in a scientific topic, which is likely not true.
+This does, however, give us an indication that countries differ in their scientific news coverage.
+ 
  
 Through our comprehensive analysis, we were able to identify how news coverage varies by country, name origin, and gender, and compare it to scientific publishing background rates.
 While we found a significant gender bias, the rate of female representation in scientific news is increasing and outpacing authorships on scientific manuscripts.
-Furthermore, we identified a significant depletion of quotes from scientists with an East Asian name origin and a significant but smaller depletion of authors with an East Asian name origin among the citations of news content.
-Finally, we showed that coverage of specific countries might be biased by content, with the country’s scientific output being put in a more significant focus for some countries than the environmental aspects of other countries.
+Furthermore, we identified a significant depletion of quotes from scientists with an East Asian name origin when compared to primary research authorship, and a significant but smaller depletion of authors with an East Asian name origin among the citations in news content.
+Finally, we showed that coverage of specific countries differ in content, with the country's scientific output being put in a more significant focus for some countries than the environmental aspects of other countries.
+
 Previous anecdotal studies from journalists have shown that awareness of their bias can help them to reduce it [@https://medium.com/ladybits-on-medium/i-analyzed-a-year-of-my-reporting-for-gender-bias-and-this-is-what-i-found-a16c31e1cdf; @https://www.theatlantic.com/technology/archive/2016/02/gender-diversity-journalism/463023/; @https://www.theatlantic.com/science/archive/2018/02/i-spent-two-years-trying-to-fix-the-gender-imbalance-in-my-stories/552404/].
 Once a bias is identified an individual can seek resources to help them find and retain diverse sources, such as utilizing international expert databases like gage [@https://gage.500womenscientists.org/] and SheSource [@https://www.womensmediacenter.com/shesource/].
 Additional tips for journalists to achieve and maintain a diverse source pool is described by Christina Selby in the Open Notebook [@https://www.theopennotebook.com/2016/08/23/including-diverse-voices-in-science-stories/].
 
 While removing biases from their coverage should be a focus for editors and journalists, many journalists are limited by the persons who can respond to their requests for an interview or leads from prominent scientists.
-Scientists themselves can also recommend junior researchers from diverse backgrounds, in contrast to referring journalists to well-established researchers that may already receive a lot of representation.
-Furthermore, since news coverage is accountable to their readership, it presents the opportunity to represent scientific perspectives that are more diverse than observed in academic publishing.
-We have shown that in at least one aspect that this is possible, as observed by the gender parity in quotes from the "career-features" column.
-News outlets and referee scientists have a unique opportunity to shape the public and their peers’ perspectives on who is a scientific expert.
-Their choice of coverage topics and interviewees could reflect a more diverse view of science and scientists and help to diminish existing biases in scientific research.
+Scientists can also audit themselves to ensure that not only are they referring field experts to journalists, but are also not allowing their biases to influence the experts they suggest. 
+<!-- CUT Furthermore, since news coverage is accountable to their readership, it presents the opportunity to represent scientific perspectives that are more diverse than observed in academic publishing. !-->
+We have shown that approaching gender parity is possible in at least one column type, as observed by the gender parity in quotes from the "Career-Features" column.
+News outlets and referee scientists have a unique opportunity to shape the public and their peers' perspectives on who is a scientific expert.
+Their choice of coverage topics and interviewees could help to diminish existing biases in scientific research.
 
 
 
