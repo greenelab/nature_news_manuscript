@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/greenelab/nature_news_manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://greenelab.github.io/nature_news_manuscript/>.
-The permalink for this webpage version is <https://greenelab.github.io/nature_news_manuscript/v/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1/>.
+The permalink for this webpage version is <https://greenelab.github.io/nature_news_manuscript/v/9082db717c69f00e71e2aaedb99803ab5cace354/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://greenelab.github.io/nature_news_manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1`](https://github.com/greenelab/nature_news_manuscript/commit/5f3cf07fa2f20cf265215a3cd9f365e51b2abbd1).
+[`9082db717c69f00e71e2aaedb99803ab5cace354`](https://github.com/greenelab/nature_news_manuscript/commit/9082db717c69f00e71e2aaedb99803ab5cace354).
