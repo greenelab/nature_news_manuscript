@@ -31,6 +31,7 @@ GreeneScientist
 heatmap
 humaniformat
 hydropower
+indispensible
 json
 Lastname
 Levenshtein
@@ -46,6 +47,7 @@ overrepresented
 Perkel
 pos
 pre
+prediciton
 pseudocount
 py
 quantiles
@@ -53,7 +55,7 @@ README
 recommenders
 reproducability
 scaped
-Scrapy
+scrapy
 Selby
 SheSource
 Springer
