@@ -1,7 +1,6 @@
 Acknowledgements
 annotater
 annotaters
-audting
 authorships
 bg
 binarized
@@ -31,13 +30,13 @@ GreeneScientist
 heatmap
 humaniformat
 hydropower
-indispensible
 json
 Lastname
 Levenshtein
 LSTM
 mers
 NamePrism
+NamePrisms
 nchdhay
 ner
 nrosed
@@ -55,7 +54,7 @@ README
 recommenders
 reproducability
 scaped
-scrapy
+Scrapy
 Selby
 SheSource
 Springer
@@ -68,5 +67,5 @@ substring
 suppfig
 tidytext
 tokenize
+treemap
 tsv
-XXXXXXXX
