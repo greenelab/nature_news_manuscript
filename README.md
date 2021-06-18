@@ -12,22 +12,24 @@
 
 <!-- usage note: edit this section. -->
 
-Scientific news is a critical way in which the public can remain informed and benefit from new scientific findings.
-In this position, scientific news also shapes the public’s view of the current state of scientific findings and legitimizes experts.
-News stories frequently cite and quote a limited number of sources.
-These sources may be identified by the journalist’s research or by recommendations by other scientists.
+Scientific journalism is a critical way in which the public can remain informed and benefit from new scientific findings.
+Such journalism also shapes the public’s view of the current state of scientific findings and legitimizes experts.
+Those covering science can only cite and quote a limited number of sources.
+Sources may be identified by the journalist’s research or by recommendations by other scientists.
 In both cases, biases may influence who is identified and ultimately included as an expert.
-We analyzed 22,001 news articles published by _Nature_ to quantify possible disparities.
+We analyzed 22,001 non-research articles published by _Nature_ to quantify possible disparities.
 Our analysis considered three possible sources of disparity: gender, name origin, and country affiliation.
 To explore these sources of disparity, we extracted cited authors’ names and affiliations, as well as extracted names of quoted speakers.
-We then used the names to predict gender and name origin of the authors and speakers. <!-- maybe add caveat here -->
-In order to appropriately quantify the level of difference, we must identify an appropriate reference set for comparison.
-We chose first and last authors within primary research articles in _Nature_ and a subset of _Springer_ articles in the same time period as our comparator.
-In our analysis, we found a skew towards male quotation in _Nature_ news-related articles, but quotation is trending toward equal representation at a faster rate than first and last authorship in academic publishing.
+While citations and quotations within a piece do not reflect the entire information-gathering process, they can provide insight into the demographics of visible sources.
+We then used the extracted names to predict gender and name origin of the cited authors and speakers. <!-- maybe add caveat here -->
+
+In order to appropriately quantify the level of difference, we must identify an suitable reference set for comparison.
+We chose first and last authors within primary research articles in _Nature_ and a subset of _Springer Nature_ articles in the same time period as our comparator.
+In our analysis, we found a skew towards male quotation in _Nature_ journalism-related articles, but quotation is trending toward equal representation at a faster rate than first and last authorship in academic publishing.
 Interestingly, we found that the gender disparity in quotes was column-dependent, with the "Career Features" column reaching gender parity.
-Our name origin analysis found a significant over-representation of names with Celtic/English origin and under-representation of names with an East Asian origin.
+Our name origin analysis found a significant over-representation of names with predicted Celtic/English origin and under-representation of names with a predicted East Asian origin.
 This finding was observed both in extracted quotes and journal citations, but dampened in citations.
-Finally, we performed an analysis to identify how countries vary in the way that they're described in the news.
+Finally, we performed an analysis to identify how countries vary in the way that they're described in scientific journalism.
 We focused on two groups of countries: countries that are often mentioned in articles, but do not often have affiliated authors cited, and countries that have affiliated authors that are often cited, but the country is not typically mentioned.
 We found that the articles in which the less cited countries occur tend to have more agricultural, extraction-related, and political terms, whereas articles including highly cited countries have broader scientific terms.
 This discrepancy indicates a possible lack of regional diversity in the reporting of scientific output.

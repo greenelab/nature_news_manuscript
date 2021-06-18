@@ -1,5 +1,5 @@
 ---
-title: "Analysis of _Nature_ news reveals gender and regional disparities in scientific coverage"
+title: "Analysis of scientific journalism in _Nature_ reveals gender and regional disparities in coverage"
 keywords:
   - markdown
   - publishing
@@ -14,7 +14,7 @@ authors:
     affiliations:
       - University of Colorado School of Medicine, Aurora, Colorado, United States of America; Center for Health AI
     funders:
-      - Grant XXXXXXXX
+      - The Gordon and Betty Moore Foundation (GBMF 4552)
   - github: cgreene
     name: Casey S. Greene
     orcid: 0000-0001-8713-9213
