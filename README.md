@@ -14,7 +14,7 @@
 
 Scientific journalism is a critical way in which the public can remain informed and benefit from new scientific findings.
 Such journalism also shapes the public’s view of the current state of scientific findings and legitimizes experts.
-Journalism focused on science frequently includes citations and quotes from a subset of interviewed sources.
+Those covering science can only cite and quote a limited number of sources.
 These sources may be identified by the journalist’s research or by recommendations by other scientists.
 In both cases, biases may influence who is identified and ultimately included as an expert.
 We analyzed 22,001 non-research articles published by _Nature_ to quantify possible disparities.
