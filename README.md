@@ -13,14 +13,14 @@
 <!-- usage note: edit this section. -->
 
 Scientific journalism is a critical way in which the public can remain informed and benefit from new scientific findings.
-In this position, scientific journalism also shapes the public’s view of the current state of scientific findings and legitimizes experts.
-Journalistic coverage of science frequently cites and quotes a limited number of sources.
+Such journalism also shapes the public’s view of the current state of scientific findings and legitimizes experts.
+Journalism focused on science frequently includes citations and quotes from a subset of interviewed sources.
 These sources may be identified by the journalist’s research or by recommendations by other scientists.
 In both cases, biases may influence who is identified and ultimately included as an expert.
-We analyzed 22,001 journalistic articles published by _Nature_ to quantify possible disparities.
+We analyzed 22,001 non-research articles published by _Nature_ to quantify possible disparities.
 Our analysis considered three possible sources of disparity: gender, name origin, and country affiliation.
 To explore these sources of disparity, we extracted cited authors’ names and affiliations, as well as extracted names of quoted speakers.
-While citations and quotations within a journalistic piece do not reflect the entire journalistic process of information gathering, they still provide useful insight into the visible demographics of sources.
+While citations and quotations within a piece do not reflect the entire information-gathering process, they can provide insight into the demographics of visible sources.
 We then used the extracted names to predict gender and name origin of the cited authors and speakers. <!-- maybe add caveat here -->
 
 In order to appropriately quantify the level of difference, we must identify an suitable reference set for comparison.
