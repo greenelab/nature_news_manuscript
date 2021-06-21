@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-06-18'
+date-meta: '2021-06-21'
 author-meta:
 - Natalie R. Davidson
 - Casey S. Greene
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Analysis of scientific journalism in _Nature_ reveals gender and regional disparities in coverage" />
   <meta property="og:title" content="Analysis of scientific journalism in _Nature_ reveals gender and regional disparities in coverage" />
   <meta property="twitter:title" content="Analysis of scientific journalism in _Nature_ reveals gender and regional disparities in coverage" />
-  <meta name="dc.date" content="2021-06-18" />
-  <meta name="citation_publication_date" content="2021-06-18" />
+  <meta name="dc.date" content="2021-06-21" />
+  <meta name="citation_publication_date" content="2021-06-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/nature_news_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/0b3dd4831dea3c64da978d34de4f223321d95746/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/0b3dd4831dea3c64da978d34de4f223321d95746/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/0b3dd4831dea3c64da978d34de4f223321d95746/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/968715fa04625935cff475c9533378e63e82a674/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/968715fa04625935cff475c9533378e63e82a674/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/968715fa04625935cff475c9533378e63e82a674/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="og:image" content="https://github.com/nrosed/nature_news_disparities/blob/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/nature_news_manuscript/v/0b3dd4831dea3c64da978d34de4f223321d95746/))
+([permalink](https://greenelab.github.io/nature_news_manuscript/v/968715fa04625935cff475c9533378e63e82a674/))
 was automatically generated
-from [greenelab/nature_news_manuscript@0b3dd48](https://github.com/greenelab/nature_news_manuscript/tree/0b3dd4831dea3c64da978d34de4f223321d95746)
-on June 18, 2021.
+from [greenelab/nature_news_manuscript@968715f](https://github.com/greenelab/nature_news_manuscript/tree/968715fa04625935cff475c9533378e63e82a674)
+on June 21, 2021.
 </em></small>
 
 ## Authors
@@ -116,7 +116,7 @@ To explore these sources of disparity, we extracted cited authors’ names and a
 While citations and quotations within a piece do not reflect the entire information-gathering process, they can provide insight into the demographics of visible sources.
 We then used the extracted names to predict gender and name origin of the cited authors and speakers. <!-- maybe add caveat here -->
 
-In order to appropriately quantify the level of difference, we must identify an suitable reference set for comparison.
+In order to appropriately quantify the level of difference, we must identify a suitable reference set for comparison.
 We chose first and last authors within primary research articles in _Nature_ and a subset of _Springer Nature_ articles in the same time period as our comparator.
 In our analysis, we found a skew towards male quotation in _Nature_ journalism-related articles, but quotation is trending toward equal representation at a faster rate than first and last authorship in academic publishing.
 Interestingly, we found that the gender disparity in quotes was column-dependent, with the "Career Features" column reaching gender parity.

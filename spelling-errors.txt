@@ -54,7 +54,7 @@ README
 recommenders
 reproducability
 scaped
-Scrapy
+scrapy
 Selby
 SheSource
 Springer
