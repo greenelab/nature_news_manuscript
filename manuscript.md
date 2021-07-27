@@ -1,11 +1,11 @@
 ---
-title: Analysis of scientific journalism in _Nature_ reveals gender and regional disparities in coverage
+title: Analysis of science journalism reveals gender and regional disparities in coverage
 keywords:
 - markdown
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-06-25'
+date-meta: '2021-07-27'
 author-meta:
 - Natalie R. Davidson
 - Casey S. Greene
@@ -15,12 +15,12 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Analysis of scientific journalism in _Nature_ reveals gender and regional disparities in coverage" />
-  <meta name="citation_title" content="Analysis of scientific journalism in _Nature_ reveals gender and regional disparities in coverage" />
-  <meta property="og:title" content="Analysis of scientific journalism in _Nature_ reveals gender and regional disparities in coverage" />
-  <meta property="twitter:title" content="Analysis of scientific journalism in _Nature_ reveals gender and regional disparities in coverage" />
-  <meta name="dc.date" content="2021-06-25" />
-  <meta name="citation_publication_date" content="2021-06-25" />
+  <meta name="dc.title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
+  <meta name="citation_title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
+  <meta property="og:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
+  <meta property="twitter:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
+  <meta name="dc.date" content="2021-07-27" />
+  <meta name="citation_publication_date" content="2021-07-27" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/nature_news_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/0a0a096f38c2d2b021c00b74df549950701316f4/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/0a0a096f38c2d2b021c00b74df549950701316f4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/0a0a096f38c2d2b021c00b74df549950701316f4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/83e8d5261a4513a82430b385fd762ba2c59d6270/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/83e8d5261a4513a82430b385fd762ba2c59d6270/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/83e8d5261a4513a82430b385fd762ba2c59d6270/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="og:image" content="https://github.com/nrosed/nature_news_disparities/raw/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/nature_news_manuscript/v/0a0a096f38c2d2b021c00b74df549950701316f4/))
+([permalink](https://greenelab.github.io/nature_news_manuscript/v/83e8d5261a4513a82430b385fd762ba2c59d6270/))
 was automatically generated
-from [greenelab/nature_news_manuscript@0a0a096](https://github.com/greenelab/nature_news_manuscript/tree/0a0a096f38c2d2b021c00b74df549950701316f4)
-on June 25, 2021.
+from [greenelab/nature_news_manuscript@83e8d52](https://github.com/greenelab/nature_news_manuscript/tree/83e8d5261a4513a82430b385fd762ba2c59d6270)
+on July 27, 2021.
 </em></small>
 
 ## Authors
@@ -105,12 +105,13 @@ on June 25, 2021.
 
 ## Abstract {.page_break_before}
 
-Scientific journalism is a critical way in which the public can remain informed and benefit from new scientific findings.
+Science journalism is a critical way in which the public can remain informed and benefit from new scientific findings.
 Such journalism also shapes the public’s view of the current state of scientific findings and legitimizes experts.
 Those covering science can only cite and quote a limited number of sources.
 Sources may be identified by the journalist’s research or by recommendations by other scientists.
 In both cases, biases may influence who is identified and ultimately included as an expert.
-We analyzed 22,001 non-research articles published by _Nature_ to quantify possible disparities.
+To ensure our results are generalizable, we analyzed two journalism outlets that cater to different demogrgaphics, _Nature_ and _The Guardian_.
+This resulted in 37,748 total articles, 15,747 science-related articles from _The Guardian_ and 22,001 non-research articles published by _Nature_ to quantify possible disparities.
 Our analysis considered three possible sources of disparity: gender, name origin, and country affiliation.
 To explore these sources of disparity, we extracted cited authors’ names and affiliations, as well as extracted names of quoted speakers.
 While citations and quotations within a piece do not reflect the entire information-gathering process, they can provide insight into the demographics of visible sources.
@@ -118,8 +119,9 @@ We then used the extracted names to predict gender and name origin of the cited 
 
 In order to appropriately quantify the level of difference, we must identify a suitable reference set for comparison.
 We chose first and last authors within primary research articles in _Nature_ and a subset of _Springer Nature_ articles in the same time period as our comparator.
-In our analysis, we found a skew towards male quotation in _Nature_ journalism-related articles, but quotation is trending toward equal representation at a faster rate than first and last authorship in academic publishing.
-Interestingly, we found that the gender disparity in quotes was column-dependent, with the "Career Features" column reaching gender parity.
+In our analysis, we found a very similar skew towards male quotation in both _The Guardian_ and _Nature_ science journalism-related articles.
+However, quotation in _Nature_ is trending toward equal representation at a faster rate than first and last authorship in academic publishing.
+Interestingly, we found that the gender disparity in _Nature_ quotes was column-dependent, with the "Career Features" column reaching gender parity.
 Our name origin analysis found a significant over-representation of names with predicted Celtic/English origin and under-representation of names with a predicted East Asian origin.
 This finding was observed both in extracted quotes and journal citations, but dampened in citations.
 Finally, we performed an analysis to identify how countries vary in the way that they're described in scientific journalism.
@@ -153,8 +155,8 @@ For clarity, throughout this manuscript we will refer to journalistic articles a
 Furthermore, when we refer to "authors" we mean authors of academic papers, not journalists; this work did not scrape any journalists' names, nor derive any insights about individual journalists.
 In our analysis, we identified quoted and cited people by analyzing the content and citations within all news articles from 2005 to 2020, and compared this demographic to the academic publishing demographic by analyzing first and last authorship statistics across all _Nature_ papers during the same time period.
  
-Through our analysis of 22,001 news articles, we were able to identify >100,000 quotes and >8,000 citations with sufficient speaker or author information.
-We also identified first and last authors of >13,000 _Nature_ papers. <!-- check number -->
+Through our analysis of 37,748 news articles from two disparate news outlets, we were able to identify >150,000 quotes and >8,000 citations with sufficient speaker or author information. <!-- check citation number -->
+We also identified first and last authors of >10,000 _Nature_ papers.
 We then identified possible gender or regional differences using the extracted names.
 The extracted names were used to generate three data-types: quoted, mentioned, and cited people.
 We used computational methods to predict gender and identified a trend towards quotes from people predicted male in news articles when compared to both the general population and predicted male authorship in papers.
@@ -162,7 +164,7 @@ Within the period that we examined, the proportion of predicted male attributed 
 Furthermore, we found that the quote difference was dependent on article type; the “Career Feature” column achieved gender parity in quoted speakers.
 We also used computational methods to predict name origins and found a significant over-representation of names with predicted Celtic/English origin and under-representation of names with a predicted East Asian origin in both quotes and citations.
  
-While we focused on news from _Nature_, our software can be repurposed to analyze other text.
+While we focused on news from _Nature_ and _The Guardian_, our software can be repurposed to analyze other text.
 We hope that publishers will welcome systems to identify disparities and use them to improve representation in journalism.
 Furthermore, our approach is limited by the features we were able to extract, which only reflects a portion of the journalistic process.
 Journalists could additionally track all sources they contact to self-audit.
@@ -176,11 +178,11 @@ To help change these patterns, there exist guides [@https://www.theopennotebook.
 
 #### Text Scraping
 
-We scraped all text and metadata using the web-crawling framework Scrapy [@https://scrapy.org/] (version 2.4.1).
+We scraped all text and metadata from _Nature_ using the web-crawling framework Scrapy [@https://scrapy.org/] (version 2.4.1).
 We created three independent scrapy web spiders to process the news text, news citations, and paper metadata.
 News articles were defined as all articles from 2005 to 2020 that were designated as "News", "News Feature", "Career Feature", "Technology Feature", and "Toolbox".
 Using the spider “target_year_crawl.py”, we scraped the title and main text from all news articles.
-We character normalized the main text by mapping visually identical Unicode codepoints to a single Unicode codepoint and stripping all non-Unicode characters.
+We character normalized the main text by mapping visually identical Unicode codepoints to a single Unicode codepoint and stripping many invalid Unicode characters.
 Using an additional spider defined in “doi_crawl.py”, we scaped all citations within news articles.
 For simplicity, we only considered citations with a DOI included in either text or a hyperlink in this spider.
 Other possible forms of citations, e.g., titles, were not included.
@@ -188,6 +190,14 @@ The DOIs were then queried using the _Springer Nature_ API.
 The spider “article_author_crawl.py” scraped all articles designated "Article" or "Letters" from 2005 to 2020.
 We only scraped author names, author positions, and associated affiliations from research articles, which we refer to as _papers_.
 It should be noted that "News" article designations changed over time.
+
+#### _The Guardian_ API
+
+To obtain science-related articles from _The Guardian_, we used their API which is available here: https://open-platform.theguardian.com/.
+We queried for 100 articles in the "science" section per month from 2005 to 2020, which typically covered all available articles.
+All html was removed using the R package textclean [@https://cran.r-project.org/web/packages/textclean/index.html].
+Similar to the data scraped from _Nature_, we also mapped visually identical Unicode codepoints to a single Unicode codepoint and stripped all non-ASCII characters.
+Since citations are hyperlinked in-line, we did not extract any citation information from _The Guaradian_.
 
 #### coreNLP
 
@@ -210,6 +220,8 @@ For both API query types, the author names, positions, and affiliations for each
 ### Name Formatting
 
 #### Name Formatting for Gender Prediction in Quotes or Mentions
+We first pre-filter articles that have more than 25 quotes, which is 1.86% (704/37,748) of total articles.
+This was done to ensure no single article is over-represented and to avoid spuriously identified quotes due to unusual article formatting.
 To identify the gender of a quoted or mentioned person, we first attempt to identify the person’s full name.
 Even though genderizeR only uses the first name to make the gender prediction, identifying the full name gives us greater confidence that we are using the first name.
 To identify the full name, we take the predicted speaker by coreNLP and match it to the longest matching name within the same article.
@@ -320,6 +332,7 @@ $$\textrm{Prop. CO Affil. Citations} = \frac{|\textrm{Cited Articles in News wit
  
 ### Divergent Word Identification
 
+As mentioned in our previous description of how we utilized _The Guardian_ API, no citations were extracted from _The Guardian_, only _Nature_ articles were used in this analysis.
 After calculating the citation and mention proportion for each country, we identified countries outlying in their comparative citation or mention rate.
 Outlier detection was done by subtracting the citation and mention rates, then identifying which countries were in the top or bottom 5% from each year.
 We only considered countries identified as either high citation (Set C) or high mention (Set M) across all years.
@@ -365,8 +378,8 @@ Panel B shows the types and amounts of articles that we have used for analyses.
 
 ### Creation of an Annotated News Dataset
 
-We have analyzed the text and citations of 22,001 news-related articles hosted on "www.nature.com" that span 15 years from 2005 to 2020.
-Our primary focus is on 16,080 articles written by journalists which include the following five article types: "Career Feature", "News", "News Feature", "Technology Feature", and "Toolbox".
+We have analyzed the text of 22,001 news-related articles hosted on "www.nature.com" and 15,747 science-related articles accessible by _The Guardian_ API that each span 15 years from 2005 to 2020.
+For _Nature_ articles our primary focus is on 16,080 articles written by journalists which include the following five article types: "Career Feature", "News", "News Feature", "Technology Feature", and "Toolbox".
 "Career Feature" generally focuses on the career-related aspects of being a scientist.
 "News" and "News Feature" focuses on current events related to science as well as new scientific findings.
 It should be noted that the types of articles contained in "News" changed over time which may induce content shifts in a subset of the articles within our corpus.
@@ -375,8 +388,11 @@ Lastly, "Toolbox" is similar to "Technology Feature", but is more centered on te
 We also include one analysis of the scientist-written news articles, "Career Column" and "News and Views", as an additional set of 5,921 articles.
 "Career Column" is similar to "Career Feature", except it is not written by journalists, but individuals in the scientific field.  
 "News and Views" is similar to a review article, where a field expert writes an article relating to a recently written article within Nature.
+For _The Guardian_ articles, we took all "science" section articles, which is the finest granularity available from the API to identify article types.
+The articles in _The Guardian_ span multiple subjects, formats, and production offices (United States, Australia, and United Kingdom)
 
 The text and citations were then uniformly processed as depicted in Figure {@fig:fig1}a to identify: 1) mentioned locations or organizations (light orange box), 2) quotes and quoted speakers (blue box), and 3) cited authors (green box).
+Due to limitations of _The Guardian_ API and their citation format, citations were only extracted for analysis in articles from _Nature_.
 The extracted names from the text were used to generate three data types for downstream processing: quoted, mentioned, and cited people.
 A summary of frequencies for each data type at each point of processing is provided in Tables {@tbl:table1} - {@tbl:table4}.
 We scraped the text using the web-crawling framework Scrapy [@https://scrapy.org/], processed, and ran it through the coreNLP pipeline ([Methods]).
@@ -440,7 +456,7 @@ After establishing a reasonable accuracy for gender prediction, we determined th
 !-->
 
 
-We first examined the number of quotes identified within each type of news-related article (Figure {@fig:fig2}b), totaling 119,998 quotes with 109,723 of them containing a gender prediction for the speaker.
+We first examined the number of quotes identified within each type of science-news article (Figure {@fig:fig2}b), totaling 177,134 quotes with 157,955 of them containing a gender prediction for the speaker.
 Quote frequencies vary by article type.
 We compared the number of quotes from predicted male people to the number of predicted male first and last authors published in _Nature_.
 The total number of authors with a gender prediction were 10,454 first authors and 10,488 last authors.
@@ -453,16 +469,18 @@ Overall, predicted male people were more frequently quoted than predicted female
 
 
 The gender proportions of authorship were relatively stable over time for both _Nature_ and _Springer Nature_ papers.
-In contrast, we found that the rate of quotes predicted to be from male people noticeably decreased over time.
-In 2005, the fraction of quotes predicted to be from male people was 86.87% (5,552/6,391) whereas in 2020 it was 68.5% (3,494/5,098).
-Indeed, the fraction of quotes from predicted male people was initially higher than the fraction of predicted male last authors, then slowly decreased until it was below the predicted male first and last authorship rates in 2020.
+In contrast, we found that the rate of quotes predicted to be from male people noticeably decreased over time, however at different rates between _The Guardian_ and _Nature_.
+For _Nature_ in 2005, the fraction of quotes predicted to be from male people was 87.09% (5,291/6,075) whereas in 2020 it was 68.86% (2,870/4,168).
+In contrast _The Guardian_ is decreasing at a slower rate in comparison to _Nature_, in 2005 the fraction of quotes predicted to be from male people was 84.01% (3,331/3,965) and 75.94% (2,273/2,993) in 2020.
+Indeed, the fraction of quotes from _Nature_ of predicted male people was initially higher than the fraction of predicted male last authors and quotes from _The Guardian_, then slowly decreased until it was below the predicted male first and last authorship rates in 2020.
+We identified that a large decrease occured in _Nature_ between 2017 and 2018.
 We explored the possible reasons for this decrease.
 First, we looked at the authorship position of speakers who were quoted about their published paper (Figure {@fig:fig2}d).
 We identified 8,064 quotes with an associated citation (3,382 first author and 4,682 last author quotes).
 We found that quotes trend slightly towards last authors from 2005 to 2020, but because the fraction of predicted male last authors remained stable over time both for _Nature_ and the selection of _Springer Nature_ papers, which likely does not explain the downward trend.
 We then analyzed the breakdown of gender predicted quotes by article type.
 Interestingly, one article type, "Career Feature", achieved gender parity in its quotes (Figure {@fig:fig2}e and Figure {@fig:suppfig2}b).
-In this article type, we identified a total of 1,454 quotes (759 predicted female and 695 predicted male quotes), which substantially pulled the overall quote gender ratio closer to parity from 2018 onward.
+In this article type, we identified a total of 898 quotes (449 predicted female and 449 predicted male quotes), which substantially pulled the overall quote gender ratio closer to parity from 2018 onward.
 
 
 ### Predicted Celtic English Name Origins are over-enriched in cited and quoted people, while predicted East Asian name origins are under-enriched
@@ -473,6 +491,7 @@ Panel A, left, depicts an example of the names extracted from quoted speakers an
 Panel A, right, highlights the data types and processes used to analyze the predicted origin of extracted names. Panels B and C depict a comparison between the predicted name origins of last authors in _Nature_ and cited papers in the news.
 Panel B and C differ in the news article types.
 Panel B calculates the predicted name origin proportion using only journalist-written articles, whereas Panel C only uses scientist-written articles.
+The distinction between journalist- and scientist-written articles only exists in the _Nature_ corpus, all articles are assumed to be written by a journalist in _The Guardian_.
 Similarly, Panels D and E depict two possible trend lines, comparing predicted name origins of either quoted or mentioned people against name origins of last authors of _Nature_ research papers.
 <!-- REMOVE CONCLUSION FROM CAPTION We found that Celtic/English name origins are overrepresented in quotes, and to a smaller degree in citations, when compared to name origins of last authors.
 Furthermore, East Asian name origins are underrepresented in quotes and citations when compared to name origins of last authors, however it was much particularly for citations of non-journalist-written articles versus journalist-written articles.
@@ -481,8 +500,8 @@ Furthermore, we recapitulate this finding when comparing against an additional b
 ](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig3_tmp/fig3_main.png "Figure 3"){#fig:fig3 width=6in}
 
 
-To identify possible disparities with respect to name origin, we again used the extracted names of quoted speakers and last authors published in _Nature_.
-In addition, we also identified the last authors of all papers cited by a news article. 
+To identify possible disparities with respect to name origin, we again used the extracted names of quoted speakers from _Nature_ and _The Guardian_ news articles and last authors of published papers in _Nature_.
+In addition, we also identified the last authors of all papers cited by a _Nature_ news article. 
 All processed names were then input into Wiki2019-LSTM and assigned one of ten possible name origins ([Methods]).
 Figure {@fig:fig3}a shows an overview of the process and example input data for this analysis: 1) quotes and quoted speakers (blue box), 2) names of cited last authors in news articles (green)  3) last authors' names of papers published by _Nature_ (dark orange box).
 We divided our analysis into three parts: firstly, quantifying the proportions of predicted name origins of last authors cited in _Nature_ news articles.
@@ -490,11 +509,12 @@ Secondly, calculating the proportion of quotes from speakers with a predicted na
 Thirdly, calculating the proportion of unique names mentioned within an article with a predicted name origin.
 As a comparator set, we again used the last author names in _Nature_ papers for all three analyses.
 Additionally, in our supplemental analyses, we compared against the last authorship in a random selection of _Springer Nature_ papers.
-We found that the number of quotes and unique names mentioned dramatically outnumbered the number of cited authors in _Nature_ news articles, as well as  last authors within _Nature_ papers (Figure {@fig:suppfig3}a).
+We found that the number of quotes and unique names mentioned dramatically outnumbered the number of cited authors in _Nature_ news articles, as well as last authors within _Nature_ papers (Figure {@fig:suppfig3}a).
 Still, since we have more than one hundred observations per time point for each data type, we believe this is sufficient for our analysis.
-Minimum and median per data type over all years: _Nature_ papers, (565, 679); _Springer Nature_ papers, (1298, 1684); quotes, (4577, 6194); mentions, (3634, 5002); citations in journalist-written article, (139, 267) citations in a scientist-written article, (503, 660).
+Minimum and median per data type over all years: _Nature_ papers, (565, 679); _Springer Nature_ papers, (1298, 1684); _Nature_ quotes, (3751, 5662); _Nature_ mentions, (3177, 4726); _The Guardian_ quotes, (2240, 2898); _The Guardian_ mentions, (2192, 3271); citations in journalist-written _Nature_ article, (139, 267) citations in a scientist-written _Nature_ article, (503, 660).
 
 In comparing the citation rate of last author name origins in news articles, we decided to additionally analyze scientist-written articles.
+Since no citations were able to be easily extracted from _The Guardian_ articles, the citation analysis was performed only on _Nature_ articles.
 Though fewer in number, scientist-written news articles have many citations, making the set sufficient for analysis and providing an opportunity to measure differences in citation patterns between journalists and scientists.
 In both journalist- and scientist-written articles, we found that most cited name origins were predicted Celtic/English or European, both with a bootstrapped estimated citation rate between 24.8-43.0% (Figure {@fig:suppfig3}b,c).
 East Asian predicted name origins are the third highest proportion of cited names, with a bootstrapped estimated citation rate between 5.7-24.8%.
@@ -509,12 +529,16 @@ We also observed the predicted Celtic/English over-enrichment and East Asian und
 In contrast to _Nature_, in the _Springer Nature_ set, we see a difference in predicted European name origins, with a growing over-enrichment.
 Additionally, we see a difference in predicted Arabic/Turkish/Persian name origins frequencies between cited authors and _Springer Nature_ authors, however the absolute difference is lower than observed for Celtic/English and East Asian predicted name origins.
 
-We then sought to determine whether or not the quoted speaker demographic replicated the cited authors’ over- and under-enrichment patterns.
-We found a much stronger Celtic/English over-enrichment, with quotes from those with Celtic/English name origins at a much higher frequency than quotes from those with European name origins (Figure {@fig:suppfig3}d).
-Additionally, we also found a much stronger depletion of quotes from people with predicted East Asian name origins (Figure {@fig:suppfig3}b), with never more than 7.9% of quotes even though they constitute between 5.7-24.8% of last authors cited in either journalist- or scientist-written news articles (Figure {@fig:fig3}b,c).
-When we again compare against last authorship in _Nature_, we observe patterns consistent with the citation analysis with all predicted name origins, except for East Asian and Celtic/English closely matching the predicted name origin rate of last authors in _Nature_ (Figure {@fig:fig3}d). 
+We then sought to determine whether or not the quoted speaker demographic replicated the cited authors’ over- and under-enrichment patterns using articles from _The Guardian_ and _Nature_.
+We found a much stronger Celtic/English over-enrichment in comparison to citation patterns, with quotes from those with Celtic/English name origins at a much higher frequency than quotes from those with European name origins (Figure {@fig:suppfig3}d).
+Furthermore, we also found that the Celtic/English over-enrichment was much stronger in _The Guardian_ than in _Nature_.
+We also found a much stronger depletion of quotes from people with predicted East Asian name origins (Figure {@fig:suppfig3}b), with never more than 7.4% and 4.9% of quotes in _Nature_ and _The Guardian_, respectively (Figure {@fig:fig3}d).
+This reveals a large disparity when considering that people with a predicted East Asian name origin constitute between 5.7-24.8% of last authors cited in either journalist- or scientist-written news articles (Figure {@fig:fig3}b,c).
+When we again compare _Nature_ articles against last authorship in _Nature_, we observe patterns consistent with the citation analysis with all predicted name origins, except for East Asian and Celtic/English closely matching the predicted name origin rate of last authors in _Nature_ (Figure {@fig:suppfig4}c, dark grey and purple lines).
+We find a similar pattern when we consider _The Guardian_ articles, except we additionally find a depletion of predicted European name origins (Figure {@fig:suppfig4}c, dark grey and light grey lines).
 
-Similarly, we find the same patterns in quoted speakers with East Asian, Celtic/English, and Arabic/Turkish/Persian predicted name origins when comparing against the _Springer Nature_ set of last authors as we did in the previous citation analysis (Figure {@fig:suppfig4}d).
+When comparing _Nature_ articles against the _Springer Nature_ set of last authors, we again find the same patterns in quoted speakers with East Asian, Celtic/English, and Arabic/Turkish/Persian predicted name origins when comparing against the  as we did in the previous citation analysis (Figure {@fig:suppfig4}d, green and purple lines).
+Again, when considering _The Guardian_ articles, we find a depletion of predicted European name origins (Figure {@fig:suppfig4}c, green and light grey lines).
 In addition, we find an under-enrichment of predicted Hispanic, South Asian, and Hebrew name origins when comparing against the predicted name origin rate of last authors in our _Springer Nature_ set.
 
 Since many journalists use additional sources that are not directly quoted, we also also analyzed likely paraphrased speakers, e.g. a case in which the person was a source and mentioned in the story but not directly quoted.
@@ -594,11 +618,11 @@ Scientific journalism is the critical conduit between the academic and public sp
 However, as observed in other forms of recognition in science, biases may shift coverage away from the known demographics within science [@doi:10.1101/2020.04.14.927251].
 Ideally, scientific journalism is representative of academic papers.
 Though it would be best for news coverage to promote equitable representation, at a minimum quotes and citations would ideally match the regional and gender demographics of scientific academia.
-To examine this last point, we analyzed over 22,000 news articles published by _Nature_ to identify quoted, mentioned, and cited people.
+To examine this last point, we analyzed over 37,000 news articles published in two disparate news outlets, _Nature_ and _The Guardian_, to identify quoted, mentioned, and cited people.
 We then compared this to the authorship statistics from _Nature_'s papers and a subset of _Springer Nature_'s English language papers.
 
-We first looked at possible gender differences in quotes and found a large, but decreasing, gender gap when compared to the broader population in all but one article type.
-We found that the decreasing trend was largely driven by the recent introduction of a single column, "Career Feature".
+We first looked at possible gender differences in quotes and found in both news outlets, a large, but decreasing, gender gap when compared to the broader population in all but one article type.
+We found that the decreasing trend in _Nature_ articles was largely driven by the recent introduction of a single column, "Career Feature".
 This column has an equal number of quotes from both genders, showing that gender parity is possible in science journalism.
 However, we do recognize that different journalistic columns have different purposes or may represent different demographics and be inherently more difficult to reach parity.
 In order to draw these conclusions, we analyzed the proportion of all identified quotes that were from a speaker predicted to be male compared to the proportion of first and last authors in _Nature_ predicted to be male, which similarly is a measure of scientific participation.
@@ -614,8 +638,9 @@ This is because our findings of under-enrichment of predicted East Asian name or
 Furthermore, we find that scientist-written news articles tend to under-cite people with predicted East Asian name origins more than journalist-written articles.
 Our finding of under-quotation of people with predicted East Asian name origin was also recapitulated when we additionally looked at unique names mentioned within news articles.
 Overall, we find that most quotes, mentions, and citations are from people with predicted Celtic/English or European name origins, followed by East Asian, with the remaining origins individually making up less than 10% of both citations or quotes.
-Except Celtic/English (over-representation) and East Asian (under-representation), all predicted name origins roughly match the expected background rate estimated by _Nature_ last authorship.
-We also found this same pattern in our _Springer Nature_ data set.
+When considering _Nature_ news articles, all predicted name origins roughly match the expected background rate estimated by _Nature_ last authorship, except Celtic/English (over-representation) and East Asian (under-representation).
+When considerng _The Guardian_ articles, we additionally find a under-representation of predicted European names.
+We also found this same pattern for both _Nature_ and _The Guardian_ when comparing against our _Springer Nature_ data set.
  
 After observing name origin differences, we determined if there was a difference in the frequency or content of coverage across countries.
 We first looked at possible citation disparities for cited authors with specific country affiliations, and found that most papers cited by _Nature_ news articles have at least one author affiliated with the United States, United Kingdom, or Germany.
@@ -645,7 +670,7 @@ Previous anecdotal studies from journalists have shown that awareness of their b
 Once a bias is identified an individual can seek resources to help them find and retain diverse sources, such as utilizing international expert databases like gage [@https://gage.500womenscientists.org/] and SheSource [@https://www.womensmediacenter.com/shesource/].
 Additional tips for journalists to achieve and maintain a diverse source pool is described by Christina Selby in the Open Notebook [@https://www.theopennotebook.com/2016/08/23/including-diverse-voices-in-science-stories/].
 
-It should also be mentioned that we were only able to analyze the data provided through scraping "www.nature.com".
+It should also be mentioned that we were only able to analyze the data provided through either scraping "www.nature.com" or accessing _The Guardian_ open platform API.
 This is a major limitation, because the only measures that we have of demographics of sources are people who have their name mentioned or research cited within the article.
 Journalists do not quote or mention all of the sources that they interviewed or cite all of the papers that they read when researching an article.
 For example, a person may not be mentioned or quoted in the article because of length limitations, because they do not want to be named, or if they provide information that is not directly quotable but that still shapes the content of the article.
@@ -691,7 +716,7 @@ Panels C shows the estimated versus true frequency of country mentions within ou
 
 ![
 **Predicted male speakers are overrepresented in news quotes when compared against _Springer Nature_ authorship**
-Panel A depicts three trend lines: Purple: Proportion of quotes for an estimated male speaker; Yellow: Proportion of first author articles from an estimated male author in _Springer Nature_; Dark Mustard: Proportion of last author articles from an estimated male author in _Springer Nature_.
+Panel A depicts three trend lines: Purple: Proportion of _Nature_ quotes for an estimated male speaker; Light Grey: Proportion of _The Guardian_ quotes for an estimated male speaker; Yellow: Proportion of first author articles from an estimated male author in _Springer Nature_; Dark Mustard: Proportion of last author articles from an estimated male author in _Springer Nature_.
 We observe a larger gender difference between first and last authors in _Springer Nature_ articles, however the proportion of predicted male speakers is less than observed in _Nature_ research articles.
 Panel B depicts the proportion of male quotes broken down by article type.
 In all plots the colored bands represent the 5th and 95th bootstrap quantiles and the point is the mean calculated from 5,000 bootstrap samples.
@@ -710,6 +735,7 @@ Panels A-F depicts ten plots, each for a possible name origin comparison against
 Panel A, C, and E compare the citation (a), quote (c), or mention (e) rate against _Nature_ last author name origins.
 Panel B, D, and F compare the citation (a), quote (c), or mention (e) rate against _Springer Nature_ last author name origins.
 Panels A and B additionally partition the citation rates calculated into two sets, journalist-written articles (salmon) and scientist-written articles (mint green).
+Only Panels C-F contain information from both _Nature_ and _The Guardian_, since no citations were extracted from _The Guardian_ articles.
 For C-F, only journalist written articles are considered.
 ](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig3_tmp/fig3_supp2.png "Supplementary Figure 4"){#fig:suppfig4 tag="Supplemental 4" width=6in}
 
@@ -726,12 +752,13 @@ Panel C and D show the overall word frequencies of the 15 words with the largest
 
 | Processing Step            | Frequency|
 |---------------------------|---------|
-|Total Quotes                |    119998|
-|Quotes with a full name or pronoun associated |    110035|
-|Quotes with a gender prediction     |    109723|
-|Quote with a full name        |    100529|
-|Quotes with a name origin prediction       |    100528|
+|Total Quotes                |    201857|
+|Quotes with a full name or pronoun associated |    180316|
+|Quotes with a gender prediction     |    179967|
+|Quote with a full name        |    161066|
+|Quotes with a name origin prediction       |    159018|
 Table: Breakdown of quotes at major processing steps {#tbl:table1}
+
 
 |Writer of Article                | Total citations| Total  Springer Nature citations| First author citations with a full name| Last author citations with a full name| First author citations with a name origin prediciton| Last author citations with a name origin prediciton|
 |:-------------------|---------------:|------------------------:|-------------------------------:|------------------------------:|---------------------------------------:|--------------------------------------:|
@@ -746,7 +773,7 @@ Table: Breakdown of citations at major processing steps {#tbl:table2}
 |# First + last authors with a full name in  Springer Nature Articles  |     54509|
 |# First + last authors with a gender prediction in  Springer Nature Articles |     50877|
 |# First + last authors with a name origin prediction in  Springer Nature Articles |     54358|
-Table: Breakdown of all  Springer Nature articles at major processing steps {#tbl:table3}
+Table: Breakdown of all  Springer Nature papers at major processing steps {#tbl:table3}
 
 
 | Processing Step       | Frequency|
@@ -755,7 +782,7 @@ Table: Breakdown of all  Springer Nature articles at major processing steps {#tb
 |# First + last authors with a full name in Nature Articles  |     21765|
 |# First + last authors with a gender prediction in Nature Articles |     20942|
 |# First + last authors with a name origin prediction in Nature Articles |     21765|
-Table: Breakdown of all Nature articles at major processing steps {#tbl:table4}
+Table: Breakdown of all Nature papers at major processing steps {#tbl:table4}
 
 
 ## References {.page_break_before}
