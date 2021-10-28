@@ -1,4 +1,4 @@
-# Analysis of scientific journalism in _Nature_ and _The Guardian_ reveals gender and regional disparities in coverage
+# Analysis of science journalism reveals gender and regional disparities in coverage
 
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
@@ -12,12 +12,12 @@
 
 <!-- usage note: edit this section. -->
 
-Science journalism is a critical way in which the public can remain informed and benefit from new scientific findings.
-Such journalism also shapes the public’s view of the current state of scientific findings and legitimizes experts.
+Science journalism informs the public of the process and outcome of research as well as the implications of new scientific findings.
+Such journalism also shapes the public’s view of scientists and legitimizes experts.
 Those covering science can only cite and quote a limited number of sources.
 Sources may be identified by the journalist’s research or by recommendations by other scientists.
 In both cases, biases may influence who is identified and ultimately included as an expert.
-To ensure our results are generalizable, we analyzed two journalism outlets that cater to different demogrgaphics, _Nature_ and _The Guardian_.
+To ensure our results are generalizable, we analyzed two journalism outlets with different target audiences, _Nature_ and _The Guardian_.
 This resulted in 37,748 total articles, 15,747 science-related articles from _The Guardian_ and 22,001 non-research articles published by _Nature_ to quantify possible disparities.
 Our analysis considered three possible sources of disparity: gender, name origin, and country affiliation.
 To explore these sources of disparity, we extracted cited authors’ names and affiliations, as well as extracted names of quoted speakers.
