@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-11-03'
+date-meta: '2021-11-05'
 author-meta:
 - Natalie R. Davidson
 - Casey S. Greene
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
   <meta property="og:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
   <meta property="twitter:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
-  <meta name="dc.date" content="2021-11-03" />
-  <meta name="citation_publication_date" content="2021-11-03" />
+  <meta name="dc.date" content="2021-11-05" />
+  <meta name="citation_publication_date" content="2021-11-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/nature_news_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/0eff9a00b240c7889afbd013de6ad0e4eec9b393/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/0eff9a00b240c7889afbd013de6ad0e4eec9b393/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/0eff9a00b240c7889afbd013de6ad0e4eec9b393/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/82ba1250b09a97b0331fa26069150f4ba0a3a971/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/82ba1250b09a97b0331fa26069150f4ba0a3a971/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/82ba1250b09a97b0331fa26069150f4ba0a3a971/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="og:image" content="https://github.com/nrosed/nature_news_disparities/raw/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/nature_news_manuscript/v/0eff9a00b240c7889afbd013de6ad0e4eec9b393/))
+([permalink](https://greenelab.github.io/nature_news_manuscript/v/82ba1250b09a97b0331fa26069150f4ba0a3a971/))
 was automatically generated
-from [greenelab/nature_news_manuscript@0eff9a0](https://github.com/greenelab/nature_news_manuscript/tree/0eff9a00b240c7889afbd013de6ad0e4eec9b393)
-on November 3, 2021.
+from [greenelab/nature_news_manuscript@82ba125](https://github.com/greenelab/nature_news_manuscript/tree/82ba1250b09a97b0331fa26069150f4ba0a3a971)
+on November 5, 2021.
 </em></small>
 
 ## Authors
@@ -554,15 +554,18 @@ This reveals a large disparity when considering that people with a predicted Eas
 When we again compare _Nature_ articles against last authorship in _Nature_, we observe patterns consistent with the citation analysis with all predicted name origins, except for East Asian and Celtic/English closely matching the predicted name origin rate of last authors in _Nature_ (Figure {@fig:suppfig4}c, dark grey and purple lines).
 We find a similar pattern when we consider _The Guardian_ articles, except we additionally find a depletion of predicted European name origins (Figure {@fig:suppfig4}c, dark grey and light grey lines).
 
-To further understand the source of Celtic/English over-enrichment and East Asian under-enrichment, we selected a subset of quotes from people that were also cited in the news article; again, this analysis could only be completed on _Nature_ articles.
-We found that the under-enrichment of predicted East Asian name origins was greatly reduced, more closely matching the analysis on citations alone (Figure {@fig:suppfig_quote_cite}a,b).
+To further understand the source of Celtic/English over-enrichment and East Asian under-enrichment, we selected a subset of quotes from people whose works were also cited in the news article; again, this analysis could only be completed on _Nature_ articles, since they have citations easily available.
+The purpose of this additional comparison of quoted speakers versus quoted *and* cited speakers was to reveal source gathering patterns beyond cited works.
+We found that the proportion of predicted East Asian name origins was closer to the expected rate after considering only quoted speakers with citations, more closely matching the analysis on citations alone (Figure {@fig:suppfig_quote_cite}a,b).
+This indicates that expert opinions gathered beyond manuscript authors is responsible for a large proportion of the observed name disparities. 
+
 Next, we designed an experiment to test if predicted journalist name origin had any effect on quote disparities.
 We found that journalists with a predicted East Asian name origin had a higher rate of East Asian quoted speakers (26.0%) in comparison to journalists with Celtic/English (3.7%) or European (8.3%) predicted name origins (Table {@tbl:table5}).
-To examine the source of this difference between journalists with different predicted name origins, we looked at a more specific subsection of quotes.
-We added a new constraint that the quotes must be from a cited last author in the same news article (Table {@tbl:table6}) and that the article must have a US affiliation (Table {@tbl:table7}).
+To examine if this was again driven by source gathering beyond manuscript authors we again subsetted the quotes by adding two constraints: 1) the quotes must be from a cited last author in the same news article (Table {@tbl:table6}) and 2) that the cited article must have a US affiliation (Table {@tbl:table7}).
 We found that differences between journalists with different predicted name origins was nearly eliminated when restricting to quoted and cited speakers, and absent with an additional restriction of US affiliated citations, as evidenced in the predicted East Asian column of Table {@tbl:table7}.
 The differences between Table {@tbl:table5} and Tables {@tbl:table6} and {@tbl:table7}, indicate that the predicted name origin of a journalist has some association with sources gathered outside of directly cited works.
-The additional reduction in differences between the predicted name origin groups and quote rates for US-affiliated people could suggest that, while we don't know the locations of journalists at the time an article is written, regional differences in the presence of journalists may play some role in driving the observed disparities.
+The additional reduction in differences between the predicted name origin groups and quote rates for US-affiliated people, could suggest that, while we don't know the locations of journalists at the time an article is written, regional differences in the presence of journalists may play some role in driving the observed disparities.
+This is reflected in the trajectory of changes from Table {@tbl:table6} to {@tbl:table7}, showing the convergence of quote patterns across journalists.
 
 When comparing _Nature_ articles against the _Springer Nature_ set of last authors, we again find the same patterns in quoted speakers with East Asian, Celtic/English, and Arabic/Turkish/Persian predicted name origins when comparing against the  as we did in the previous citation analysis (Figure {@fig:suppfig4}d, green and purple lines).
 Again, when considering _The Guardian_ articles, we find a depletion of predicted European name origins (Figure {@fig:suppfig4}c, green and light grey lines).

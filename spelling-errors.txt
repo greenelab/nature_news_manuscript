@@ -19,7 +19,7 @@ coreference
 coreNLP
 coreNLP’s
 CoV
-dataset
+Dataset
 demogrgaphics
 discriminative
 DOI’s
@@ -65,7 +65,7 @@ reasearcher
 recommenders
 reproducability
 scaped
-scrapy
+Scrapy
 Selby
 SheSource
 Springer
@@ -74,6 +74,7 @@ Steinberg
 subfolder
 subsample
 subsampling
+subsetted
 substring
 suppfig
 textclean
