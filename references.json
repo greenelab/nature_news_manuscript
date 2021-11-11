@@ -908,7 +908,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -947,7 +947,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1018,7 +1018,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1044,7 +1044,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1061,7 +1061,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1086,7 +1086,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1112,7 +1112,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1128,7 +1128,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1145,7 +1145,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1164,7 +1164,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1183,7 +1183,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1217,7 +1217,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1251,7 +1251,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1268,18 +1268,27 @@
   },
   {
     "id": "9uN0d5DN",
-    "type": "webpage",
+    "type": "article-newspaper",
     "abstract": "The Long Read: What three decades in journalism has taught me about the persistence of racism in the US",
-    "container-title": "the Guardian",
-    "language": "en",
-    "title": "The enduring whiteness of the American media | Howard French",
-    "URL": "http://www.theguardian.com/world/2016/may/25/enduring-whiteness-of-american-journalism",
+    "container-title": "The Guardian",
+    "ISSN": "0261-3077",
+    "language": "en-GB",
+    "section": "World news",
+    "source": "The Guardian",
+    "title": "The enduring whiteness of the American media",
+    "URL": "https://www.theguardian.com/world/2016/may/25/enduring-whiteness-of-american-journalism",
+    "author": [
+      {
+        "family": "French",
+        "given": "Howard W."
+      }
+    ],
     "accessed": {
       "date-parts": [
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1313,7 +1322,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },
@@ -1338,7 +1347,7 @@
         [
           "2021",
           11,
-          5
+          11
         ]
       ]
     },

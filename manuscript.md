@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-11-05'
+date-meta: '2021-11-11'
 author-meta:
 - Natalie R. Davidson
 - Casey S. Greene
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
   <meta property="og:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
   <meta property="twitter:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
-  <meta name="dc.date" content="2021-11-05" />
-  <meta name="citation_publication_date" content="2021-11-05" />
+  <meta name="dc.date" content="2021-11-11" />
+  <meta name="citation_publication_date" content="2021-11-11" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/nature_news_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/82ba1250b09a97b0331fa26069150f4ba0a3a971/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/82ba1250b09a97b0331fa26069150f4ba0a3a971/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/82ba1250b09a97b0331fa26069150f4ba0a3a971/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/d55bc92cc407407081d686aa67ddca7ffc7cbd51/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/d55bc92cc407407081d686aa67ddca7ffc7cbd51/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/d55bc92cc407407081d686aa67ddca7ffc7cbd51/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="og:image" content="https://github.com/nrosed/nature_news_disparities/raw/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/nature_news_manuscript/v/82ba1250b09a97b0331fa26069150f4ba0a3a971/))
+([permalink](https://greenelab.github.io/nature_news_manuscript/v/d55bc92cc407407081d686aa67ddca7ffc7cbd51/))
 was automatically generated
-from [greenelab/nature_news_manuscript@82ba125](https://github.com/greenelab/nature_news_manuscript/tree/82ba1250b09a97b0331fa26069150f4ba0a3a971)
-on November 5, 2021.
+from [greenelab/nature_news_manuscript@d55bc92](https://github.com/greenelab/nature_news_manuscript/tree/d55bc92cc407407081d686aa67ddca7ffc7cbd51)
+on November 11, 2021.
 </em></small>
 
 ## Authors
@@ -387,7 +387,7 @@ The coreNLP pipeline also extracts all quotes and associated speakers.
 A custom script described in section [Methods] identifies all citations.
 Panel A, right, charts the analyses done on the extracted names and locations from news articles and papers published by _Nature_.
 Panel B shows the types and amounts of articles that we have used for analyses.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig1_tmp/fig1_main.png "Figure 1"){#fig:fig1 width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig1_tmp/fig1_main.png "Figure 1"){#fig:fig1 width=6in}
 
 
 
@@ -450,7 +450,7 @@ Instead, the observed downward trend of male quotes coincides with additional ar
 Panel E depicts the frequency of quote by article type highlighting an increase in quotes from "Career Feature" articles.
 Panel E depicts that the quotes obtained in this article type have reached parity.
 The colored bands represent a 5th and 95th bootstrap quantiles in all plots, and the point is the mean calculated from 5,000 bootstrap samples.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig2_tmp/fig2_main.png "Figure 2"){#fig:fig2 width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig2_tmp/fig2_main.png "Figure 2"){#fig:fig2 width=6in}
 
 
 To quantify and compare the gender demographic of quoted people and authors, we analyzed their names.
@@ -514,7 +514,7 @@ Similarly, Panels D and E depict two possible trend lines, comparing predicted n
 Furthermore, East Asian name origins are underrepresented in quotes and citations when compared to name origins of last authors, however it was much particularly for citations of non-journalist-written articles versus journalist-written articles.
 Additional information for the cited, quoted, and mentioned people are provided in (Figure {@fig:suppfig3} and {@fig:suppfig4}).
 Furthermore, we recapitulate this finding when comparing against an additional background of _Springer Nature_ published last authors (Figure {@fig:suppfig3}) -->.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig3_tmp/fig3_main.png "Figure 3"){#fig:fig3 width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig3_tmp/fig3_main.png "Figure 3"){#fig:fig3 width=6in}
 
 
 To identify possible disparities with respect to name origin, we again used the extracted names of quoted speakers from _Nature_ and _The Guardian_ news articles and last authors of published papers in _Nature_.
@@ -593,7 +593,7 @@ The left annotation bar titled "median_M_C" is the median difference across all 
 The "Class" annotation column denotes the binarized set definition of each country, either "Cited" or "Mentioned".
 Panel E shows the top 15 words extracted from articles mentioning the countries depicted in Panel D, with the largest proportional frequency between the two defined country sets.
 The width of the bar depicts the log10(Frequency in Mentions +1 / Frequency of Citations +1).
-](https://github.com/nrosed/nature_news_manuscript/raw/main/content/images/fig4_tmp/fig4_main.png "Figure 4"){#fig:fig4 width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig4_tmp/fig4_main.png "Figure 4"){#fig:fig4 width=6in}
 
 
 After finding name origin differences between cited and quoted people in comparison to last authorship rates, we wanted to determine if news articles 1) represent countries at different rates, or 2) vary in the language used to describe scientific content related to each country.
@@ -760,7 +760,7 @@ We would like to thank Jeffrey Perkel for asking thoughtful questions that spurr
 Panel A, depicts the performance of gender prediction for pipeline-identified quoted speakers. 
 Panel B is a histogram of the number of articles that were falsely identified to mention a country by our processing pipeline. 
 Panels C shows the estimated versus true frequency of country mentions within our benchmark dataset. The red line denotes the x = y line.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/supp_fig1_tmp/supp_fig1.png "Supplementary Figure 1"){#fig:suppfig1 tag="Supplemental 1" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/supp_fig1_tmp/supp_fig1.png "Supplementary Figure 1"){#fig:suppfig1 tag="Supplemental 1" width=6in}
 
 ![
 **Predicted male speakers are overrepresented in news quotes regardless of predicted journalist gender**
@@ -768,7 +768,7 @@ Panel A depicts two trend lines: Yellow: Proportion of _Nature_ news articles wr
 We observe almost no gender difference in the number of articles written by male and female journalists.
 Panel B depicts two trend lines: Yellow: Proportion of predicted male quotes in an article written by a predicted female journalist; Blue: Proportion of predicted male quotesin an article  written by a predicted male journalist.
 In all plots, the colored bands represent the 5th and 95th bootstrap quantiles and the point is the mean calculated from 5,000 bootstrap samples.
-](https://github.com/nrosed/nature_news_manuscript/raw/main/content/images/supp_journalist_contingency_tab_tmp/supp_fig.png "Supplementary Figure 2"){#fig:suppfig_j_gender tag="Supplemental 2" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/supp_journalist_contingency_tab_tmp/supp_fig.png "Supplementary Figure 2"){#fig:suppfig_j_gender tag="Supplemental 2" width=6in}
 
 
 ![
@@ -777,14 +777,14 @@ Panel A depicts three trend lines: Purple: Proportion of _Nature_ quotes for an 
 We observe a larger gender difference between first and last authors in _Springer Nature_ articles, however the proportion of predicted male speakers is less than observed in _Nature_ research articles.
 Panel B depicts the proportion of male quotes broken down by article type.
 In all plots the colored bands represent the 5th and 95th bootstrap quantiles and the point is the mean calculated from 5,000 bootstrap samples.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig2_tmp/fig2_supp.png "Supplementary Figure 3"){#fig:suppfig2 tag="Supplemental 3" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig2_tmp/fig2_supp.png "Supplementary Figure 3"){#fig:suppfig2 tag="Supplemental 3" width=6in}
 
 ![
 **Predicted Celtic/English, and European name origins are the highest cited, quoted, and mentioned**
 Panel A, depicts the number of quotes, mentions, citations, or research articles considered in the name origin analysis.
 Panels B-E depicts the proportion of a name origin in a given dataset, citations in articles written by journalists or writers, quoted speakers or mentions.
 In all plots the colored bands represent the 5th and 95th bootstrap quantiles and the point is the mean calculated from 5,000 bootstrap samples.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig3_tmp/fig3_supp.png "Supplementary Figure 4"){#fig:suppfig3 tag="Supplemental 4" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig3_tmp/fig3_supp.png "Supplementary Figure 4"){#fig:suppfig3 tag="Supplemental 4" width=6in}
 
 ![
 **Over-representation of predicted Celtic/English and under-representation of East Asian name origins is also found in _Nature_ and _Springer Nature_ articles**
@@ -794,7 +794,7 @@ Panel B, D, and F compare the citation (a), quote (c), or mention (e) rate again
 Panels A and B additionally partition the citation rates calculated into two sets, journalist-written articles (salmon) and scientist-written articles (mint green).
 Only Panels C-F contain information from both _Nature_ and _The Guardian_, since no citations were extracted from _The Guardian_ articles.
 For C-F, only journalist written articles are considered.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/tmp_files/fig3_tmp/fig3_supp2.png "Supplementary Figure 5"){#fig:suppfig4 tag="Supplemental 5" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig3_tmp/fig3_supp2.png "Supplementary Figure 5"){#fig:suppfig4 tag="Supplemental 5" width=6in}
 
 ![
 **Over-representation of predicted Celtic/English and under-representation of East Asian quotes and mentions are reduced when additionally considering citation**
@@ -802,7 +802,7 @@ Panels A-D depicts twelve plots, each for a possible name origin comparison agai
 Panels A and B compare name origin proportions of quotes from people that were also cited in the same article.
 Panels C and D compare name origin proportions from mentions of people that were also cited in the same article.
 In all plots the colored bands represent the 5th and 95th bootstrap quantiles and the point is the mean calculated from 5,000 bootstrap samples.
-](https://github.com/nrosed/nature_news_manuscript/raw/main/content/images/supp_country_specific_analysis_tmp/supp_fig.png "Supplementary Figure 6"){#fig:suppfig_quote_cite tag="Supplemental 6" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/supp_country_specific_analysis_tmp/supp_fig.png "Supplementary Figure 6"){#fig:suppfig_quote_cite tag="Supplemental 6" width=6in}
 
 
 ![
@@ -813,7 +813,7 @@ Panel B depicts the top and bottom 5% of (mention rate - citation rate).
 Each point represents a country - year pair.
 Blue points are a country that is further considered to be a "Citation" or "Mention" country.
 Panel C and D show the overall word frequencies of the 15 words with the largest ratio of frequencies between "Citation" (panel C) and "Mention" (panel D) countries.
-](https://github.com/nrosed/nature_news_manuscript/raw/main/content/images/fig4_tmp/fig4_supp.png "Supplementary Figure 7"){#fig:suppfig5 tag="Supplemental 7" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig4_tmp/fig4_supp.png "Supplementary Figure 7"){#fig:suppfig5 tag="Supplemental 7" width=6in}
 
 
 | Processing Step            | Frequency|

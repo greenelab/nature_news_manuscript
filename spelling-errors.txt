@@ -19,7 +19,7 @@ coreference
 coreNLP
 coreNLP’s
 CoV
-Dataset
+dataset
 demogrgaphics
 discriminative
 DOI’s
