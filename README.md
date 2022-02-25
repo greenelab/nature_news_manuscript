@@ -14,7 +14,7 @@
 <!-- The following paragraph is a copy-paste from the abstract NO NEED TO EDIT-->
 
 Science journalism is a critical way in which the public can remain informed and benefit from new scientific findings.
-Such journalism also shapes the public’s view of the current state of scientific findings and legitimizes experts.
+Such journalism also shapes the public’s view of scientific findings and legitimizes experts.
 Those covering science can only cite and quote a limited number of sources.
 Sources may be identified by the journalist’s research or by recommendations by other scientists.
 In both cases, biases may influence who is identified and ultimately included as an expert.
