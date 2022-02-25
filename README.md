@@ -20,7 +20,7 @@ Sources may be identified by the journalist’s research or by recommendations b
 In both cases, biases may influence who is identified and ultimately included as an expert.
 <!-- To ensure our results are generalizable, we analyzed two journalism outlets that cater to different demogrgaphics, _Nature_ and _The Guardian_. -->
 To analyze possible biases in science journalism, we analyzed 22,001 non-research articles published by _Nature_.
-We chose to analyze _Nature_ non-research articles since it's research articles provide a natural comparator.
+We chose to analyze _Nature_ non-research articles since its research articles provide a natural comparator.
 Our analysis considered two possible sources of disparity: gender and name origin.
 To explore these sources of disparity, we extracted cited authors’ names as well as extracted names of quoted speakers.
 While citations and quotations within a piece do not reflect the entire information-gathering process, they can provide insight into the demographics of visible sources.
