@@ -1,12 +1,4 @@
 input_id	dealiased_id	standard_id	short_id
-doi:10.7554/eLife.32822	doi:10.7554/eLife.32822	doi:10.7554/elife.32822	IhliSZDo
-pmc:PMC6103790	pmc:PMC6103790	pmc:PMC6103790	mSMVRkoc
-pubmed:30718888	pubmed:30718888	pubmed:30718888	126Wi5Us4
-wikidata:Q56458321	wikidata:Q56458321	wikidata:Q56458321	QhC8yJ7V
-isbn:9780262517638	isbn:9780262517638	isbn:9780262517638	zBPP9YKu
-https://greenelab.github.io/meta-review/	https://greenelab.github.io/meta-review/	url:https://greenelab.github.io/meta-review/	1GGGHdsew
-deep-review	doi:10.1098/rsif.2017.0387	doi:10.1098/rsif.2017.0387	PZMP42Ak
-doi:10.1371/journal.pcbi.1007128	doi:10.1371/journal.pcbi.1007128	doi:10.1371/journal.pcbi.1007128	YuJbg3zO
 https://www.theguardian.com/world/2016/may/25/enduring-whiteness-of-american-journalism	https://www.theguardian.com/world/2016/may/25/enduring-whiteness-of-american-journalism	url:https://www.theguardian.com/world/2016/may/25/enduring-whiteness-of-american-journalism	9uN0d5DN
 https://medium.com/ladybits-on-medium/i-analyzed-a-year-of-my-reporting-for-gender-bias-and-this-is-what-i-found-a16c31e1cdf	https://medium.com/ladybits-on-medium/i-analyzed-a-year-of-my-reporting-for-gender-bias-and-this-is-what-i-found-a16c31e1cdf	url:https://medium.com/ladybits-on-medium/i-analyzed-a-year-of-my-reporting-for-gender-bias-and-this-is-what-i-found-a16c31e1cdf	CR5YHhw8
 https://www.theatlantic.com/technology/archive/2016/02/gender-diversity-journalism/463023	https://www.theatlantic.com/technology/archive/2016/02/gender-diversity-journalism/463023	url:https://www.theatlantic.com/technology/archive/2016/02/gender-diversity-journalism/463023	gud4dlat
@@ -41,3 +33,4 @@ doi:10.7717/peerj-cs.156	doi:10.7717/peerj-cs.156	doi:10.7717/peerj-cs.156	ODb9u
 doi:10.5195/jmla.2021.1252	doi:10.5195/jmla.2021.1252	doi:10.5195/jmla.2021.1252	8CuPqphs
 doi:10.1016/j.cell.2022.01.004	doi:10.1016/j.cell.2022.01.004	doi:10.1016/j.cell.2022.01.004	GCXcas65
 doi:10.1101/2020.10.12.336230	doi:10.1101/2020.10.12.336230	doi:10.1101/2020.10.12.336230	MpfuFcH2
+doi:10.1371/journal.pcbi.1007128	doi:10.1371/journal.pcbi.1007128	doi:10.1371/journal.pcbi.1007128	YuJbg3zO
