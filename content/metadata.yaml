@@ -21,6 +21,7 @@ authors:
     twitter: GreeneScientist
     email: casey.s.greene@cuanschutz.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - University of Colorado School of Medicine, Aurora, Colorado, United States of America; Center for Health AI
+    funders:
+      - The Gordon and Betty Moore Foundation (GBMF 4552)
     corresponding: true
