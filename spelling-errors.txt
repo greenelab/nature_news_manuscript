@@ -8,7 +8,7 @@ cgreene
 codepoint
 codepoints
 collab
-comparator
+Comparator
 coref
 coreference
 coreNLP

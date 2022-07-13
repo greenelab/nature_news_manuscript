@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-03-16'
+date-meta: '2022-07-13'
 author-meta:
 - Natalie R. Davidson
 - Casey S. Greene
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
   <meta property="og:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
   <meta property="twitter:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
-  <meta name="dc.date" content="2022-03-16" />
-  <meta name="citation_publication_date" content="2022-03-16" />
+  <meta name="dc.date" content="2022-07-13" />
+  <meta name="citation_publication_date" content="2022-07-13" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/nature_news_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/87cb98308f8c021c8e838bafd4741607ce07fe77/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/87cb98308f8c021c8e838bafd4741607ce07fe77/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/87cb98308f8c021c8e838bafd4741607ce07fe77/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/ad1cd3fa4092cf9a394eb61a7160b9e710e46cc3/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/ad1cd3fa4092cf9a394eb61a7160b9e710e46cc3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/ad1cd3fa4092cf9a394eb61a7160b9e710e46cc3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="og:image" content="https://github.com/nrosed/nature_news_disparities/raw/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png" />
@@ -67,17 +67,18 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/nature_news_manuscript/v/87cb98308f8c021c8e838bafd4741607ce07fe77/))
+([permalink](https://greenelab.github.io/nature_news_manuscript/v/ad1cd3fa4092cf9a394eb61a7160b9e710e46cc3/))
 was automatically generated
-from [greenelab/nature_news_manuscript@87cb983](https://github.com/greenelab/nature_news_manuscript/tree/87cb98308f8c021c8e838bafd4741607ce07fe77)
-on March 16, 2022.
+from [greenelab/nature_news_manuscript@ad1cd3f](https://github.com/greenelab/nature_news_manuscript/tree/ad1cd3fa4092cf9a394eb61a7160b9e710e46cc3)
+on July 13, 2022.
 </em></small>
 
 ## Authors
 
 
 
-+ **Natalie R. Davidson**<br>
++ **Natalie R. Davidson**
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-1745-8072](https://orcid.org/0000-0002-1745-8072)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
@@ -89,7 +90,8 @@ on March 16, 2022.
      · Funded by The Gordon and Betty Moore Foundation (GBMF 4552)
   </small>
 
-+ **Casey S. Greene**<br>
++ **Casey S. Greene**
+  ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
@@ -102,21 +104,44 @@ on March 16, 2022.
   </small>
 
 
+::: {#correspondence}
+✉ — Correspondence possible via [GitHub Issues](https://github.com/greenelab/nature_news_manuscript/issues)
+or email to
+Casey S. Greene \<casey.s.greene@cuanschutz.edu\>.
+
+
+:::
+
 
 ## Abstract {.page_break_before}
 
-Science journalism is a critical way in which the public can remain informed and benefit from new scientific findings.
+Science journalism is a critical way for the public to learn about and benefit from scientific findings.
+Such journalism shapes the public's view of the current state of science and legitimizes experts.
+Journalists can only cite and quote a limited number of sources, who they may discover in their research, including recommendations by other scientists.
+Biases in either process may influence who is identified and ultimately included as a source.
+To examine potential biases in science journalism, we analyzed 22,001 non-research articles published by Nature and compared these with Nature-published research articles with respect to predicted gender and name origin.
+We extracted cited authors' names and those of quoted speakers.
+While citations and quotations within a piece do not reflect the entire information-gathering process, they can provide insight into the demographics of visible sources.
+We then predicted gender and name origin of the cited authors and speakers.
+We compared articles with a comparator set made up of first and last authors within primary research articles in Nature and a subset of Springer Nature articles in the same time period.
+In our analysis, we found a skew toward male quotation in Nature science journalism.
+However, quotation is trending toward equal representation at a faster rate than authorship rates in academic publishing.
+Gender disparity in Nature quotes was column-dependent.
+We found a significant over-representation of names with predicted Celtic/English origin and under-representation of names with a predicted East Asian origin in both in extracted quotes and journal citations but dampened in citations.
+
+
+<!-- LONG VERSION: Science journalism is a critical way in which the public can remain informed and benefit from new scientific findings.
 Such journalism also shapes the public’s view of the current state of scientific findings and legitimizes experts.
 Those covering science can only cite and quote a limited number of sources.
 Sources may be identified by the journalist’s research or by recommendations by other scientists.
 In both cases, biases may influence who is identified and ultimately included as an expert.
-<!-- To ensure our results are generalizable, we analyzed two journalism outlets that cater to different demogrgaphics, _Nature_ and _The Guardian_. -->
+
 To analyze possible biases in science journalism, we analyzed 22,001 non-research articles published by _Nature_.
-We chose to analyze _Nature_ non-research articles since it's research articles provide a natural comparator.
+We chose to analyze _Nature_ non-research articles since its research articles provide a natural comparator.
 Our analysis considered two possible sources of disparity: gender and name origin.
 To explore these sources of disparity, we extracted cited authors’ names as well as extracted names of quoted speakers.
 While citations and quotations within a piece do not reflect the entire information-gathering process, they can provide insight into the demographics of visible sources.
-We then used the extracted names to predict gender and name origin of the cited authors and speakers. <!-- maybe add caveat here -->
+We then used the extracted names to predict gender and name origin of the cited authors and speakers. 
 
 In order to appropriately quantify the level of difference, we must identify a suitable reference set for comparison.
 We chose first and last authors within primary research articles in _Nature_ and a subset of _Springer Nature_ articles in the same time period as our comparator.
@@ -124,12 +149,15 @@ In our analysis, we found a skew towards male quotation in _Nature_ science jour
 However, quotation is trending toward equal representation at a faster rate than first and last authorship in academic publishing.
 Interestingly, we found that the gender disparity in _Nature_ quotes was column-dependent, with the "Career Features" column reaching gender parity.
 Our name origin analysis found a significant over-representation of names with predicted Celtic/English origin and under-representation of names with a predicted East Asian origin.
-This finding was observed both in extracted quotes and journal citations, but dampened in citations.
+This finding was observed both in extracted quotes and journal citations, but dampened in citations.-->
+
+<!-- extra text -->
 <!-- Finally, we performed an analysis to identify how countries vary in the way that they're described in scientific journalism.
 We focused on two groups of countries: countries that are often mentioned in articles, but do not often have affiliated authors cited, and countries that have affiliated authors that are often cited, but the country is not typically mentioned.
 We found that the articles in which the less cited countries occur tend to have more agricultural, extraction-related, and political terms, whereas articles including highly cited countries have broader scientific terms.
 This discrepancy indicates a possible lack of regional diversity in the reporting of scientific output. -->
 
+<!--To ensure our results are generalizable, we analyzed two journalism outlets that cater to different demogrgaphics, _Nature_ and _The Guardian_. -->
 
 ## Introduction
  
@@ -742,16 +770,22 @@ Their choice of coverage topics and interviewees could help to reduce disparitie
 
 
 
-### Data and Resource availability
+### Data availability
+
+Due to copyright, we are unable to provide the unprocessed scraped data used in this analysis.
+To ensure reproducability without violating copyright, we provide the word frequencies for each news article, the coreNLP output, all analyzed names with an article identifier, as well as any other associated data used in the analyses such as quotes and citations.
+We provide all of this data on [github](https://github.com/greenelab/nature_news_disparities/tree/main/data).
+We also provide data descriptions in our github README, under the header "Quick data folder overview".
+
+
+### Code availability
 
 This manuscript was written using Manubot [@doi:10.1371/journal.pcbi.1007128] and is available on github: [manuscript repository link](https://github.com/greenelab/nature_news_manuscript). 
 All code and metadata is also available on github, [full analysis repository link](https://github.com/greenelab/nature_news_disparities), under a BSD 3-Clause License.
 The code to generate all main and supplemental figures are available as R markdown documents within our main analysis github, in the following subfolder: [notebooks](https://github.com/greenelab/nature_news_disparities/tree/main/figure_notebooks).
-Due to copyright, we are unable to provide the scraped data used in this analysis.
-However, scraping code is available on our main analysis github, in the following subfolder: [scraper](https://github.com/greenelab/nature_news_disparities/tree/main/nature_news_scraper).
-To ensure reproducability without violating copyright, we provide the word frequencies for each news article and the coreNLP output.
-Furthermore, we provide a docker image that can re-run the analysis pipeline using intermediate, pre-processed data and produce all the main and supplemental figures.
+We provide a docker image that can re-run the analysis pipeline using intermediate, pre-processed data and produce all the main and supplemental figures.
 To re-run the entire pipeline (including scraping), the docker image contains all necessary packages and code. 
+Scraping code is available on our main analysis github, in the following subfolder: [scraper](https://github.com/greenelab/nature_news_disparities/tree/main/nature_news_scraper).
 The shell scripts to re-run the entire analysis are provided in the README file in the github repository.
 
 
