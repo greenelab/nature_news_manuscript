@@ -1,0 +1,75 @@
+{
+  "pandoc": {
+    "title": "Analysis of science journalism reveals gender and regional disparities in coverage",
+    "keywords": [
+      "markdown",
+      "publishing",
+      "manubot"
+    ],
+    "lang": "en-US",
+    "date-meta": "2022-10-27",
+    "author-meta": [
+      "Natalie R. Davidson",
+      "Casey S. Greene"
+    ],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Analysis of science journalism reveals gender and regional disparities in coverage\" />\n<meta name=\"citation_title\" content=\"Analysis of science journalism reveals gender and regional disparities in coverage\" />\n<meta property=\"og:title\" content=\"Analysis of science journalism reveals gender and regional disparities in coverage\" />\n<meta property=\"twitter:title\" content=\"Analysis of science journalism reveals gender and regional disparities in coverage\" />\n<meta name=\"dc.date\" content=\"2022-10-27\" />\n<meta name=\"citation_publication_date\" content=\"2022-10-27\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Natalie R. Davidson\" />\n<meta name=\"citation_author_institution\" content=\"University of Colorado School of Medicine, Aurora, Colorado, United States of America; Center for Health AI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1745-8072\" />\n<meta name=\"twitter:creator\" content=\"@n_rose_d\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"University of Colorado School of Medicine, Aurora, Colorado, United States of America; Center for Health AI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"twitter:creator\" content=\"@GreeneScientist\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/nrosed/nature_news_disparities/raw/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/nrosed/nature_news_disparities/raw/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "bibliography": [
+      "content/manual-references.json"
+    ],
+    "manubot-output-bibliography": "output/references.json",
+    "manubot-output-citekeys": "output/citations.tsv",
+    "manubot-requests-cache-path": "ci/cache/requests-cache",
+    "manubot-clear-requests-cache": false
+  },
+  "manubot": {
+    "date": "October 27, 2022",
+    "randomize_author_order": false,
+    "authors": [
+      {
+        "github": "nrosed",
+        "name": "Natalie R. Davidson",
+        "orcid": "0000-0002-1745-8072",
+        "twitter": "n_rose_d",
+        "email": "natalie.davidson@cuanschutz.edu",
+        "affiliations": [
+          "University of Colorado School of Medicine, Aurora, Colorado, United States of America; Center for Health AI"
+        ],
+        "funders": [
+          "The Gordon and Betty Moore Foundation (GBMF 4552)"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "github": "cgreene",
+        "name": "Casey S. Greene",
+        "orcid": "0000-0001-8713-9213",
+        "twitter": "GreeneScientist",
+        "email": "casey.s.greene@cuanschutz.edu",
+        "affiliations": [
+          "University of Colorado School of Medicine, Aurora, Colorado, United States of America; Center for Health AI"
+        ],
+        "funders": [
+          "The Gordon and Betty Moore Foundation (GBMF 4552)"
+        ],
+        "corresponding": true,
+        "affiliation_numbers": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "affiliation": "University of Colorado School of Medicine, Aurora, Colorado, United States of America; Center for Health AI",
+        "affiliation_number": 1
+      }
+    ],
+    "manubot_version": "0.5.2",
+    "rootstock_commit": "9504aa7751e9d5ca0e7df896bf3aeeb73d2fb262",
+    "thumbnail_url": "https://github.com/nrosed/nature_news_disparities/raw/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png",
+    "manuscript_stats": {
+      "word_count": 13197
+    }
+  }
+}

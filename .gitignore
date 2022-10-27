@@ -1,6 +1,6 @@
 # Generated manuscript output files
-output/*
-!output/README.md
+# output/*
+# !output/README.md
 
 webpage/v
 
