@@ -1,4 +1,4 @@
-# Analysis of science journalism reveals gender and regional disparities in coverage
+# Analysis of science journalism reveals disparities in coverage across percieved gender and ethnic identities
 
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
@@ -28,7 +28,7 @@ We then used the extracted names to predict gender and name origin of the cited 
 
 In order to appropriately quantify the level of difference, we must identify a suitable reference set for comparison.
 We chose first and last authors within primary research articles in _Nature_ and a subset of _Springer Nature_ articles in the same time period as our comparator.
-In our analysis, we found a skew towards male quotation in _Nature_ science journalism-related articles.
+In our analysis, we found a skew towards quoting men in _Nature_ science journalism-related articles.
 However, quotation is trending toward equal representation at a faster rate than first and last authorship in academic publishing.
 Interestingly, we found that the gender disparity in _Nature_ quotes was column-dependent, with the "Career Features" column reaching gender parity.
 Our name origin analysis found a significant over-representation of names with predicted Celtic/English origin and under-representation of names with a predicted East Asian origin.
