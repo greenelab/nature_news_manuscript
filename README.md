@@ -1,4 +1,4 @@
-# Analysis of science journalism reveals disparities in coverage across percieved gender and ethnic identities
+# Analysis of science journalism reveals disparities in coverage across predicted gender and ethnic identities
 
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
