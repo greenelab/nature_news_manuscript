@@ -1,6 +1,7 @@
-annotaters
+ArabTurkPers
 authorships
 bg
+boostrap
 breifly
 cardinality
 CelticEnglish
@@ -12,7 +13,7 @@ comparator
 coref
 coreference
 coreNLP
-dataset
+Dataset
 Datasets
 DOI’s
 DOIs
@@ -27,6 +28,7 @@ GreeneScientist
 humaniformat
 json
 Lastname
+lemmatization
 Levenshtein
 LSTM
 mers
@@ -34,8 +36,8 @@ nameorigin
 NamePrism
 ner
 nrosed
-occured
 occuring
+overprediction
 overrepresented
 Perkel
 Pers
@@ -44,7 +46,6 @@ pre
 prediciton
 py
 quantiles
-quotesin
 README
 recommenders
 reproducability
@@ -52,6 +53,7 @@ scaped
 Scrapy
 Selby
 SheSource
+SouthAsian
 springer
 ssplit
 Steinberg
@@ -62,6 +64,10 @@ supfig
 suppfig
 tableFCNature
 tableFCSpringer
+tableGenderNameOrigin
+tokenization
 tokenize
 treemap
 tsv
+underreporting
+webpage
