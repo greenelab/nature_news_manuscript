@@ -9,7 +9,7 @@ cgreene
 codepoint
 codepoints
 collab
-comparator
+Comparator
 coref
 coreference
 coreNLP
@@ -19,6 +19,7 @@ DOI’s
 DOIs
 EastAsian
 Elsevier
+ethnicities
 Firstname
 fullname
 GBMF
@@ -38,6 +39,7 @@ ner
 nrosed
 occuring
 overprediction
+overrepresentation
 overrepresented
 Perkel
 Pers
@@ -50,7 +52,7 @@ README
 recommenders
 reproducability
 scaped
-Scrapy
+scrapy
 Selby
 SheSource
 SouthAsian
@@ -71,3 +73,4 @@ treemap
 tsv
 underreporting
 webpage
+webpages

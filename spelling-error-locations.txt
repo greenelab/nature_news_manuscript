@@ -9,6 +9,7 @@ content/03.methods.md:7:scrapy
 content/03.methods.md:7:Scrapy
 content/03.methods.md:8:Scrapy
 content/03.methods.md:8:webpage
+content/03.methods.md:8:webpages
 content/03.methods.md:9:Scrapy
 content/03.methods.md:10:scrapy
 content/03.methods.md:12:py
@@ -132,11 +133,13 @@ content/04.results.md:209:tableFCSpringer
 content/04.results.md:229:nrosed
 content/04.results.md:256:coreNLP
 content/04.results.md:258:coreNLP
-content/05.discussion.md:24:overrepresented
-content/05.discussion.md:24:overrepresented
-content/05.discussion.md:28:authorships
-content/05.discussion.md:79:authorships
-content/05.discussion.md:96:authorships
+content/05.discussion.md:22:overrepresentation
+content/05.discussion.md:23:overrepresented
+content/05.discussion.md:23:overrepresented
+content/05.discussion.md:29:authorships
+content/05.discussion.md:41:ethnicities
+content/05.discussion.md:78:authorships
+content/05.discussion.md:95:authorships
 content/05.discussion.md:109:shesource
 content/05.discussion.md:109:SheSource
 content/05.discussion.md:110:Selby
