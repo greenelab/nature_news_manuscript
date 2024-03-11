@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-03-07'
+date-meta: '2024-03-11'
 author-meta:
 - Natalie R. Davidson
 - Casey S. Greene
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
   <meta property="og:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
   <meta property="twitter:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
-  <meta name="dc.date" content="2024-03-07" />
-  <meta name="citation_publication_date" content="2024-03-07" />
+  <meta name="dc.date" content="2024-03-11" />
+  <meta name="citation_publication_date" content="2024-03-11" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,7 +70,7 @@ This manuscript
 ([permalink](https://greenelab.github.io/nature_news_manuscript/v/1764d963796921cd6403a26a106c86e63475dcba/))
 was automatically generated
 from [greenelab/nature_news_manuscript@1764d96](https://github.com/greenelab/nature_news_manuscript/tree/1764d963796921cd6403a26a106c86e63475dcba)
-on March 7, 2024.
+on March 11, 2024.
 </em></small>
 
 ## Authors

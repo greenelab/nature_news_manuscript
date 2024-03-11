@@ -52,11 +52,11 @@ README
 recommenders
 reproducability
 scaped
-scrapy
+Scrapy
 Selby
 SheSource
 SouthAsian
-springer
+Springer
 ssplit
 Steinberg
 subfolder
