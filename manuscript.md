@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-03-11'
+date-meta: '2024-03-15'
 author-meta:
 - Natalie R. Davidson
 - Casey S. Greene
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
   <meta property="og:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
   <meta property="twitter:title" content="Analysis of science journalism reveals gender and regional disparities in coverage" />
-  <meta name="dc.date" content="2024-03-11" />
-  <meta name="citation_publication_date" content="2024-03-11" />
+  <meta name="dc.date" content="2024-03-15" />
+  <meta name="citation_publication_date" content="2024-03-15" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/nature_news_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/nature_news_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/1764d963796921cd6403a26a106c86e63475dcba/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/1764d963796921cd6403a26a106c86e63475dcba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/1764d963796921cd6403a26a106c86e63475dcba/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/nature_news_manuscript/v/e0b1ead87f75788feb34b17d6754048bdf14c4f2/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/e0b1ead87f75788feb34b17d6754048bdf14c4f2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/nature_news_manuscript/v/e0b1ead87f75788feb34b17d6754048bdf14c4f2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="og:image" content="https://github.com/nrosed/nature_news_disparities/raw/0253bf0db8871f17d1e41182b61eeffc2721d43c/figure_notebooks/illustrator_pdfs/nature_news_ex_fig1b.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/nature_news_manuscript/v/1764d963796921cd6403a26a106c86e63475dcba/))
+([permalink](https://greenelab.github.io/nature_news_manuscript/v/e0b1ead87f75788feb34b17d6754048bdf14c4f2/))
 was automatically generated
-from [greenelab/nature_news_manuscript@1764d96](https://github.com/greenelab/nature_news_manuscript/tree/1764d963796921cd6403a26a106c86e63475dcba)
-on March 11, 2024.
+from [greenelab/nature_news_manuscript@e0b1ead](https://github.com/greenelab/nature_news_manuscript/tree/e0b1ead87f75788feb34b17d6754048bdf14c4f2)
+on March 15, 2024.
 </em></small>
 
 ## Authors
@@ -209,222 +209,6 @@ However, auditing is only part of the solution; journalists and source recommend
 To help change these patterns, there exist guides [@https://www.theopennotebook.com/2016/08/23/including-diverse-voices-in-science-stories], databases [@https://gage.500womenscientists.org, @https://www.womensmediacenter.com/shesource], and affinity groups that can help us all expand our vision of who can be considered a field expert.
 
 
-## Methods
-
-### Data Acquisition and Processing
-
-#### Text Scraping
-
-We scraped all text and metadata from _Nature_ using the web-crawling framework Scrapy [@https://scrapy.org] (version 2.4.1).
-Scrapy is a tool that applies user-defined rules to follow hyperlinks on webpages and return the information contained on each webpage.
-We used Scrapy to extract all web pages containing news articles and extract the text.
-We created four independent scrapy web spiders to process the news text, news citations, journalist names, and paper metadata.
-News articles were defined as all articles from 2005 to 2020 that were designated as "News", "News Feature", "Career Feature", "Technology Feature", and "Toolbox".
-Using the spider “target_year_crawl.py”, we scraped the title and main text from all news articles.
-We character normalized the main text by mapping visually identical Unicode codepoints to a single Unicode codepoint and stripping many invalid Unicode characters.
-Using an additional spider defined in “doi_crawl.py”, we scaped all citations within news articles.
-For simplicity, we only considered citations with a DOI included in either text or a hyperlink in this spider.
-Other possible forms of citations, e.g., titles, were not included.
-The DOIs were then queried using the _Springer Nature_ API.
-The spider “article_author_crawl.py” scraped all articles designated "Article" or "Letters" from 2005 to 2020.
-We only scraped author names, author positions, and associated affiliations from research articles, which we refer to as _papers_.
-It should be noted that "News" article designations changed over time and partially explain the changing frequency of news articles within each category.
-The frequency of "News" articles decreased, but more specific news-related article types increased.
-Additionally, scraping for journalist names was performed months after the initial scraping of the text, and some aspects of the _Nature_ website changed.
-Website changes caused us to lose unique file mappings between the scraped journalist name and other article metadata for 137 articles.
-Less than thirty articles per year were impacted.
-
-<!--#### _The Guardian_ API
-
-To obtain science-related articles from _The Guardian_, we used their API which is available here: https://open-platform.theguardian.com/.
-We queried for 100 articles in the "science" section per month from 2005 to 2020, which typically covered all available articles.
-All html was removed using the R package textclean [@https://cran.r-project.org/web/packages/textclean/index.html].
-Similar to the data scraped from _Nature_, we also mapped visually identical Unicode codepoints to a single Unicode codepoint and stripped all non-ASCII characters.
-Since citations are hyperlinked in-line, we did not extract any citation information from _The Guaradian_.
--->
-
-#### coreNLP
-
-After the news articles were scraped and processed, the text was processed using the coreNLP pipeline [@doi:10.3115/v1/P14-5010] (version 4.2.0).
-The main purpose for using coreNLP was to identify named entities related to mentioned and quoted speakers.
-We used the standard set of annotators: tokenize, ssplit, pos, lemma, ner, parse, coref, and additionally the quote annotator.
-Each of which respectively performs text tokenization, sentence splitting, part of speech recognition, lemmatization, named entity recognition, division of sentences into constituent phrases, co-reference resolution, and identification of quoted entities.
-We used the "statistical" algorithm to perform coreference resolution for speed.
-Each of these aspects is required in order to identify the names of quoted or mentioned speakers and identify any of their associated pronouns.
-All results were output to json format for further downstream processing.
-
-
-#### _Springer Nature_ API
-
-_Springer Nature_ was chosen over other publishers and search engines for multiple reasons: 1) ease of use; 2) it is a large publisher, second only to Elsevier; 3) it covers diverse subjects, in contrast to PubMed, which focuses on the biomedical and life sciences literature; 4) its API has a large daily query limit (5000/day); and 5) it provided more author affiliation information than found in Elsevier. 
-We generated a comparative background set for supplemental analysis with the _Springer Nature_ API by obtaining author information for papers cited in news articles.
-We selected a subset of papers to generate the _Springer Nature_ background set.
-These papers were the first 200 English language "Journal" papers returned by the _Springer Nature_ API for each month, resulting in 2400 papers per year from 2005 through 2020.
-These papers are the first 200 papers published each month by a _Springer Nature_ journal, which may not be completely random, but we believe to be a reasonably representative sample.
-Furthermore, the _Springer Nature_ articles are only being used as an additional comparator to the complete set of all _Nature_ research papers used in our analyses.
-To obtain the author information for the cited papers, we queried the _Springer Nature_ API using the scraped DOI.
-For both API query types, the author names, positions, and affiliations for each publication were stored and are available in "all_author_country.tsv" and "all_author_fullname.tsv".
- 
-### Name Formatting
-
-#### Name Formatting for Gender Prediction in Quotes or Mentions
-We first pre-filter articles that have more than 25 quotes, which results in the removal of 2.69% (433/16,080) of the total articles.
-This was done to ensure no single article is over-represented and to avoid spuriously identified quotes due to unusual article formatting.
-To identify the gender of a quoted or mentioned person, we first attempt to identify the person’s full name.
-Even though genderizeR, the computational method used to predict the name's gender, only uses the first name to make the gender prediction, identifying the full name gives us greater confidence that we correctly identified the first name.
-To identify the full name, we take the predicted speaker by coreNLP.
-Unfortunately, this is not always the full name and is only either the first or last name, with the full name occuring somewhere else in the article.
-In order to get the full name for all names that coreNLP is unable to identify, we match the coreNLP-identified partial name to the longest matching name within the same article.
-We match names by finding the longest mentioned name in the article with minimal edit (Levenshtein) distance.
-The name with the smallest edit distance, where character deletions have zero cost, is defined as the matching name.
-Character deletion was assigned a zero cost because we would like exact substring matches.
-For example, the calculated cost, including a cost for character deletion, between John and John Steinberg is 10; without character deletion, it is 0.
-Compared with the distance between John and Jane Doe, with character deletion cost, it is 7; without it is 2.
-If we are still unable to find a full name, or if coreNLP cannot identify a speaker at all, we also determine whether or not coreNLP linked a gendered pronoun to the quote.
-If so, we predict that the gender of the speaker is the gender of the pronoun.
-We ignore all quotes with no name or partial names and no associated pronouns.
-A summary of processed gender predictions of quotes at each point of processing is provided in Table {@tbl:table1}.
-
-
-#### Name Formatting for Gender Prediction of Authors
-
-Because we separate first and last authors, we only considered papers with more than one author.
-Roughly 7% of all papers were estimated to be single authors and removed from this analysis: 1113/15013  for cited Springer articles, 2899/42155 for random Springer articles, 955/12459 for Nature research articles.
-As for quotes, we needed to extract the first name of the authors.
-We cast names to lowercase and processed them using the R package humaniformat [@https://cran.r-project.org/web/packages/humaniformat/index.html].
-humaniformat is a rule based program that uses character markers to identify if names are reversed (Lastname, Firstname), find middle names and titles.
-This processing was not required for quote prediction because names written in news articles did not appear to be reversed or abbreviated.
-Since many last or first authorships may be non-names, we additionally filtered out any identified names if they partially or fully match any of the following terms: "consortium", "group", "initiative", "team", "collab", "committee", "center", "program", "author", or "institute".
-Furthermore, since many papers only contain first name initials (for example, "N. Davidson"), we remove any names less than four letters (length includes punctuation) and containing a "." or "-", then strip out all periods from the first name.
-This ensures that hyphenated names are not changed, e.g. Julia-Louise remains unchanged, but removes hyphenated initials, e.g. J-L.
-<!--Finally, we only consider any remaining first names of one or more characters.
-This is to eliminate first and middle jointly-initialized names.
-For example, "NR Davidson" would be reduced to "Davidson" and then eliminated due to the lack of a first name. -->
-A summary of processed author gender predictions at each point of processing is provided in Tables {@tbl:table2} - {@tbl:table4}.
-
-
-#### Name Formatting for Name Origin Prediction
-In contrast to the gender prediction, we require the entire name in all steps of name origin prediction.
-For names identified in the _Nature_ news articles, we use the same process as described for the gender prediction; we again try to identify the full name.
-For author names, we process the names as previously described for the gender prediction of authors.
-For all names, we only consider them in our analyses if they consist of two distinct parts separated by a space and excluding titles (e.g. Mrs., Prof.,  Dr., etc.).
-All names that were filtered out in the analysis of quotes and mentions are provided on our github in the file "data/author_data/all_mentioned_fullname_excluded.tsv" and "data/author_data/all_speaker_fullname_excluded.tsv".
-<!-- Additionally, if a full name is less than three characters, we were unable to consider it as the prediction model that we apply uses 3-mers. ## removed this because this does not occur. -->
-A summary of processed name origin predictions of quotes and citations at each point of processing is provided in Tables {@tbl:table1} - {@tbl:table4}.
-
-
-### Gender Analysis
-
-The quote extraction and attribution annotator from the coreNLP pipeline was employed to identify quotes and their associated speakers in the article text.
-In some cases, coreNLP could not identify an associated speaker’s name but instead assigned a gendered pronoun.
-In these instances, we used the gender of the pronoun for the analysis.
-The R package genderizeR [@doi:10.32614/rj-2016-002], a wrapper for the genderize.io API [@https://genderize.io], predicted the gender of authors and speakers.
-We predicted a name as indicating a man if the first name was predicted by genderizeR to come from a man with at least a probability of 50%.
-To reduce the number of queries made to genderize.io, a previously cached gender prediction from [@doi:10.1101/2020.04.14.927251] was also used and can be found in the file "genderize.tsv".
-All first name predictions from this analysis are in the file "genderize_update.tsv".
-To estimate the gender gap for the quote gender analyses, we used the proportion of total quotes, not quoted speakers.
-We used the proportion of quotes to measure speaker participation instead of only the diversity of speakers.
-The specific formulas for a single year are shown in equations @eq:quote and @eq:first-author.
-We did not consider any names where no prediction could be made or quotes where neither speaker nor gendered pronoun was associated.
-
-$$\textrm{Prop. Quotes from Men} = \frac{|\textrm{Speaker Quotes from Men}|} {|\textrm{Speaker Quotes from Men or Women}|}$${#eq:quote}
- 
-$$\textrm{Prop. First Author Men} = \frac{|\textrm{First Authors Men}|} {|\textrm{First Author Men or Women}|}$${#eq:first-author}
- 
-### Name Origin Analysis
-
-We used the same quoted speakers as described in the previous section for the name origin analysis.
-In addition, we also consider all authors cited in a _Nature_ news article.
-In contrast to the gender prediction, we need to use the full name to predict name origin.
-We submitted all extracted full names to Wiki-2019LSTM [@doi:10.1101/2020.04.14.927251] to predict one of ten possible name origins: African, Celtic/English, East Asian, European, Greek, Hispanic, Hebrew, Arabic/Turkish/Persian, Nordic, and South Asian.
-While a full description of Wiki-2019LSTM is outside the scope of this paper, we describe it here breifly.
-Wiki-2019LSTM is trained on name and nationality pairs, using 3-mers of the characters in a name to predict a nationality.
-To ensure robust predictions, nationalities were grouped together as described in NamePrism [@doi:10.1145/3132847.3133008].
-NamePrism chose to exclude the United States, Australia, and Canada from their country groupings and were therefore excluded during training of Wiki-2019LSTM.
-This choice was justified by NamePrism in stating that these countries had a high level of immigration.
-The treemap of country groupings defined in the NamePrism manuscript are found in figure 5 of the publication [@doi:10.1145/3132847.3133008]. 
-
-After running the pre-trained Wiki-2019LSTM model, we used the probability origin for each name instead of a hard assignment to a single class.
-Hard assignment was not used because it has been shown to reproduce biases due to the underreporting of Black and overprediction of White individuals [@doi:10.1371/journal.pone.0264270].
-Similar to the gender analyses, quote proportions were again directly compared against publication rates, except using the probability of assignment instead of the count of hard assignments.
-For citations, quotes, and mentions, we calculated the proportion for a given year for each name origin.
-This is shown in Eq. @eq:cite-origin to, for example, calculate the citation rate for last authors with a Greek name origin for a single year.
- 
-$$\textrm{Prop. Greek Last Author Cited} = \frac{\Sigma \textrm{(Probability Greek Name for each Cited Last Author)}} {|\textrm{Cited Last Authors w/any Name}|}$${#eq:cite-origin}
-
-$$\textrm{Prop. Greek Quotes} = \frac{\Sigma \textrm{(Probability Greek Name for each Quoted Speaker)}} {| \textrm{Quotes w/any Named Speaker}|}$${#eq:quote-origin}
-
-$$\textrm{Prop. Greek Names Mentioned} = \frac{\Sigma \textrm{(Probability Greek Mentioned Name)}} {| \textrm{Unique Names w/any Origin Mentioned}|}$${#eq:quote-origin}
-
-<!--
-### Identifying Quotes or Mentions with a Country Affiliation
-
-We assigned affiliations to quoted or mentioned people when their name was also a cited first or last author in the same news article.
-All country affiliations within the cited article were assigned to the quoted or mentioned person.
-For example, if a reasearcher was affiliated with an Austrian university, but the cited paper has authors from both Austria, France, and the United States, the researcher will be given three affiliations.
-University or Institution of the author was mapped to a country using OpenStreetMap [@https://www.openstreetmap.org].
-
- 
-
-### Country Mention Proportions
-
-We estimated the prevalence of a country’s mentions by including all identified organizations, countries, states, or provinces from coreNLP's named entity annotater.
-We queried the resultant terms using OpenStreetMap [@https://www.openstreetmap.org] to identify the associated country with the term.
-All terms that were identified in the text 25 or more times were visually inspected for correctness.
-Hand-edited entries are denoted in the OpenStreetMap cache file "osm_cache.tsv" by the column "hand_edited".
-Still, this only accounts for less than 5% of the total entries.
-Furthermore, country-associated terms identified by coreNLP may be ambiguous, causing OpenStreetMap to return incorrect locations.
-Therefore, we count country mentions only if we find at least two unique country-associated terms in an article.
-We calculate the mentioned rate as the proportion of country-specific mentions divided by the total articles for a particular year, as exemplified in @eq:mention for calculating the mentioned rate for Mexico for a single year.
- 
-$$\textrm{Prop. Mexico Mentions} = \frac{|\textrm{Articles with} \geq 2 \textrm{ unique Mexico-related terms}|} {|\textrm{All News Articles}|}$${#eq:mention}
- 
-### Country Citation Proportions
-
-To identify the citation rate of a particular country, we processed all authors’ affiliations for a specific article.
-Since the affiliations could be in multiple formats, we again used OpenStreetMap to identify the country affiliation.
-Additionally, we considered all affiliations for a single author.
-We calculated a countries' citation rate as the number of citations for a country divided by either the number of _Nature_ papers (@eq:mention-bg) or the total number of papers cited by news articles for that year (@eq:mention-news).
-Shown below are example calculations for Colombia for a single year.
- 
-$$\textrm{Prop. CO Affil. in Nature} = \frac{|\textrm{Articles with} \geq 1 \textrm{ CO affil. in Nature}|} {|\textrm{All Nature Research Articles}|}$${#eq:mention-bg}
- 
-$$\textrm{Prop. CO Affil. Citations} = \frac{|\textrm{Cited Articles in News with} \geq 1 \textrm{ CO affil.}|} {|\textrm{All Articles Cited in News}|}$${#eq:mention-news}
- 
-### Divergent Word Identification
-
-As mentioned in our previous description of how we utilized _The Guardian_ API, no citations were extracted from _The Guardian_, only _Nature_ articles were used in this analysis.
-After calculating the citation and mention proportion for each country, we identified countries outlying in their comparative citation or mention rate.
-Outlier detection was done by subtracting the citation and mention rates, then identifying which countries were in the top or bottom 5% from each year.
-We only considered countries identified as either high citation (Set C) or high mention (Set M) across all years.
-We did not consider any country that was in the top and bottom 5% in different years.
-Additionally, we only considered a country if cited or mentioned five times in a single year.
-Once we identified the set of C and M countries, we analyzed the word frequencies in all news articles where the set C or M country was mentioned but not cited.
-We believe this would provide insight into content differences between set C and M countries.
-Text from articles in 2020 were not considered due to an excess of SARS-CoV-2 related terms.
-Using the R package tidytext [@https://cran.r-project.org/web/packages/tidytext/index.html] we extracted tokens, removed stop words, and calculated the token frequencies across all articles.
-We only consider tokens in set C or M articles if the token has been observed at least 100 times across all articles.
-We then identify tokens that have the most significant ratio of usage between the two sets.
-Since there are differences in the number of articles per country within each set, we calculated a token frequency within a set as the median frequency within each countries associated articles.
-We calculated the resultant token ratio as the country normalized citation frequency to the country normalized mention frequency.
-To avoid divide by zero errors, a pseudocount of 1 is added to both the numerator and denominator.
-We assert that the term must be observed at least once in each set.
--->
-
-### Bootstrap Estimations
- 
-We used the boostrap method to construct confidence intervals for each of our calculated statistics.
-For all analyses related to equations @eq:quote - @eq:quote-origin, we independently selected 1,000 bootstrap samples for each year.
-We sampled with replacement of size equal to the cardinality of the complete set of interest.
-Bootstrap estimates for equations @eq:quote - @eq:quote-origin were performed by sampling the denominator set.
-The mean, 5th, 95th quantiles across the estimates are reported as the estimated mean, lower, and upper bounds.
-<!--For the divergent word analysis, due to computational constraints, we only took 1000 bootstrap samples.
-The bootstrap estimates were taken by subsampling the news articles with replacement, each time recalculating the country-normalized token frequencies within each country set (C and M).
-After the normalized frequencies within each country set were calculated, we calculated the ratio between country sets for each subsample with a pseudocount of 1 in the numerator and denominator, (C+1)/(M+1).
-Again, the mean, 5th, 95th quantiles across the estimates are reported as the estimated mean, lower, and upper bounds.-->
-
-
-
 ## Results
 
 ![
@@ -514,7 +298,7 @@ Figure @fig:fig2 shows an overview of the process and example input data for thi
 These analyses relied upon accurate gender prediction of both authors and speakers.
 To predict the gender of the speaker or author, we used the package genderizeR [@doi:10.32614/rj-2016-002], an R package wrapper to access the genderize.io API [@https://genderize.io] to get binary gender predictions for each identified first name.
 We unfortunately cannot identify non-binary gender expression with the tools we used.
-Performance of binary prediction was evaluated on a benchmark data set of thirty randomly selected news articles, ten from each of the following years: 2005, 2010, 2015 (Figure {@fig:suppfig1}a).
+Performance of binary prediction was evaluated on a benchmark data set of thirty randomly selected news articles, ten from each of the following years: 2005, 2010, 2015 (Figure {@fig:suppfig1}).
 In addition, genderize.io has been found by independent researchers to have an error rate comparable to other published gender prediction methods, with a error-rate on predicted names below 6% [@doi:10.7717/peerj-cs.156;@doi:10.5195/jmla.2021.1252].
 However, it should be noted that the error rate varies by name origin with the largest decrease in performance on names with an Asian origin [@doi:10.7717/peerj-cs.156;@doi:10.5195/jmla.2021.1252].
 In our analysis, we did not observe a large difference in names predicted to come from a man or woman between predicted East Asian and other name origins (Table{@tbl:tableGenderNameOrigin}).
@@ -594,9 +378,9 @@ Minimum and median per data type over all years: _Nature_ papers, (568, 684); _S
 
 In comparing the citation rate of first and last author name origins in news articles, we decided to additionally analyze scientist-written articles.
 Though fewer in number, scientist-written news articles have many citations, making the set sufficient for analysis and providing an opportunity to measure differences in citation patterns between journalists and scientists.
-In both journalist- and scientist-written articles, we found that most cited name origins were predicted Celtic/English or European, both with a bootstrapped estimated citation rate between 19.2-42.8% (Figure {@fig:suppfig3}b,c).
-East Asian predicted name origins are the third highest proportion of cited names, with a bootstrapped estimated citation rate between 6.4-28.8%.
-All other predicted name origins individually account for less than 7.9% of total cited authors. 
+In both journalist- and scientist-written articles, we found that most cited name origins were predicted Celtic/English or European, both with a bootstrapped estimated citation rate between 17.9-39.6% (Figure {@fig:suppfig3}b,c).
+East Asian predicted name origins are the third highest proportion of cited names, with a bootstrapped estimated citation rate between 7.3-28.1%.
+All other predicted name origins individually account for less than 8.1% of total cited authors.
 
 We analyzed how these distributions compare to the composition of the first and last authors in _Nature_ (Figure {@fig:supfig_nameorigin_bg}), by examining the top three most frequent predicted name origins (Figure {@fig:fig3}b,c, Table {@tbl:tableFCNature}).
 When considering only first authors, we found a slight over-representation for predicted Celtic/English name origins and a small under-representation for predicted East Asian name origins in scientist-written and journalist-written news articles when compared to the composition of first authors in _Nature_ (Figure {@fig:fig3}b, c).
@@ -610,8 +394,8 @@ Additionally, we see a difference in predicted Arabic/Turkish/Persian name origi
 
 We then sought to determine whether or not the quoted speaker demographic replicated the cited authors’ over- and under-representation patterns.
 We found a much stronger Celtic/English over-representation in comparison to citation patterns, with quotes from those with Celtic/English name origins at a much higher frequency than quotes from those with European name origins (Figure {@fig:suppfig3}d, Table {@tbl:tableFCNature}).
-We also found a much stronger reduction of quotes from people with predicted East Asian name origins (Figure {@fig:suppfig3}b), with never more than 7.7% of quotes (Figure {@fig:fig3}d, Table {@tbl:tableFCNature}).
-This reveals a large disparity when considering that people with a predicted East Asian name origin constitute between 14.3-33.6% of last authors cited in either journalist- or scientist-written news articles (Figure {@fig:fig3}b,c, Table {@tbl:tableFCNature}).
+We also found a much stronger reduction of quotes from people with predicted East Asian name origins (Figure {@fig:suppfig3}b), with never more than 8.2% of quotes (Figure {@fig:fig3}d, Table {@tbl:tableFCNature}).
+This reveals a large disparity when considering that people with a predicted East Asian name origin constitute between 7.3-24.6% of last authors cited in either journalist- or scientist-written news articles (Figure {@fig:fig3}b,c, Table {@tbl:tableFCNature}).
 When we compare against first and last authorship in _Nature_ across all predicted name origins, we find that for all other name origins except for East Asian and Celtic/English, the quote rates closely matches the predicted name origin rate of first and last authors in _Nature_ (Figure {@fig:suppfig4}c, dark grey and light blue lines compare to the purple lines).
 
 To further understand the source of Celtic/English over-representation and East Asian under-representation, we selected a subset of quotes from people whose works were also cited in the news article.
@@ -842,6 +626,222 @@ Journalists and the scientists they interview have a unique opportunity to shape
 Their choice of coverage topics and interviewees could help to reduce disparities in the outputs of science-related journalism.
 
 
+## Methods
+
+### Data Acquisition and Processing
+
+#### Text Scraping
+
+We scraped all text and metadata from _Nature_ using the web-crawling framework Scrapy [@https://scrapy.org] (version 2.4.1).
+Scrapy is a tool that applies user-defined rules to follow hyperlinks on webpages and return the information contained on each webpage.
+We used Scrapy to extract all web pages containing news articles and extract the text.
+We created four independent scrapy web spiders to process the news text, news citations, journalist names, and paper metadata.
+News articles were defined as all articles from 2005 to 2020 that were designated as "News", "News Feature", "Career Feature", "Technology Feature", and "Toolbox".
+Using the spider “target_year_crawl.py”, we scraped the title and main text from all news articles.
+We character normalized the main text by mapping visually identical Unicode codepoints to a single Unicode codepoint and stripping many invalid Unicode characters.
+Using an additional spider defined in “doi_crawl.py”, we scaped all citations within news articles.
+For simplicity, we only considered citations with a DOI included in either text or a hyperlink in this spider.
+Other possible forms of citations, e.g., titles, were not included.
+The DOIs were then queried using the _Springer Nature_ API.
+The spider “article_author_crawl.py” scraped all articles designated "Article" or "Letters" from 2005 to 2020.
+We only scraped author names, author positions, and associated affiliations from research articles, which we refer to as _papers_.
+It should be noted that "News" article designations changed over time and partially explain the changing frequency of news articles within each category.
+The frequency of "News" articles decreased, but more specific news-related article types increased.
+Additionally, scraping for journalist names was performed months after the initial scraping of the text, and some aspects of the _Nature_ website changed.
+Website changes caused us to lose unique file mappings between the scraped journalist name and other article metadata for 137 articles.
+Less than thirty articles per year were impacted.
+
+<!--#### _The Guardian_ API
+
+To obtain science-related articles from _The Guardian_, we used their API which is available here: https://open-platform.theguardian.com/.
+We queried for 100 articles in the "science" section per month from 2005 to 2020, which typically covered all available articles.
+All html was removed using the R package textclean [@https://cran.r-project.org/web/packages/textclean/index.html].
+Similar to the data scraped from _Nature_, we also mapped visually identical Unicode codepoints to a single Unicode codepoint and stripped all non-ASCII characters.
+Since citations are hyperlinked in-line, we did not extract any citation information from _The Guaradian_.
+-->
+
+#### coreNLP
+
+After the news articles were scraped and processed, the text was processed using the coreNLP pipeline [@doi:10.3115/v1/P14-5010] (version 4.2.0).
+The main purpose for using coreNLP was to identify named entities related to mentioned and quoted speakers.
+We used the standard set of annotators: tokenize, ssplit, pos, lemma, ner, parse, coref, and additionally the quote annotator.
+Each of which respectively performs text tokenization, sentence splitting, part of speech recognition, lemmatization, named entity recognition, division of sentences into constituent phrases, co-reference resolution, and identification of quoted entities.
+We used the "statistical" algorithm to perform coreference resolution for speed.
+Each of these aspects is required in order to identify the names of quoted or mentioned speakers and identify any of their associated pronouns.
+All results were output to json format for further downstream processing.
+
+
+#### _Springer Nature_ API
+
+_Springer Nature_ was chosen over other publishers and search engines for multiple reasons: 1) ease of use; 2) it is a large publisher, second only to Elsevier; 3) it covers diverse subjects, in contrast to PubMed, which focuses on the biomedical and life sciences literature; 4) its API has a large daily query limit (5000/day); and 5) it provided more author affiliation information than found in Elsevier. 
+We generated a comparative background set for supplemental analysis with the _Springer Nature_ API by obtaining author information for papers cited in news articles.
+We selected a subset of papers to generate the _Springer Nature_ background set.
+These papers were the first 200 English language "Journal" papers returned by the _Springer Nature_ API for each month, resulting in 2400 papers per year from 2005 through 2020.
+These papers are the first 200 papers published each month by a _Springer Nature_ journal, which may not be completely random, but we believe to be a reasonably representative sample.
+Furthermore, the _Springer Nature_ articles are only being used as an additional comparator to the complete set of all _Nature_ research papers used in our analyses.
+To obtain the author information for the cited papers, we queried the _Springer Nature_ API using the scraped DOI.
+For both API query types, the author names, positions, and affiliations for each publication were stored and are available in "all_author_country.tsv" and "all_author_fullname.tsv".
+ 
+### Name Formatting
+
+#### Name Formatting for Gender Prediction in Quotes or Mentions
+We first pre-filter articles that have more than 25 quotes, which results in the removal of 2.69% (433/16,080) of the total articles.
+This was done to ensure no single article is over-represented and to avoid spuriously identified quotes due to unusual article formatting.
+To identify the gender of a quoted or mentioned person, we first attempt to identify the person’s full name.
+Even though genderizeR, the computational method used to predict the name's gender, only uses the first name to make the gender prediction, identifying the full name gives us greater confidence that we correctly identified the first name.
+To identify the full name, we take the predicted speaker by coreNLP.
+Unfortunately, this is not always the full name and is only either the first or last name, with the full name occuring somewhere else in the article.
+In order to get the full name for all names that coreNLP is unable to identify, we match the coreNLP-identified partial name to the longest matching name within the same article.
+We match names by finding the longest mentioned name in the article with minimal edit (Levenshtein) distance.
+The name with the smallest edit distance, where character deletions have zero cost, is defined as the matching name.
+Character deletion was assigned a zero cost because we would like exact substring matches.
+For example, the calculated cost, including a cost for character deletion, between John and John Steinberg is 10; without character deletion, it is 0.
+Compared with the distance between John and Jane Doe, with character deletion cost, it is 7; without it is 2.
+If we are still unable to find a full name, or if coreNLP cannot identify a speaker at all, we also determine whether or not coreNLP linked a gendered pronoun to the quote.
+If so, we predict that the gender of the speaker is the gender of the pronoun.
+We ignore all quotes with no name or partial names and no associated pronouns.
+A summary of processed gender predictions of quotes at each point of processing is provided in Table {@tbl:table1}.
+
+
+#### Name Formatting for Gender Prediction of Authors
+
+Because we separate first and last authors, we only considered papers with more than one author.
+Roughly 7% of all papers were estimated to be single authors and removed from this analysis: 1113/15013  for cited Springer articles, 2899/42155 for random Springer articles, 955/12459 for Nature research articles.
+As for quotes, we needed to extract the first name of the authors.
+We cast names to lowercase and processed them using the R package humaniformat [@https://cran.r-project.org/web/packages/humaniformat/index.html].
+humaniformat is a rule based program that uses character markers to identify if names are reversed (Lastname, Firstname), find middle names and titles.
+This processing was not required for quote prediction because names written in news articles did not appear to be reversed or abbreviated.
+Since many last or first authorships may be non-names, we additionally filtered out any identified names if they partially or fully match any of the following terms: "consortium", "group", "initiative", "team", "collab", "committee", "center", "program", "author", or "institute".
+Furthermore, since many papers only contain first name initials (for example, "N. Davidson"), we remove any names less than four letters (length includes punctuation) and containing a "." or "-", then strip out all periods from the first name.
+This ensures that hyphenated names are not changed, e.g. Julia-Louise remains unchanged, but removes hyphenated initials, e.g. J-L.
+<!--Finally, we only consider any remaining first names of one or more characters.
+This is to eliminate first and middle jointly-initialized names.
+For example, "NR Davidson" would be reduced to "Davidson" and then eliminated due to the lack of a first name. -->
+A summary of processed author gender predictions at each point of processing is provided in Tables {@tbl:table2} - {@tbl:table4}.
+
+
+#### Name Formatting for Name Origin Prediction
+In contrast to the gender prediction, we require the entire name in all steps of name origin prediction.
+For names identified in the _Nature_ news articles, we use the same process as described for the gender prediction; we again try to identify the full name.
+For author names, we process the names as previously described for the gender prediction of authors.
+For all names, we only consider them in our analyses if they consist of two distinct parts separated by a space and excluding titles (e.g. Mrs., Prof.,  Dr., etc.).
+All names that were filtered out in the analysis of quotes and mentions are provided on our github in the file "data/author_data/all_mentioned_fullname_excluded.tsv" and "data/author_data/all_speaker_fullname_excluded.tsv".
+<!-- Additionally, if a full name is less than three characters, we were unable to consider it as the prediction model that we apply uses 3-mers. ## removed this because this does not occur. -->
+A summary of processed name origin predictions of quotes and citations at each point of processing is provided in Tables {@tbl:table1} - {@tbl:table4}.
+
+
+### Gender Analysis
+
+The quote extraction and attribution annotator from the coreNLP pipeline was employed to identify quotes and their associated speakers in the article text.
+In some cases, coreNLP could not identify an associated speaker’s name but instead assigned a gendered pronoun.
+In these instances, we used the gender of the pronoun for the analysis.
+The R package genderizeR [@doi:10.32614/rj-2016-002], a wrapper for the genderize.io API [@https://genderize.io], predicted the gender of authors and speakers.
+We predicted a name as indicating a man if the first name was predicted by genderizeR to come from a man with at least a probability of 50%.
+To reduce the number of queries made to genderize.io, a previously cached gender prediction from [@doi:10.1101/2020.04.14.927251] was also used and can be found in the file "genderize.tsv".
+All first name predictions from this analysis are in the file "genderize_update.tsv".
+To estimate the gender gap for the quote gender analyses, we used the proportion of total quotes, not quoted speakers.
+We used the proportion of quotes to measure speaker participation instead of only the diversity of speakers.
+The specific formulas for a single year are shown in equations @eq:quote and @eq:first-author.
+We did not consider any names where no prediction could be made or quotes where neither speaker nor gendered pronoun was associated.
+
+$$\textrm{Prop. Quotes from Men} = \frac{|\textrm{Speaker Quotes from Men}|} {|\textrm{Speaker Quotes from Men or Women}|}$${#eq:quote}
+ 
+$$\textrm{Prop. First Author Men} = \frac{|\textrm{First Authors Men}|} {|\textrm{First Author Men or Women}|}$${#eq:first-author}
+ 
+### Name Origin Analysis
+
+We used the same quoted speakers as described in the previous section for the name origin analysis.
+In addition, we also consider all authors cited in a _Nature_ news article.
+In contrast to the gender prediction, we need to use the full name to predict name origin.
+We submitted all extracted full names to Wiki-2019LSTM [@doi:10.1101/2020.04.14.927251] to predict one of ten possible name origins: African, Celtic/English, East Asian, European, Greek, Hispanic, Hebrew, Arabic/Turkish/Persian, Nordic, and South Asian.
+While a full description of Wiki-2019LSTM is outside the scope of this paper, we describe it here breifly.
+Wiki-2019LSTM is trained on name and nationality pairs, using 3-mers of the characters in a name to predict a nationality.
+To ensure robust predictions, nationalities were grouped together as described in NamePrism [@doi:10.1145/3132847.3133008].
+NamePrism chose to exclude the United States, Australia, and Canada from their country groupings and were therefore excluded during training of Wiki-2019LSTM.
+This choice was justified by NamePrism in stating that these countries had a high level of immigration.
+The treemap of country groupings defined in the NamePrism manuscript are found in figure 5 of the publication [@doi:10.1145/3132847.3133008]. 
+
+After running the pre-trained Wiki-2019LSTM model, we used the probability origin for each name instead of a hard assignment to a single class.
+Hard assignment was not used because it has been shown to reproduce biases due to the underreporting of Black and overprediction of White individuals [@doi:10.1371/journal.pone.0264270].
+Similar to the gender analyses, quote proportions were again directly compared against publication rates, except using the probability of assignment instead of the count of hard assignments.
+For citations, quotes, and mentions, we calculated the proportion for a given year for each name origin.
+This is shown in Eq. @eq:cite-origin to, for example, calculate the citation rate for last authors with a Greek name origin for a single year.
+ 
+$$\textrm{Prop. Greek Last Author Cited} = \frac{\Sigma \textrm{(Probability Greek Name for each Cited Last Author)}} {|\textrm{Cited Last Authors w/any Name}|}$${#eq:cite-origin}
+
+$$\textrm{Prop. Greek Quotes} = \frac{\Sigma \textrm{(Probability Greek Name for each Quoted Speaker)}} {| \textrm{Quotes w/any Named Speaker}|}$${#eq:quote-origin}
+
+$$\textrm{Prop. Greek Names Mentioned} = \frac{\Sigma \textrm{(Probability Greek Mentioned Name)}} {| \textrm{Unique Names w/any Origin Mentioned}|}$${#eq:quote-origin}
+
+<!--
+### Identifying Quotes or Mentions with a Country Affiliation
+
+We assigned affiliations to quoted or mentioned people when their name was also a cited first or last author in the same news article.
+All country affiliations within the cited article were assigned to the quoted or mentioned person.
+For example, if a reasearcher was affiliated with an Austrian university, but the cited paper has authors from both Austria, France, and the United States, the researcher will be given three affiliations.
+University or Institution of the author was mapped to a country using OpenStreetMap [@https://www.openstreetmap.org].
+
+ 
+
+### Country Mention Proportions
+
+We estimated the prevalence of a country’s mentions by including all identified organizations, countries, states, or provinces from coreNLP's named entity annotater.
+We queried the resultant terms using OpenStreetMap [@https://www.openstreetmap.org] to identify the associated country with the term.
+All terms that were identified in the text 25 or more times were visually inspected for correctness.
+Hand-edited entries are denoted in the OpenStreetMap cache file "osm_cache.tsv" by the column "hand_edited".
+Still, this only accounts for less than 5% of the total entries.
+Furthermore, country-associated terms identified by coreNLP may be ambiguous, causing OpenStreetMap to return incorrect locations.
+Therefore, we count country mentions only if we find at least two unique country-associated terms in an article.
+We calculate the mentioned rate as the proportion of country-specific mentions divided by the total articles for a particular year, as exemplified in @eq:mention for calculating the mentioned rate for Mexico for a single year.
+ 
+$$\textrm{Prop. Mexico Mentions} = \frac{|\textrm{Articles with} \geq 2 \textrm{ unique Mexico-related terms}|} {|\textrm{All News Articles}|}$${#eq:mention}
+ 
+### Country Citation Proportions
+
+To identify the citation rate of a particular country, we processed all authors’ affiliations for a specific article.
+Since the affiliations could be in multiple formats, we again used OpenStreetMap to identify the country affiliation.
+Additionally, we considered all affiliations for a single author.
+We calculated a countries' citation rate as the number of citations for a country divided by either the number of _Nature_ papers (@eq:mention-bg) or the total number of papers cited by news articles for that year (@eq:mention-news).
+Shown below are example calculations for Colombia for a single year.
+ 
+$$\textrm{Prop. CO Affil. in Nature} = \frac{|\textrm{Articles with} \geq 1 \textrm{ CO affil. in Nature}|} {|\textrm{All Nature Research Articles}|}$${#eq:mention-bg}
+ 
+$$\textrm{Prop. CO Affil. Citations} = \frac{|\textrm{Cited Articles in News with} \geq 1 \textrm{ CO affil.}|} {|\textrm{All Articles Cited in News}|}$${#eq:mention-news}
+ 
+### Divergent Word Identification
+
+As mentioned in our previous description of how we utilized _The Guardian_ API, no citations were extracted from _The Guardian_, only _Nature_ articles were used in this analysis.
+After calculating the citation and mention proportion for each country, we identified countries outlying in their comparative citation or mention rate.
+Outlier detection was done by subtracting the citation and mention rates, then identifying which countries were in the top or bottom 5% from each year.
+We only considered countries identified as either high citation (Set C) or high mention (Set M) across all years.
+We did not consider any country that was in the top and bottom 5% in different years.
+Additionally, we only considered a country if cited or mentioned five times in a single year.
+Once we identified the set of C and M countries, we analyzed the word frequencies in all news articles where the set C or M country was mentioned but not cited.
+We believe this would provide insight into content differences between set C and M countries.
+Text from articles in 2020 were not considered due to an excess of SARS-CoV-2 related terms.
+Using the R package tidytext [@https://cran.r-project.org/web/packages/tidytext/index.html] we extracted tokens, removed stop words, and calculated the token frequencies across all articles.
+We only consider tokens in set C or M articles if the token has been observed at least 100 times across all articles.
+We then identify tokens that have the most significant ratio of usage between the two sets.
+Since there are differences in the number of articles per country within each set, we calculated a token frequency within a set as the median frequency within each countries associated articles.
+We calculated the resultant token ratio as the country normalized citation frequency to the country normalized mention frequency.
+To avoid divide by zero errors, a pseudocount of 1 is added to both the numerator and denominator.
+We assert that the term must be observed at least once in each set.
+-->
+
+### Bootstrap Estimations
+ 
+We used the boostrap method to construct confidence intervals for each of our calculated statistics.
+For all analyses related to equations @eq:quote - @eq:quote-origin, we independently selected 1,000 bootstrap samples for each year.
+We sampled with replacement of size equal to the cardinality of the complete set of interest.
+Bootstrap estimates for equations @eq:quote - @eq:quote-origin were performed by sampling the denominator set.
+The mean, 5th, 95th quantiles across the estimates are reported as the estimated mean, lower, and upper bounds.
+<!--For the divergent word analysis, due to computational constraints, we only took 1000 bootstrap samples.
+The bootstrap estimates were taken by subsampling the news articles with replacement, each time recalculating the country-normalized token frequencies within each country set (C and M).
+After the normalized frequencies within each country set were calculated, we calculated the ratio between country sets for each subsample with a pseudocount of 1 in the numerator and denominator, (C+1)/(M+1).
+Again, the mean, 5th, 95th quantiles across the estimates are reported as the estimated mean, lower, and upper bounds.-->
+
+
+
 
 ### Data availability
 
@@ -873,7 +873,7 @@ We would like to thank Jeffrey Perkel for asking thoughtful questions that spurr
 ![
 **Benchmark Data **
 The performance of gender prediction for pipeline-identified quoted speakers. 
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/supp_fig1_tmp/supp_fig1.png "Supplementary Figure 1"){#fig:suppfig1 tag="Supplemental 1" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/supp_fig1_tmp/supp_fig1.png "Figure 1 – figure supplemental 1"){#fig:suppfig1 tag="1 – figure supplemental 1" width=6in}
 
 ![
 **Speakers predicted to be men are overrepresented in news quotes regardless of predicted journalist gender**
@@ -881,7 +881,7 @@ Panel a depicts two trend lines: Yellow: Proportion of _Nature_ news articles wr
 We observe a moderate gender difference in the number of articles written by men and women journalists.
 Panel b depicts two trend lines: Yellow: Proportion of quotes predicted to be from men in an article written by a journalist predicted to be a woman; Blue: Proportion of quotes predicted to be from men in an article written by a journalist predicted to be a man.
 In all plots, the colored bands represent the 5th and 95th bootstrap quantiles and the point is the mean calculated from 1,000 bootstrap samples.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/supp_journalist_contingency_tab_tmp/supp_fig.png "Supplementary Figure 2"){#fig:suppfig_j_gender tag="Supplemental 2" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/supp_journalist_contingency_tab_tmp/supp_fig.png "Figure 2 - figure supplemental 1"){#fig:suppfig_j_gender tag="2 - figure supplemental 1" width=6in}
 
 
 ![
@@ -890,14 +890,14 @@ Panel a depicts three trend lines: Purple: Proportion of _Nature_ quotes for a s
 We observe a larger gender difference between first and last authors in _Springer Nature_ articles, however the proportion of speakers estimated to be men is less than observed in _Nature_ research articles.
 Panel b depicts the proportion of quotes from predicted men broken down by article type.
 In all plots the colored bands represent the 5th and 95th bootstrap quantiles and the point is the mean calculated from 1,000 bootstrap samples.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig2_tmp/fig2_supp.png "Supplementary Figure 3"){#fig:suppfig2 tag="Supplemental 3" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig2_tmp/fig2_supp.png "Figure 2 - figure supplemental 2"){#fig:suppfig2 tag="2 - figure supplemental 2" width=6in}
 
 ![
 **Predicted Celtic/English, and European name origins are the highest cited, quoted, and mentioned**
 Panel a, depicts the number of quotes, mentions, citations, or research articles considered in the name origin analysis.
 Panels b-g depicts the proportion of a name origin in a given dataset, citations in articles written by journalists or writers, quoted speakers or mentions.
 In all plots the colored bands represent the 5th and 95th bootstrap quantiles and the point is the mean calculated from 1,000 bootstrap samples.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig3_tmp/fig3_supp.png "Supplementary Figure 4"){#fig:suppfig3 tag="Supplemental 4" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig3_tmp/fig3_supp.png "Figure 3 – figure supplemental 1"){#fig:suppfig3 tag="3 – figure supplemental 1" width=6in}
 
 
 ![
@@ -905,7 +905,7 @@ In all plots the colored bands represent the 5th and 95th bootstrap quantiles an
 Panels a-d depicts the predicted name origins of first and last authors in our background sets.
 Panel a and b show the predicted name origins of _Nature_ first and last authors, respectively.
 Panel c and d show the predicted name origins of _Springer Nature_ first and last authors, respectively.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig3_tmp/fig3_supp3.png "Supplementary Figure 5"){#fig:supfig_nameorigin_bg tag="Supplemental 5" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig3_tmp/fig3_supp3.png "Figure 3 – figure supplemental 2"){#fig:supfig_nameorigin_bg tag="3 – figure supplemental 2" width=6in}
 
 
 ![
@@ -915,7 +915,7 @@ Panel a, c, and e compare the citation (a), quote (c), or mention (e) rate again
 Panel b, d, and f compare the citation (a), quote (c), or mention (e) rate against _Springer Nature_ first and last author name origins.
 Panels a and b additionally partition the citation rates by journalist-written articles and scientist-written articles, each further divided into first or last author position.
 For c-f, only journalist written articles are considered.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig3_tmp/fig3_supp2.png "Supplementary Figure 6"){#fig:suppfig4 tag="Supplemental 6" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/fig3_tmp/fig3_supp2.png "Figure 3 – figure supplemental 3"){#fig:suppfig4 tag="3 – figure supplemental 3" width=6in}
 
 
 ![
@@ -924,7 +924,7 @@ Panels a-d depicts twelve plots, each for a possible name origin comparison agai
 Panels a and b compare name origin proportions of quotes from people that were also cited in the same article.
 Panels c and d compare name origin proportions from mentions of people that were also cited in the same article.
 In all plots the colored bands represent the 5th and 95th bootstrap quantiles and the point is the mean calculated from 1,000 bootstrap samples.
-](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/supp_country_specific_analysis_tmp/supp_fig.png "Supplementary Figure 7"){#fig:suppfig_quote_cite tag="Supplemental 7" width=6in}
+](https://github.com/nrosed/nature_news_disparities/raw/main/figure_notebooks/manuscript_figs/supp_country_specific_analysis_tmp/supp_fig.png "Figure 3 - figure supplemental 4"){#fig:suppfig_quote_cite tag="3 - figure supplemental 4" width=6in}
 
 <!--
 ![
@@ -992,28 +992,28 @@ Table: Quoted speaker gender by name origin {#tbl:tableGenderNameOrigin}
 
 |                                           |CelticEnglish     |EastAsian         |European          |
 |:------------------------------------------|:-----------------|:-----------------|:-----------------|
-|citation_journalist_first vs. nature_first |1.37 (0.93, 1.82) |0.68 (0.44, 0.91) |1.01 (0.77, 1.28) |
-|citation_journalist_last vs. nature_last   |1.18 (0.91, 1.58) |0.81 (0.4, 1.27)  |0.92 (0.68, 1.17) |
-|citation_scientist_first vs. nature_first  |1.28 (1.04, 1.56) |0.8 (0.64, 1.02)  |1.06 (0.88, 1.25) |
-|citation_scientist_last vs. nature_last    |1.11 (0.93, 1.34) |0.76 (0.56, 1)    |1.07 (0.91, 1.22) |
-|quote vs. nature_first                     |2.2 (1.8, 2.64)   |0.23 (0.18, 0.29) |1.02 (0.79, 1.23) |
-|quote vs. nature_last                      |1.54 (1.33, 1.85) |0.36 (0.28, 0.47) |0.89 (0.78, 1.01) |
-|mention vs. nature_first                   |2.1 (1.69, 2.53)  |0.27 (0.21, 0.33) |1.02 (0.8, 1.24)  |
-|mention vs. nature_last                    |1.47 (1.26, 1.76) |0.42 (0.32, 0.52) |0.89 (0.78, 1)    |
+|citation_journalist_first vs. nature_first |1.36 (0.96, 1.74) |0.7 (0.46, 0.91)  |1.01 (0.8, 1.25)  |
+|citation_journalist_last vs. nature_last   |1.18 (0.93, 1.54) |0.82 (0.42, 1.27) |0.93 (0.71, 1.19) |
+|citation_scientist_first vs. nature_first  |1.26 (1.05, 1.5)  |0.81 (0.66, 1.02) |1.05 (0.88, 1.22) |
+|citation_scientist_last vs. nature_last    |1.11 (0.95, 1.31) |0.77 (0.58, 0.99) |1.06 (0.93, 1.19) |
+|quote vs. nature_first                     |2.12 (1.77, 2.51) |0.25 (0.2, 0.32)  |1.01 (0.81, 1.22) |
+|quote vs. nature_last                      |1.52 (1.32, 1.75) |0.39 (0.3, 0.49)  |0.89 (0.79, 1.01)    |
+|mention vs. nature_first                   |2.03 (1.67, 2.39) |0.29 (0.23, 0.36) |1.02 (0.81, 1.22) |
+|mention vs. nature_last                    |1.44 (1.26, 1.67) |0.45 (0.35, 0.54) |0.89 (0.79, 1)    |
 Table: Mean fold change comparison with Nature from bootstrap samples with 95% CI {#tbl:tableFCNature}
 
 
 
 |                                             |CelticEnglish     |EastAsian         |European          |
 |:--------------------------------------------|:-----------------|:-----------------|:-----------------|
-|citation_journalist_first vs. springer_first |2.08 (1.42, 2.9)  |0.68 (0.45, 0.94) |1.15 (0.87, 1.53) |
-|citation_journalist_last vs. springer_last   |2.08 (1.31, 3.26) |0.56 (0.28, 0.81) |1.13 (0.87, 1.43) |
-|citation_scientist_first vs. springer_last   |1.59 (0.95, 2.29) |0.9 (0.61, 1.67)  |1.15 (0.91, 1.37) |
-|citation_scientist_last vs. nature_last      |1.11 (0.93, 1.34) |0.76 (0.56, 1)    |1.07 (0.91, 1.22) |
-|quote vs. springer_last                      |2.71 (1.78, 3.91) |0.26 (0.18, 0.5)  |1.1 (0.84, 1.37)  |
-|quote vs. nature_last                        |1.54 (1.33, 1.85) |0.36 (0.28, 0.47) |0.89 (0.78, 1.01) |
-|mention vs. springer_last                    |2.59 (1.68, 3.75) |0.3 (0.21, 0.56)  |1.1 (0.86, 1.34)  |
-|mention vs. nature_last                      |1.47 (1.26, 1.76) |0.42 (0.32, 0.52) |0.89 (0.78, 1)    |
+|citation_journalist_first vs. springer_first |1.99 (1.42, 2.64) |0.69 (0.47, 0.96) |1.14 (0.89, 1.47) |
+|citation_journalist_last vs. springer_last   |2.01 (1.31, 3.08) |0.56 (0.3, 0.82)  |1.12 (0.91, 1.37) |
+|citation_scientist_first vs. springer_last   |1.54 (0.95, 2.17) |0.91 (0.62, 1.64) |1.13 (0.91, 1.33) |
+|citation_scientist_last vs. nature_last      |1.11 (0.95, 1.31) |0.77 (0.58, 0.99) |1.06 (0.93, 1.19) |
+|quote vs. springer_last                      |2.58 (1.74, 3.6)  |0.28 (0.2, 0.54)  |1.08 (0.84, 1.35) |
+|quote vs. nature_last                        |1.52 (1.32, 1.75) |0.39 (0.3, 0.49)  |0.89 (0.79, 1.0)    |
+|mention vs. springer_last                    |2.45 (1.65, 3.42) |0.32 (0.23, 0.59) |1.08 (0.85, 1.32) |
+|mention vs. nature_last                      |1.44 (1.26, 1.67) |0.45 (0.35, 0.54) |0.89 (0.79, 1)    |
 Table: Mean fold change comparison with Springer Nature from bootstrap samples with 95% CI {#tbl:tableFCSpringer}
 
 
@@ -1028,16 +1028,16 @@ Table: Quoted speaker name origin, by journalist name origin {#tbl:table5}
 | Journalist Name Origin |   African| Arab Turk Pers| Celtic English| East Asian|  European|     Greek|    Hebrew|  Hispanic|    Nordic| South Asian|
 |:-------------|---------:|------------:|-------------:|---------:|---------:|---------:|---------:|---------:|---------:|----------:|
 |CelticEnglish | 0.016|    0.027|     0.368| 0.070| 0.363| 0.008| 0.017| 0.023| 0.083|  0.025|
-|EastAsian     | 0.002|    0.077|     0.377| 0.142| 0.167| 0.000| 0.012| 0.133| 0.019|  0.080|
+|EastAsian     | 0.002|    0.077|     0.377| 0.143| 0.167| 0.000| 0.012| 0.133| 0.019|  0.080|
 |European      | 0.014|    0.028|     0.363| 0.116| 0.352| 0.006| 0.030| 0.026| 0.035|  0.030|
 Table: Quoted + cited speaker name origin, by journalist name origin  {#tbl:table6}
 
 
 | Journalist Name Origin |   African| Arab Turk Pers| Celtic English| East Asian|  European|     Greek|    Hebrew|  Hispanic|    Nordic| South Asian|
 |:-------------|---------:|------------:|-------------:|---------:|---------:|---------:|---------:|---------:|---------:|----------:|
-|CelticEnglish | 0.010|    0.023|     0.378| 0.087| 0.361| 0.010| 0.021| 0.029| 0.056|  0.024|
+|CelticEnglish | 0.011|    0.023|     0.378| 0.086| 0.361| 0.010| 0.021| 0.029| 0.056|  0.025|
 |EastAsian     | 0.000|    0.066|     0.340| 0.148| 0.209| 0.000| 0.005| 0.148| 0.033|  0.049|
-|European      | 0.020|    0.030|     0.410| 0.111| 0.300| 0.012| 0.023| 0.019| 0.030|  0.046|
+|European      | 0.021|    0.030|     0.410| 0.111| 0.300| 0.012| 0.023| 0.019| 0.030|  0.046|
 Table: Quoted speakers (with US affiliated citation) name origin, by journalist name origin {#tbl:table7}
 
 
